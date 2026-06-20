@@ -61,6 +61,11 @@
             bindings = <&soft_off>;
             key-positions = <14 28 40>;
         };
+
+        alt_ctr_tab {
+            bindings = <&kp LA(LC(TAB))>;
+            key-positions = <26 39>;
+        };
     };
 
     macros {
