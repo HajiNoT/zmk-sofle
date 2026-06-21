@@ -56,13 +56,13 @@ layers:
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-command$$
-  - {t: LANGUAGE 1, h: '$$mdi:apple-keyboard-control$$'}
+  - '&lan1_ctr_lay'
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:keyboard-space$$', h: num}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', h: arrow}
   - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: LANGUAGE 2, h: '$$mdi:apple-keyboard-control$$'}
+  - '&lan2_ctr_lay'
   - LEFT WIN
   - CTR
   num:
