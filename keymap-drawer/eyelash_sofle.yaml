@@ -62,7 +62,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', h: arrow}
   - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - '&lan2_ctr_lay'
+  - '&int5_ctr_lay'
   - LEFT WIN
   - ARROW2
   num:
