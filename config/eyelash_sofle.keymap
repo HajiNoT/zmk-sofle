@@ -29,6 +29,10 @@
 
 &soft_off { hold-time-ms = <2000>; };
 
+&lt { quick-tap-ms = <150>; };
+
+&mt { quick-tap-ms = <150>; };
+
 / {
     scroll_encoder: scroll_encoder {
         compatible = "zmk,behavior-sensor-rotate";
@@ -152,11 +156,11 @@
 
         layer0 {
             bindings = <
-&kp GRAVE     &kp N1     &kp N2        &kp N3        &kp N4           &kp N5         &kp UP_ARROW     &kp N6     &kp N7          &kp N8        &kp N9        &kp N0    &kp BACKSPACE
-&kp ESC       &kp P      &kp M         &kp R         &kp K            &kp B          &kp DOWN_ARROW   &kp J      &kp U           &kp O         &kp Y         &kp F     &kp SEMI
-&kp TAB       &kp D      &kp S         &kp N         &kp T            &kp G          &kp LEFT_ARROW   &kp MINUS  &kp E           &kp I         &kp A         &kp H     &kp EQUAL
-&kp LEFT_ALT  &kp Z      &kp W         &kp L         &kp C            &kp V          &kp RIGHT_ARROW  &kp X      &kp Q           &kp COMMA     &kp DOT       &kp FSLH  &kp RIGHT_ALT
-&kp C_MUTE    &kp LCTRL  &kp LEFT_GUI  &f13_ctr_lay  &mt LSHIFT BSPC  &lt 1 SPACE    &kp ENTER        &lt 2 RET  &mt RSHIFT DEL  &f14_ctr_lay  &kp LEFT_WIN  &mo 5
+&kp GRAVE     &kp N1     &kp N2        &kp N3           &kp N4       &kp N5          &kp UP_ARROW     &kp N6        &kp N7     &kp N8         &kp N9        &kp N0    &kp BACKSPACE
+&kp ESC       &kp P      &kp M         &kp R            &kp K        &kp B           &kp DOWN_ARROW   &kp J         &kp U      &kp O          &kp Y         &kp F     &kp SEMI
+&kp TAB       &kp D      &kp S         &kp N            &kp T        &kp G           &kp LEFT_ARROW   &kp MINUS     &kp E      &kp I          &kp A         &kp H     &kp EQUAL
+&kp LEFT_ALT  &kp Z      &kp W         &kp L            &kp C        &kp V           &kp RIGHT_ARROW  &kp X         &kp Q      &kp COMMA      &kp DOT       &kp FSLH  &kp RIGHT_ALT
+&kp C_MUTE    &kp LCTRL  &kp LEFT_GUI  &mt LSHIFT BSPC  &lt 1 SPACE  &f13_ctr_lay    &kp ENTER        &f14_ctr_lay  &lt 2 RET  &mt RSHFT DEL  &kp LEFT_WIN  &mo 5
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
