@@ -76,6 +76,11 @@
             bindings = <&tog 8>;
             key-positions = <11 12>;
         };
+
+        caps {
+            bindings = <&kp CAPS>;
+            key-positions = <55 61>;
+        };
     };
 
     macros {
