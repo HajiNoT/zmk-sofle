@@ -165,11 +165,11 @@
 
         NUM {
             bindings = <
-&trans  &trans           &trans           &trans           &trans           &trans             &mmv MOVE_UP     &trans        &trans         &trans     &trans                &trans    &trans
-&trans  &kp KP_DIVIDE    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MULTIPLY    &mmv MOVE_DOWN   &kp CARET     &kp AMPERSAND  &kp ASTRK  &kp SQT               &kp DQT   &trans
-&trans  &kp KP_MINUS     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS        &mmv MOVE_LEFT   &kp NUMBER_6  &kp N7         &kp N8     &kp N9                &kp N0    &trans
-&to 0   &to 1            &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp EQUAL          &mmv MOVE_RIGHT  &kp RPAR      &kp RBRC       &kp RBKT   &kp NON_US_BACKSLASH  &kp PIPE  &trans
-&trans  &kp KP_NUMBER_0  &kp DOT          &trans           &trans           &trans             &mkp LCLK        &trans        &trans         &trans     &trans                &trans
+&trans  &trans     &trans   &trans  &trans  &trans       &mmv MOVE_UP     &trans        &trans         &trans     &trans                &trans    &trans
+&trans  &kp FSLH   &kp N7   &kp N8  &kp N9  &kp ASTRK    &kp SEMI         &kp CARET     &kp AMPERSAND  &kp ASTRK  &kp SQT               &kp DQT   &trans
+&trans  &kp MINUS  &kp N4   &kp N5  &kp N6  &kp PLUS     &mmv MOVE_LEFT   &kp NUMBER_6  &kp N7         &kp N8     &kp N9                &kp N0    &trans
+&to 0   &to 1      &kp N1   &kp N2  &kp N3  &kp EQUAL    &mmv MOVE_RIGHT  &kp RPAR      &kp RBRC       &kp RBKT   &kp NON_US_BACKSLASH  &kp PIPE  &trans
+&trans  &kp N0     &kp DOT  &trans  &trans  &trans       &mkp LCLK        &trans        &trans         &trans     &trans                &trans
             >;
 
             display-name = "num";
