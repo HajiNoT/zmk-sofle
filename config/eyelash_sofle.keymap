@@ -120,30 +120,30 @@
             label = "LAN2_CTR_LAY";
         };
 
-        int4_ctr_lay: int4_ctr_lay {
+        f14_ctr_lay: f14_ctr_lay {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&mt LCTRL INT4 &mo 3>,
+                <&mt LCTRL F14 &mo 3>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mt LCTRL INT4 &mo 3>;
+                <&mt LCTRL F14 &mo 3>;
 
-            label = "INT4_CTR_LAY";
+            label = "F14_CTR_LAY";
         };
 
-        int5_ctr_lay: int5_ctr_lay {
+        f15_ctr_lay: f15_ctr_lay {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&mt LCTRL INT5 &mo 3>,
+                <&mt LCTRL F15 &mo 3>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mt LCTRL INT5 &mo 3>;
+                <&mt LCTRL F15 &mo 3>;
 
-            label = "INT5_CTR_LAY";
+            label = "F15_CTR_LAY";
         };
     };
 
@@ -152,11 +152,11 @@
 
         layer0 {
             bindings = <
-&kp GRAVE     &kp N1     &kp N2        &kp N3         &kp N4           &kp N5         &kp UP_ARROW     &kp N6     &kp N7          &kp N8         &kp N9        &kp N0    &kp BACKSPACE
-&kp ESC       &kp P      &kp M         &kp R          &kp K            &kp B          &kp DOWN_ARROW   &kp J      &kp U           &kp O          &kp Y         &kp F     &kp SEMI
-&kp TAB       &kp D      &kp S         &kp N          &kp T            &kp G          &kp LEFT_ARROW   &kp MINUS  &kp E           &kp I          &kp A         &kp H     &kp EQUAL
-&kp LEFT_ALT  &kp Z      &kp W         &kp L          &kp C            &kp V          &kp RIGHT_ARROW  &kp X      &kp Q           &kp COMMA      &kp DOT       &kp FSLH  &kp RIGHT_ALT
-&kp C_MUTE    &kp LCTRL  &kp LEFT_GUI  &int4_ctr_lay  &mt LSHIFT BSPC  &lt 1 SPACE    &kp ENTER        &lt 2 RET  &mt RSHIFT DEL  &int5_ctr_lay  &kp LEFT_WIN  &mo 5
+&kp GRAVE     &kp N1     &kp N2        &kp N3        &kp N4           &kp N5         &kp UP_ARROW     &kp N6     &kp N7          &kp N8        &kp N9        &kp N0    &kp BACKSPACE
+&kp ESC       &kp P      &kp M         &kp R         &kp K            &kp B          &kp DOWN_ARROW   &kp J      &kp U           &kp O         &kp Y         &kp F     &kp SEMI
+&kp TAB       &kp D      &kp S         &kp N         &kp T            &kp G          &kp LEFT_ARROW   &kp MINUS  &kp E           &kp I         &kp A         &kp H     &kp EQUAL
+&kp LEFT_ALT  &kp Z      &kp W         &kp L         &kp C            &kp V          &kp RIGHT_ARROW  &kp X      &kp Q           &kp COMMA     &kp DOT       &kp FSLH  &kp RIGHT_ALT
+&kp C_MUTE    &kp LCTRL  &kp LEFT_GUI  &f14_ctr_lay  &mt LSHIFT BSPC  &lt 1 SPACE    &kp ENTER        &lt 2 RET  &mt RSHIFT DEL  &f15_ctr_lay  &kp LEFT_WIN  &mo 5
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
@@ -250,11 +250,11 @@
         QWERTY {
             display-name = "qwerrty";
             bindings = <
-&kp GRAVE     &kp N1     &kp N2        &kp N3         &kp N4           &kp N5         &kp UP_ARROW     &kp N6     &kp N7          &kp N8         &kp N9        &kp N0     &kp BACKSPACE
-&kp ESC       &kp Q      &kp W         &kp E          &kp R            &kp T          &kp DOWN_ARROW   &kp Y      &kp U           &kp I          &kp O         &kp P      &kp SEMI
-&kp TAB       &kp A      &kp S         &kp D          &kp F            &kp G          &kp LEFT_ARROW   &kp H      &kp J           &kp K          &kp L         &kp MINUS  &kp EQUAL
-&kp LEFT_ALT  &kp Z      &kp X         &kp C          &kp V            &kp B          &kp RIGHT_ARROW  &kp N      &kp M           &kp COMMA      &kp DOT       &kp FSLH   &kp RIGHT_ALT
-&kp C_MUTE    &kp LCTRL  &kp LEFT_GUI  &int4_ctr_lay  &mt LSHIFT BSPC  &lt 1 SPACE    &kp ENTER        &lt 2 RET  &mt RSHIFT DEL  &int5_ctr_lay  &kp LEFT_WIN  &mo 5
+&kp GRAVE     &kp N1     &kp N2        &kp N3        &kp N4           &kp N5         &kp UP_ARROW     &kp N6     &kp N7          &kp N8        &kp N9        &kp N0     &kp BACKSPACE
+&kp ESC       &kp Q      &kp W         &kp E         &kp R            &kp T          &kp DOWN_ARROW   &kp Y      &kp U           &kp I         &kp O         &kp P      &kp SEMI
+&kp TAB       &kp A      &kp S         &kp D         &kp F            &kp G          &kp LEFT_ARROW   &kp H      &kp J           &kp K         &kp L         &kp MINUS  &kp EQUAL
+&kp LEFT_ALT  &kp Z      &kp X         &kp C         &kp V            &kp B          &kp RIGHT_ARROW  &kp N      &kp M           &kp COMMA     &kp DOT       &kp FSLH   &kp RIGHT_ALT
+&kp C_MUTE    &kp LCTRL  &kp LEFT_GUI  &f14_ctr_lay  &mt LSHIFT BSPC  &lt 1 SPACE    &kp ENTER        &lt 2 RET  &mt RSHIFT DEL  &f15_ctr_lay  &kp LEFT_WIN  &mo 5
             >;
 
             sensor-bindings = <&rsr_vol>, <&rsr_trans>;
