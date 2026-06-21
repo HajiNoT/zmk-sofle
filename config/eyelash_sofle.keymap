@@ -29,11 +29,6 @@
 
 &soft_off { hold-time-ms = <2000>; };
 
-&lt {
-    flavor = "tap-unless-interrupted";
-    quick-tap-ms = <200>;
-};
-
 / {
     scroll_encoder: scroll_encoder {
         compatible = "zmk,behavior-sensor-rotate";
@@ -124,6 +119,32 @@
 
             label = "LAN2_CTR_LAY";
         };
+
+        int4_ctr_lay: int4_ctr_lay {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&mt LCTRL INT4 &mo 3>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&mt LCTRL INT4 &mo 3>;
+
+            label = "INT4_CTR_LAY";
+        };
+
+        int5_ctr_lay: int5_ctr_lay {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&mt LCTRL INT5 &mo 3>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&mt LCTRL INT5 &mo 3>;
+
+            label = "INT5_CTR_LAY";
+        };
     };
 
     keymap {
@@ -135,7 +156,7 @@
 &kp ESC         &kp P      &kp M         &kp R          &kp K            &kp B          &kp DOWN_ARROW   &kp J      &kp U           &kp O          &kp Y         &kp F     &kp SEMI
 &kp TAB         &kp D      &kp S         &kp N          &kp T            &kp G          &kp LEFT_ARROW   &kp MINUS  &kp E           &kp I          &kp A         &kp H     &kp EQUAL
 &kp LEFT_ALT    &kp Z      &kp W         &kp L          &kp C            &kp V          &kp RIGHT_ARROW  &kp X      &kp Q           &kp COMMA      &kp DOT       &kp FSLH  &kp RIGHT_ALT
-&kp C_MUTE      &kp LCTRL  &kp LEFT_GUI  &lan1_ctr_lay  &mt LSHIFT BSPC  &lt 1 SPACE    &kp ENTER        &lt 2 RET  &mt RSHIFT DEL  &lan2_ctr_lay  &kp LEFT_WIN  &mo 5
+&kp C_MUTE      &kp LCTRL  &kp LEFT_GUI  &int4_ctr_lay  &mt LSHIFT BSPC  &lt 1 SPACE    &kp ENTER        &lt 2 RET  &mt RSHIFT DEL  &lan2_ctr_lay  &kp LEFT_WIN  &mo 5
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
