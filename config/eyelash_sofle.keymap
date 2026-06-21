@@ -156,7 +156,7 @@
 &kp ESC         &kp P      &kp M         &kp R          &kp K            &kp B          &kp DOWN_ARROW   &kp J      &kp U           &kp O          &kp Y         &kp F     &kp SEMI
 &kp TAB         &kp D      &kp S         &kp N          &kp T            &kp G          &kp LEFT_ARROW   &kp MINUS  &kp E           &kp I          &kp A         &kp H     &kp EQUAL
 &kp LEFT_ALT    &kp Z      &kp W         &kp L          &kp C            &kp V          &kp RIGHT_ARROW  &kp X      &kp Q           &kp COMMA      &kp DOT       &kp FSLH  &kp RIGHT_ALT
-&kp C_MUTE      &kp LCTRL  &kp LEFT_GUI  &int4_ctr_lay  &mt LSHIFT BSPC  &lt 1 SPACE    &kp ENTER        &lt 2 RET  &mt RSHIFT DEL  &lan2_ctr_lay  &kp LEFT_WIN  &mo 5
+&kp C_MUTE      &kp LCTRL  &kp LEFT_GUI  &int4_ctr_lay  &mt LSHIFT BSPC  &lt 1 SPACE    &kp ENTER        &lt 2 RET  &mt RSHIFT DEL  &int5_ctr_lay  &kp LEFT_WIN  &mo 5
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
