@@ -592,3 +592,5 @@ combos:
   k: Alt+Ctl+$$mdi:keyboard-tab$$
 - p: [11, 12]
   k: {t: qwerrty, h: toggle}
+- p: [55, 61]
+  k: $$mdi:apple-keyboard-caps$$
