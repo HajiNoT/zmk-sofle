@@ -85,7 +85,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - '*'
-  - {t: ;, s: ':'}
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - ^
   - '&'
   - '*'
@@ -105,8 +105,8 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: LAYER0, h: toggle}
-  - {t: num, h: toggle}
+  - {t: Ctl+=, s: Ctl++}
+  - {t: Ctl+-, s: Ctl+_}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -164,7 +164,7 @@ layers:
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - Gui+Sft+$$mdi:arrow-left-bold$$
-  - Sft+$$mdi:arrow-left-bold$$
+  - Ctl+$$mdi:arrow-left-bold$$
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
@@ -659,3 +659,7 @@ combos:
   k: {t: qwerrty, h: toggle}
 - p: [57, 59]
   k: $$mdi:apple-keyboard-caps$$
+- p: [57, 30]
+  k: {t: num, h: toggle}
+- p: [59, 34]
+  k: {t: arrow, h: toggle}
