@@ -80,6 +80,16 @@
             bindings = <&kp CAPS>;
             key-positions = <57 59>;
         };
+
+        TG_LAY1 {
+            bindings = <&tog 1>;
+            key-positions = <57 30>;
+        };
+
+        TG_LAY2 {
+            bindings = <&tog 2>;
+            key-positions = <59 34>;
+        };
     };
 
     macros {
@@ -169,11 +179,11 @@
 
         NUM {
             bindings = <
-&trans  &trans     &trans   &trans  &trans  &trans       &mmv MOVE_UP     &trans        &trans         &trans     &trans                &trans    &trans
-&trans  &kp FSLH   &kp N7   &kp N8  &kp N9  &kp ASTRK    &kp SEMI         &kp CARET     &kp AMPERSAND  &kp ASTRK  &kp SQT               &kp DQT   &trans
-&trans  &kp MINUS  &kp N4   &kp N5  &kp N6  &kp PLUS     &mmv MOVE_LEFT   &kp NUMBER_6  &kp N7         &kp N8     &kp N9                &kp N0    &trans
-&to 0   &to 1      &kp N1   &kp N2  &kp N3  &kp EQUAL    &mmv MOVE_RIGHT  &kp RPAR      &kp RBRC       &kp RBKT   &kp NON_US_BACKSLASH  &kp PIPE  &trans
-&trans  &kp N0     &kp DOT  &trans  &trans  &trans       &mkp LCLK        &trans        &trans         &trans     &trans                &trans
+&trans         &trans         &trans   &trans  &trans  &trans       &mmv MOVE_UP     &trans        &trans         &trans     &trans                &trans    &trans
+&trans         &kp FSLH       &kp N7   &kp N8  &kp N9  &kp ASTRK    &mmv MOVE_DOWN   &kp CARET     &kp AMPERSAND  &kp ASTRK  &kp SQT               &kp DQT   &trans
+&trans         &kp MINUS      &kp N4   &kp N5  &kp N6  &kp PLUS     &mmv MOVE_LEFT   &kp NUMBER_6  &kp N7         &kp N8     &kp N9                &kp N0    &trans
+&kp LC(EQUAL)  &kp LC(MINUS)  &kp N1   &kp N2  &kp N3  &kp EQUAL    &mmv MOVE_RIGHT  &kp RPAR      &kp RBRC       &kp RBKT   &kp NON_US_BACKSLASH  &kp PIPE  &trans
+&trans         &kp N0         &kp DOT  &trans  &trans  &trans       &mkp LCLK        &trans        &trans         &trans     &trans                &trans
             >;
 
             display-name = "num";
@@ -184,7 +194,7 @@
             bindings = <
 &trans  &trans     &trans     &trans    &trans    &trans       &kp C_VOLUME_UP    &trans        &trans         &trans    &trans       &trans         &trans
 &trans  &kp EXCL   &kp AT     &kp HASH  &kp DLLR  &kp PRCNT    &kp C_VOL_DN       &kp LC(HOME)  &kp HOME       &kp UP    &kp END      &kp LC(END)    &trans
-&trans  &kp N1     &kp N2     &kp N3    &kp N4    &kp N5       &kp LG(LS(LEFT))   &kp LS(LEFT)  &kp LEFT       &kp DOWN  &kp RIGHT    &kp LC(RIGHT)  &trans
+&trans  &kp N1     &kp N2     &kp N3    &kp N4    &kp N5       &kp LG(LS(LEFT))   &kp LC(LEFT)  &kp LEFT       &kp DOWN  &kp RIGHT    &kp LC(RIGHT)  &trans
 &trans  &kp TILDE  &kp GRAVE  &kp LBKT  &kp LBRC  &kp LPAR     &kp LS(LG(RIGHT))  &trans        &kp PAGE_DOWN  &trans    &kp PAGE_UP  &trans         &trans
 &trans  &trans     &trans     &trans    &trans    &trans       &kp K_MUTE         &trans        &trans         &trans    &trans       &trans
             >;
@@ -201,8 +211,6 @@
 &kp LS(TAB)  &kp Z   &kp Y   &kp C   &kp V   &kp X     &trans  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH   &trans
 &trans       &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans     &trans   &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         FUNCTION {
