@@ -344,7 +344,7 @@ layers:
   - RGB HUI
   - RGB BRD
   - RGB BRI
-  - RGB COLOR HSB(131,0,0)
+  - RGB COLOR HSB(131,100,50)
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
