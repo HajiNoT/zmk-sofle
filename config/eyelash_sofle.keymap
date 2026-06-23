@@ -29,9 +29,15 @@
 
 &soft_off { hold-time-ms = <2000>; };
 
-&lt { quick-tap-ms = <200>; };
+&lt {
+    quick-tap-ms = <200>;
+    flavor = "hold-preferred";
+};
 
-&mt { quick-tap-ms = <200>; };
+&mt {
+    quick-tap-ms = <200>;
+    flavor = "hold-preferred";
+};
 
 / {
     scroll_encoder: scroll_encoder {
@@ -86,18 +92,13 @@
         };
 
         TG_LAY1 {
-            bindings = <&tog 3>;
+            bindings = <&tog 2>;
             key-positions = <57 30>;
         };
 
         TG_LAY2 {
-            bindings = <&tog 2>;
+            bindings = <&tog 3>;
             key-positions = <59 34>;
-        };
-
-        to_ganary {
-            bindings = <&to 0>;
-            key-positions = <24 25>;
         };
     };
 
@@ -208,11 +209,11 @@
 
         NUM_ARROW {
             bindings = <
-&trans  &trans      &trans   &trans  &trans  &trans       &kp C_VOLUME_UP    &trans        &trans         &trans    &trans       &trans         &trans
-&trans  &kp FSLH    &kp N7   &kp N8  &kp N9  &kp ASTRK    &kp C_VOL_DN       &kp LC(HOME)  &kp HOME       &kp UP    &kp END      &kp LC(END)    &trans
-&trans  &kp MINUS   &kp N4   &kp N5  &kp N6  &kp PLUS     &kp LG(LS(LEFT))   &kp LC(LEFT)  &kp LEFT       &kp DOWN  &kp RIGHT    &kp LC(RIGHT)  &trans
-&to 0   &num_stick  &kp N1   &kp N2  &kp N3  &kp EQUAL    &kp LS(LG(RIGHT))  &trans        &kp PAGE_DOWN  &trans    &kp PAGE_UP  &trans         &trans
-&trans  &kp N0      &kp DOT  &trans  &trans  &trans       &kp K_MUTE         &trans        &trans         &trans    &trans       &trans
+&trans  &trans     &trans   &trans  &trans  &trans       &kp C_VOLUME_UP    &trans        &trans         &trans    &trans       &trans         &trans
+&trans  &kp FSLH   &kp N7   &kp N8  &kp N9  &kp ASTRK    &kp C_VOL_DN       &kp LC(HOME)  &kp HOME       &kp UP    &kp END      &kp LC(END)    &trans
+&trans  &kp MINUS  &kp N4   &kp N5  &kp N6  &kp PLUS     &kp LG(LS(LEFT))   &kp LC(LEFT)  &kp LEFT       &kp DOWN  &kp RIGHT    &kp LC(RIGHT)  &trans
+&trans  &trans     &kp N1   &kp N2  &kp N3  &kp EQUAL    &kp LS(LG(RIGHT))  &trans        &kp PAGE_DOWN  &trans    &kp PAGE_UP  &trans         &trans
+&trans  &kp N0     &kp DOT  &trans  &trans  &trans       &kp K_MUTE         &trans        &trans         &trans    &trans       &trans
             >;
 
             display-name = "num_arrow";
