@@ -56,6 +56,15 @@
             #sensor-binding-cells = <0>;
             tap-ms = <0>;
         };
+
+        capword_hold: capword_hold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "CAPWORD_HOLD";
+            bindings = <&kp>, <&caps_word>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
     };
 
     combos {
@@ -173,11 +182,11 @@
 
         GANARY {
             bindings = <
-&kp GRAVE         &kp N1  &kp N2        &kp N3        &kp N4    &kp N5         &kp UP_ARROW     &kp N6     &kp N7   &kp N8        &kp N9         &kp N0    &kp BACKSPACE
-&mt LEFT_ALT ESC  &kp P   &kp M         &kp R         &kp K     &kp B          &kp DOWN_ARROW   &kp J      &kp U    &kp O         &kp Y          &kp F     &kp SEMI
-&mt LCTRL TAB     &kp D   &kp S         &kp N         &kp T     &kp G          &kp LEFT_ARROW   &kp MINUS  &kp E    &kp I         &kp A          &kp H     &kp EQUAL
-&kp LSHIFT        &kp Z   &kp W         &kp L         &kp C     &kp V          &kp RIGHT_ARROW  &kp X      &kp Q    &kp COMMA     &kp DOT        &kp FSLH  &kp RSHIFT
-&kp C_MUTE        &mo 5   &kp LEFT_GUI  &f13_ctr_lay  &kp BSPC  &lt 1 SPACE    &kp END          &lt 2 RET  &kp DEL  &f14_ctr_lay  &kp RIGHT_WIN  &mo 5
+&kp GRAVE               &kp N1  &kp N2        &kp N3        &kp N4           &kp N5         &kp UP_ARROW     &kp N6     &kp N7          &kp N8        &kp N9         &kp N0    &kp BACKSPACE
+&mt LEFT_ALT ESC        &kp P   &kp M         &kp R         &kp K            &kp B          &kp DOWN_ARROW   &kp J      &kp U           &kp O         &kp Y          &kp F     &kp SEMI
+&mt LCTRL TAB           &kp D   &kp S         &kp N         &kp T            &kp G          &kp LEFT_ARROW   &kp MINUS  &kp E           &kp I         &kp A          &kp H     &kp EQUAL
+&capword_hold LSHIFT 0  &kp Z   &kp W         &kp L         &kp C            &kp V          &kp RIGHT_ARROW  &kp X      &kp Q           &kp COMMA     &kp DOT        &kp FSLH  &mt RSHIFT RET
+&kp C_MUTE              &mo 5   &kp LEFT_GUI  &f13_ctr_lay  &mt LSHIFT BSPC  &lt 1 SPACE    &kp END          &lt 2 RET  &mt RSHIFT DEL  &f14_ctr_lay  &kp RIGHT_WIN  &mo 5
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
@@ -199,11 +208,11 @@
 
         SYMBOL {
             bindings = <
-&trans  &trans           &trans       &trans    &trans      &trans         &mmv MOVE_UP     &trans        &trans         &trans     &trans                &trans    &trans
-&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &mmv MOVE_DOWN   &kp CARET     &kp AMPERSAND  &kp ASTRK  &kp SQT               &kp DQT   &trans
-&trans  &kp N1           &kp N2       &kp N3    &kp N4      &kp N5         &mmv MOVE_LEFT   &kp NUMBER_6  &kp N7         &kp N8     &kp N9                &kp N0    &trans
-&trans  &kp TILDE        &kp GRAVE    &kp LBKT  &kp LBRC    &kp LPAR       &mmv MOVE_RIGHT  &kp RPAR      &kp RBRC       &kp RBKT   &kp NON_US_BACKSLASH  &kp PIPE  &trans
-&trans  &trans           &trans       &trans    &trans      &trans         &mkp LCLK        &trans        &trans         &trans     &trans                &trans
+&trans  &trans           &trans       &trans    &trans      &trans         &mmv MOVE_UP     &trans        &trans         &trans     &trans    &trans     &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &mmv MOVE_DOWN   &kp CARET     &kp AMPERSAND  &kp ASTRK  &kp SQT   &kp DQT    &kp PIPE
+&trans  &kp N1           &kp N2       &kp N3    &kp N4      &kp N5         &mmv MOVE_LEFT   &kp NUMBER_6  &kp N7         &kp N8     &kp N9    &kp N0     &kp NON_US_BSLH
+&trans  &kp TILDE        &kp GRAVE    &kp LBKT  &kp LBRC    &kp LPAR       &mmv MOVE_RIGHT  &kp RPAR      &kp RBRC       &kp RBKT   &kp EXCL  &kp QMARK  &trans
+&trans  &trans           &trans       &trans    &trans      &trans         &mkp LCLK        &trans        &trans         &trans     &trans    &trans
             >;
 
             display-name = "symbol";
