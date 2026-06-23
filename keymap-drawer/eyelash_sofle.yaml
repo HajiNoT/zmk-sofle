@@ -447,11 +447,11 @@ layers:
   - {type: held}
   - Gui+$$mdi:apple-keyboard-option$$
   - Ctl+$$mdi:apple-keyboard-option$$
+  - Sft+$$mdi:apple-keyboard-option$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Sft+$$mdi:apple-keyboard-option$$
   - Ctl+$$mdi:apple-keyboard-option$$
   - Gui+$$mdi:apple-keyboard-option$$
   - {type: held alternate}
