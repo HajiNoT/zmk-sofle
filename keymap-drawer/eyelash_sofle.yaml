@@ -14,7 +14,7 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-option$$'}
   - P
   - M
   - R
@@ -27,7 +27,7 @@ layers:
   - Y
   - F
   - {t: ;, s: ':'}
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-control$$'}
   - D
   - S
   - N
@@ -63,7 +63,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: arrow}
   - $$mdi:backspace-reverse-outline$$
   - '&f14_ctr_lay'
-  - $$mdi:apple-keyboard-option$$
+  - RIGHT WIN
   - ARROW2
   num:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -105,8 +105,8 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: Ctl+=, s: Ctl++}
-  - {t: Ctl+-, s: Ctl+_}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '0', s: )}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -380,15 +380,15 @@ layers:
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
+  - Gui+$$mdi:apple-keyboard-option$$
+  - Ctl+$$mdi:apple-keyboard-option$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+$$mdi:apple-keyboard-option$$
+  - Gui+$$mdi:apple-keyboard-option$$
   - {type: held alternate}
   qwerty:
   - {t: '`', s: '~'}
