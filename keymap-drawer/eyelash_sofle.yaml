@@ -1,70 +1,5 @@
 layout: {zmk_keyboard: eyelash_sofle}
 layers:
-  ganary:
-  - {t: '`', s: '~'}
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
-  - $$mdi:arrow-up-bold$$
-  - {t: '6', s: ^}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-option$$'}
-  - P
-  - M
-  - R
-  - K
-  - B
-  - $$mdi:arrow-down-bold$$
-  - J
-  - U
-  - O
-  - Y
-  - F
-  - {t: ;, s: ':'}
-  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-control$$'}
-  - D
-  - S
-  - N
-  - T
-  - G
-  - $$mdi:arrow-left-bold$$
-  - {t: '-', s: _}
-  - E
-  - I
-  - A
-  - H
-  - {t: '=', s: +}
-  - {t: '$$mdi:alpha-w-box$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - Z
-  - W
-  - L
-  - C
-  - V
-  - $$mdi:arrow-right-bold$$
-  - X
-  - Q
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
-  - {t: /, s: '?'}
-  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - $$mdi:volume-off$$
-  - ARROW2
-  - $$mdi:apple-keyboard-command$$
-  - '&f13_ctr_lay'
-  - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:keyboard-space$$', h: num_arrow}
-  - END
-  - {t: '$$mdi:keyboard-return$$', h: symbol}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - '&f14_ctr_lay'
-  - RIGHT WIN
-  - ARROW2
   QWERTY:
   - {t: '`', s: '~'}
   - {t: '1', s: '!'}
@@ -123,7 +58,72 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - '&f13_ctr_lay'
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:keyboard-space$$', h: num_arrow}
+  - {t: '$$mdi:keyboard-space$$', h: symbol}
+  - END
+  - {t: '$$mdi:keyboard-return$$', h: symbol}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - '&f14_ctr_lay'
+  - RIGHT WIN
+  - ARROW2
+  ganary:
+  - {t: '`', s: '~'}
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - $$mdi:arrow-up-bold$$
+  - {t: '6', s: ^}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: '0', s: )}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-option$$'}
+  - P
+  - M
+  - R
+  - K
+  - B
+  - $$mdi:arrow-down-bold$$
+  - J
+  - U
+  - O
+  - Y
+  - F
+  - {t: ;, s: ':'}
+  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-control$$'}
+  - D
+  - S
+  - N
+  - T
+  - G
+  - $$mdi:arrow-left-bold$$
+  - {t: '-', s: _}
+  - E
+  - I
+  - A
+  - H
+  - {t: '=', s: +}
+  - {t: '$$mdi:alpha-w-box$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - Z
+  - W
+  - L
+  - C
+  - V
+  - $$mdi:arrow-right-bold$$
+  - X
+  - Q
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, s: '?'}
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - $$mdi:volume-off$$
+  - ARROW2
+  - $$mdi:apple-keyboard-command$$
+  - '&f13_ctr_lay'
+  - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:keyboard-space$$', h: symbol}
   - END
   - {t: '$$mdi:keyboard-return$$', h: symbol}
   - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-shift$$'}
@@ -137,7 +137,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:volume-high$$
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -150,7 +150,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - '*'
-  - $$mdi:volume-low$$
+  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - Ctl+HOME
   - HOME
   - $$mdi:arrow-up-bold$$
@@ -163,7 +163,7 @@ layers:
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
   - +
-  - Gui+Sft+$$mdi:arrow-left-bold$$
+  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - Ctl+$$mdi:arrow-left-bold$$
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
@@ -176,7 +176,7 @@ layers:
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
   - {t: '=', s: +}
-  - Sft+Gui+$$mdi:arrow-right-bold$$
+  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - PgDn
   - {t: '$$mdi:transfer$$', type: trans}
@@ -188,8 +188,8 @@ layers:
   - {t: ., s: '>'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
-  - MUTE
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '&mkp MB1'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -202,7 +202,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - $$mdi:volume-high$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -215,7 +215,7 @@ layers:
   - '#'
   - $
   - '%'
-  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - $$mdi:volume-low$$
   - ^
   - '&'
   - '*'
@@ -228,7 +228,7 @@ layers:
   - {t: '3', s: '#'}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
-  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - Gui+Sft+$$mdi:arrow-left-bold$$
   - '6'
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
@@ -241,7 +241,7 @@ layers:
   - {t: '[', s: '{'}
   - '{'
   - (
-  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - Sft+Gui+$$mdi:arrow-right-bold$$
   - )
   - '}'
   - {t: ']', s: '}'}
@@ -253,9 +253,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:mouse-left-click-outline$$
   - {type: held}
+  - MUTE
+  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -459,7 +459,7 @@ combos:
 - p: [26, 39]
   k: Alt+Ctl+$$mdi:keyboard-tab$$
 - p: [11, 12]
-  k: {t: QWERTY, h: toggle}
+  k: {t: ganary, h: toggle}
 - p: [39, 51]
   k: $$mdi:apple-keyboard-caps$$
 - p: [57, 30]
