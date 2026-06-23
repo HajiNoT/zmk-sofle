@@ -222,11 +222,11 @@
 
         SYMBOL {
             bindings = <
-&trans  &trans           &trans       &trans    &trans      &trans         &mmv MOVE_UP     &trans        &trans         &trans     &trans    &trans     &trans
-&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &mmv MOVE_DOWN   &kp CARET     &kp AMPERSAND  &kp ASTRK  &kp SQT   &kp DQT    &kp PIPE
-&trans  &kp N1           &kp N2       &kp N3    &kp N4      &kp N5         &mmv MOVE_LEFT   &kp NUMBER_6  &kp N7         &kp N8     &kp N9    &kp N0     &kp NON_US_BSLH
-&trans  &kp TILDE        &kp GRAVE    &kp LBKT  &kp LBRC    &kp LPAR       &mmv MOVE_RIGHT  &kp RPAR      &kp RBRC       &kp RBKT   &kp EXCL  &kp QMARK  &trans
-&trans  &trans           &trans       &trans    &trans      &trans         &mkp LCLK        &trans        &trans         &trans     &trans    &trans
+&trans     &trans           &trans       &trans    &trans      &trans         &mmv MOVE_UP     &trans        &trans         &trans     &trans    &trans     &trans
+&kp QMARK  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &mmv MOVE_DOWN   &kp CARET     &kp AMPERSAND  &kp ASTRK  &kp SQT   &kp DQT    &kp PIPE
+&trans     &kp N1           &kp N2       &kp N3    &kp N4      &kp N5         &mmv MOVE_LEFT   &kp NUMBER_6  &kp N7         &kp N8     &kp N9    &kp N0     &kp NON_US_BSLH
+&trans     &kp TILDE        &kp GRAVE    &kp LBKT  &kp LBRC    &kp LPAR       &mmv MOVE_RIGHT  &kp RPAR      &kp RBRC       &kp RBKT   &kp EXCL  &kp QMARK  &trans
+&trans     &trans           &trans       &trans    &trans      &trans         &mkp LCLK        &trans        &trans         &trans     &trans    &trans
             >;
 
             display-name = "symbol";
