@@ -91,12 +91,12 @@
             key-positions = <39 51>;
         };
 
-        TG_LAY1 {
+        TG_LAY2 {
             bindings = <&tog 2>;
             key-positions = <57 30>;
         };
 
-        TG_LAY2 {
+        TG_LAY3 {
             bindings = <&tog 3>;
             key-positions = <59 34>;
         };
@@ -173,26 +173,13 @@
         num_stick: num_stick {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&sl 0 &to 2>;
+            bindings = <&sl 2 &to 3>;
             label = "NUM_STICK";
         };
     };
 
     keymap {
         compatible = "zmk,keymap";
-
-        GANARY {
-            bindings = <
-&kp GRAVE               &kp N1  &kp N2        &kp N3        &kp N4           &kp N5         &kp UP_ARROW     &kp N6     &kp N7          &kp N8        &kp N9         &kp N0    &kp BACKSPACE
-&mt LEFT_ALT ESC        &kp P   &kp M         &kp R         &kp K            &kp B          &kp DOWN_ARROW   &kp J      &kp U           &kp O         &kp Y          &kp F     &kp SEMI
-&mt LCTRL TAB           &kp D   &kp S         &kp N         &kp T            &kp G          &kp LEFT_ARROW   &kp MINUS  &kp E           &kp I         &kp A          &kp H     &kp EQUAL
-&capword_hold LSHIFT 0  &kp Z   &kp W         &kp L         &kp C            &kp V          &kp RIGHT_ARROW  &kp X      &kp Q           &kp COMMA     &kp DOT        &kp FSLH  &mt RSHIFT RET
-&kp C_MUTE              &mo 6   &kp LEFT_GUI  &f13_ctr_lay  &mt LSHIFT BSPC  &lt 2 SPACE    &kp END          &lt 3 RET  &mt RSHIFT DEL  &f14_ctr_lay  &kp RIGHT_WIN  &mo 6
-            >;
-
-            sensor-bindings = <&rsr_vol &rsr_trans>;
-            display-name = "ganary";
-        };
 
         QWERTY {
             display-name = "QWERTY";
@@ -201,32 +188,45 @@
 &mt LEFT_ALT ESC        &kp Q   &kp W         &kp E         &kp R            &kp T          &kp DOWN_ARROW   &kp Y      &kp U           &kp I         &kp O          &kp P      &kp SEMI
 &mt LCTRL TAB           &kp A   &kp S         &kp D         &kp F            &kp G          &kp LEFT_ARROW   &kp H      &kp J           &kp K         &kp L          &kp MINUS  &kp EQUAL
 &capword_hold LSHIFT 0  &kp Z   &kp X         &kp C         &kp V            &kp B          &kp RIGHT_ARROW  &kp N      &kp M           &kp COMMA     &kp DOT        &kp FSLH   &mt RSHIFT RET
-&kp C_MUTE              &mo 6   &kp LEFT_GUI  &f13_ctr_lay  &mt LSHIFT BSPC  &lt 2 SPACE    &kp END          &lt 3 RET  &mt RSHIFT DEL  &f14_ctr_lay  &kp RIGHT_WIN  &mo 6
+&kp C_MUTE              &mo 6   &kp LEFT_GUI  &f13_ctr_lay  &mt LSHIFT BSPC  &lt 3 SPACE    &kp END          &lt 3 RET  &mt RSHIFT DEL  &f14_ctr_lay  &kp RIGHT_WIN  &mo 6
             >;
 
             sensor-bindings = <&rsr_vol>, <&rsr_trans>;
         };
 
+        GANARY {
+            bindings = <
+&kp GRAVE               &kp N1  &kp N2        &kp N3        &kp N4           &kp N5         &kp UP_ARROW     &kp N6     &kp N7          &kp N8        &kp N9         &kp N0    &kp BACKSPACE
+&mt LEFT_ALT ESC        &kp P   &kp M         &kp R         &kp K            &kp B          &kp DOWN_ARROW   &kp J      &kp U           &kp O         &kp Y          &kp F     &kp SEMI
+&mt LCTRL TAB           &kp D   &kp S         &kp N         &kp T            &kp G          &kp LEFT_ARROW   &kp MINUS  &kp E           &kp I         &kp A          &kp H     &kp EQUAL
+&capword_hold LSHIFT 0  &kp Z   &kp W         &kp L         &kp C            &kp V          &kp RIGHT_ARROW  &kp X      &kp Q           &kp COMMA     &kp DOT        &kp FSLH  &mt RSHIFT RET
+&kp C_MUTE              &mo 6   &kp LEFT_GUI  &f13_ctr_lay  &mt LSHIFT BSPC  &lt 3 SPACE    &kp END          &lt 3 RET  &mt RSHIFT DEL  &f14_ctr_lay  &kp RIGHT_WIN  &mo 6
+            >;
+
+            sensor-bindings = <&rsr_vol &rsr_trans>;
+            display-name = "ganary";
+        };
+
         NUM_ARROW {
             bindings = <
-&trans  &trans     &trans   &trans  &trans  &trans       &kp C_VOLUME_UP    &trans        &trans         &trans    &trans       &trans         &trans
-&trans  &kp FSLH   &kp N7   &kp N8  &kp N9  &kp ASTRK    &kp C_VOL_DN       &kp LC(HOME)  &kp HOME       &kp UP    &kp END      &kp LC(END)    &trans
-&trans  &kp MINUS  &kp N4   &kp N5  &kp N6  &kp PLUS     &kp LG(LS(LEFT))   &kp LC(LEFT)  &kp LEFT       &kp DOWN  &kp RIGHT    &kp LC(RIGHT)  &trans
-&trans  &trans     &kp N1   &kp N2  &kp N3  &kp EQUAL    &kp LS(LG(RIGHT))  &trans        &kp PAGE_DOWN  &trans    &kp PAGE_UP  &trans         &trans
-&trans  &kp N0     &kp DOT  &trans  &trans  &trans       &kp K_MUTE         &trans        &trans         &trans    &trans       &trans
+&trans  &trans     &trans   &trans  &trans  &trans       &mmv MOVE_UP     &trans        &trans         &trans    &trans       &trans         &trans
+&trans  &kp FSLH   &kp N7   &kp N8  &kp N9  &kp ASTRK    &mmv MOVE_DOWN   &kp LC(HOME)  &kp HOME       &kp UP    &kp END      &kp LC(END)    &trans
+&trans  &kp MINUS  &kp N4   &kp N5  &kp N6  &kp PLUS     &mmv MOVE_LEFT   &kp LC(LEFT)  &kp LEFT       &kp DOWN  &kp RIGHT    &kp LC(RIGHT)  &trans
+&trans  &trans     &kp N1   &kp N2  &kp N3  &kp EQUAL    &mmv MOVE_RIGHT  &trans        &kp PAGE_DOWN  &trans    &kp PAGE_UP  &trans         &trans
+&trans  &kp N0     &kp DOT  &trans  &trans  &trans       &mkp MB1         &trans        &trans         &trans    &trans       &trans
             >;
 
             display-name = "num_arrow";
-            sensor-bindings = <&rsr_vol &rsr_trans>;
+            sensor-bindings = <&inc_dec_kp LC(EQUAL) LC(MINUS)>, <&rsr_trans>;
         };
 
         SYMBOL {
             bindings = <
-&trans     &trans           &trans       &trans    &trans      &trans         &mmv MOVE_UP     &trans        &trans         &trans     &trans    &trans     &trans
-&kp QMARK  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &mmv MOVE_DOWN   &kp CARET     &kp AMPERSAND  &kp ASTRK  &kp SQT   &kp DQT    &kp PIPE
-&trans     &kp N1           &kp N2       &kp N3    &kp N4      &kp N5         &mmv MOVE_LEFT   &kp NUMBER_6  &kp N7         &kp N8     &kp N9    &kp N0     &kp NON_US_BSLH
-&trans     &kp TILDE        &kp GRAVE    &kp LBKT  &kp LBRC    &kp LPAR       &mmv MOVE_RIGHT  &kp RPAR      &kp RBRC       &kp RBKT   &kp EXCL  &kp QMARK  &trans
-&trans     &trans           &trans       &trans    &trans      &trans         &mkp LCLK        &trans        &trans         &trans     &trans    &trans
+&trans     &trans           &trans       &trans    &trans      &trans         &kp C_VOL_UP            &trans        &trans         &trans     &trans    &trans     &trans
+&kp QMARK  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp C_VOL_DN            &kp CARET     &kp AMPERSAND  &kp ASTRK  &kp SQT   &kp DQT    &kp PIPE
+&trans     &kp N1           &kp N2       &kp N3    &kp N4      &kp N5         &kp LG(LS(LEFT_ARROW))  &kp NUMBER_6  &kp N7         &kp N8     &kp N9    &kp N0     &kp NON_US_BSLH
+&trans     &kp TILDE        &kp GRAVE    &kp LBKT  &kp LBRC    &kp LPAR       &kp LS(LG(RIGHT))       &kp RPAR      &kp RBRC       &kp RBKT   &kp EXCL  &kp QMARK  &trans
+&trans     &trans           &trans       &trans    &trans      &trans         &kp K_MUTE              &trans        &trans         &trans     &trans    &trans
             >;
 
             display-name = "symbol";
@@ -268,7 +268,7 @@
         compatible = "zmk,conditional-layers";
 
         lay4 {
-            if-layers = <3 2>;
+            if-layers = <2 3>;
             then-layer = <4>;
         };
     };
