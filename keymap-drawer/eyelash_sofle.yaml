@@ -310,7 +310,7 @@ layers:
   - F11
   - F12
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Alt+F4
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -397,7 +397,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Gui+Ctl+D
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -410,7 +410,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&soft_off'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Gui+Ctl+F4
   - RGB EFR
   - RGB EFF
   - {t: '$$mdi:transfer$$', type: trans}
@@ -423,7 +423,7 @@ layers:
   - {t: Ctl+=, s: Ctl++}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:backup-restore$$', type: bootloader}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Gui+Ctl+$$mdi:arrow-left-bold$$
   - RGB BRD
   - RGB BRI
   - $$mdi:brightness-5$$
@@ -436,7 +436,7 @@ layers:
   - {t: Ctl+-, s: Ctl+_}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:progress-download$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Gui+Ctl+$$mdi:arrow-right-bold$$
   - RGB TOG
   - RGB COLOR HSB(122,0,100)
   - $$mdi:brightness-7$$
@@ -449,7 +449,7 @@ layers:
   - Ctl+$$mdi:apple-keyboard-option$$
   - Sft+$$mdi:apple-keyboard-option$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Gui+$$mdi:keyboard-tab$$
   - {t: '$$mdi:transfer$$', type: trans}
   - Sft+$$mdi:apple-keyboard-option$$
   - Ctl+$$mdi:apple-keyboard-option$$
