@@ -40,7 +40,7 @@ layers:
   - A
   - H
   - {t: '=', s: +}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:alpha-w-box$$', h: '$$mdi:apple-keyboard-shift$$'}
   - Z
   - W
   - L
@@ -52,16 +52,16 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:volume-off$$
   - ARROW2
   - $$mdi:apple-keyboard-command$$
   - '&f13_ctr_lay'
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:keyboard-space$$', h: num_arrow}
   - END
   - {t: '$$mdi:keyboard-return$$', h: symbol}
-  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-shift$$'}
   - '&f14_ctr_lay'
   - RIGHT WIN
   - ARROW2
@@ -156,7 +156,7 @@ layers:
   - '*'
   - {t: '''', s: '"'}
   - '"'
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '|'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -169,7 +169,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - '|'
   - {t: '$$mdi:transfer$$', type: trans}
   - '~'
   - {t: '`', s: '~'}
@@ -180,8 +180,8 @@ layers:
   - )
   - '}'
   - {t: ']', s: '}'}
-  - \
-  - '|'
+  - '!'
+  - '?'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
