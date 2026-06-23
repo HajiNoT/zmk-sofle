@@ -26,7 +26,7 @@ layers:
   - I
   - O
   - P
-  - {t: ;, s: ':'}
+  - {t: ;, h: '$$mdi:apple-keyboard-option$$', s: ':'}
   - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-control$$'}
   - A
   - S
@@ -39,7 +39,7 @@ layers:
   - K
   - L
   - {t: '-', s: _}
-  - {t: '=', s: +}
+  - {t: '=', h: '$$mdi:apple-keyboard-control$$', s: +}
   - {t: '$$mdi:alpha-w-box$$', h: '$$mdi:apple-keyboard-shift$$'}
   - Z
   - X
@@ -197,17 +197,17 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   symbol:
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Sft+!
+  - Sft+@
+  - Sft+#
+  - Sft+$
+  - Sft+%
   - $$mdi:volume-high$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Sft+^
+  - Sft+&
+  - Sft+*
+  - Sft+(
+  - Sft+)
   - {t: '$$mdi:transfer$$', type: trans}
   - '?'
   - '!'
