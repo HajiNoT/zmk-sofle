@@ -170,8 +170,8 @@ layers:
   - $$mdi:arrow-right-bold$$
   - Ctl+$$mdi:arrow-right-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: ganary, h: toggle}
-  - '&num_stick'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -463,8 +463,6 @@ combos:
 - p: [39, 51]
   k: $$mdi:apple-keyboard-caps$$
 - p: [57, 30]
-  k: {t: symbol, h: toggle}
-- p: [59, 34]
   k: {t: num_arrow, h: toggle}
-- p: [24, 25]
-  k: {t: ganary, h: toggle}
+- p: [59, 34]
+  k: {t: symbol, h: toggle}

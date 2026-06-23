@@ -672,23 +672,17 @@ rect.held, rect.combo.held {
 <path d="M321,220 l56,60" class="combo"/>
 <path d="M321,220 l-56,-60" class="combo"/>
 <rect rx="6" ry="6" x="307" y="208" width="28" height="26" class="combo"/>
-<a href="#symbol">
-<text x="321" y="220" class="combo tap layer-activator">symbol</text>
+<a href="#num_arrow">
+<text x="321" y="220" class="combo tap layer-activator"><tspan style="font-size: 67%">num_arrow</tspan></text>
 </a><text x="321" y="232" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-4">
 <path d="M603,220 l-56,60" class="combo"/>
 <path d="M603,220 l56,-60" class="combo"/>
 <rect rx="6" ry="6" x="589" y="208" width="28" height="26" class="combo"/>
-<a href="#num_arrow">
-<text x="603" y="220" class="combo tap layer-activator"><tspan style="font-size: 67%">num_arrow</tspan></text>
+<a href="#symbol">
+<text x="603" y="220" class="combo tap layer-activator">symbol</text>
 </a><text x="603" y="232" class="combo hold">toggle</text>
-</g>
-<g class="combo combopos-5">
-<rect rx="6" ry="6" x="854" y="99" width="28" height="26" class="combo"/>
-<a href="#ganary">
-<text x="868" y="112" class="combo tap layer-activator">ganary</text>
-</a><text x="868" y="123" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -1066,23 +1060,17 @@ rect.held, rect.combo.held {
 <path d="M321,220 l56,60" class="combo"/>
 <path d="M321,220 l-56,-60" class="combo"/>
 <rect rx="6" ry="6" x="307" y="208" width="28" height="26" class="combo"/>
-<a href="#symbol">
-<text x="321" y="220" class="combo tap layer-activator">symbol</text>
+<a href="#num_arrow">
+<text x="321" y="220" class="combo tap layer-activator"><tspan style="font-size: 67%">num_arrow</tspan></text>
 </a><text x="321" y="232" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-4">
 <path d="M603,220 l-56,60" class="combo"/>
 <path d="M603,220 l56,-60" class="combo"/>
 <rect rx="6" ry="6" x="589" y="208" width="28" height="26" class="combo"/>
-<a href="#num_arrow">
-<text x="603" y="220" class="combo tap layer-activator"><tspan style="font-size: 67%">num_arrow</tspan></text>
+<a href="#symbol">
+<text x="603" y="220" class="combo tap layer-activator">symbol</text>
 </a><text x="603" y="232" class="combo hold">toggle</text>
-</g>
-<g class="combo combopos-5">
-<rect rx="6" ry="6" x="854" y="99" width="28" height="26" class="combo"/>
-<a href="#ganary">
-<text x="868" y="112" class="combo tap layer-activator">ganary</text>
-</a><text x="868" y="123" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -1296,17 +1284,15 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
 <use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
-<g transform="translate(28, 224)" class="key keypos-39">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<a href="#ganary">
-<text x="0" y="-4" class="key tap layer-activator">ganary</text>
-</a><text x="0" y="24" class="key hold">toggle</text>
+<g transform="translate(28, 224)" class="key trans keypos-39">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
+<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
-<g transform="translate(84, 224)" class="key keypos-40">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap"><tspan style="font-size: 60%">&amp;num_stick</tspan></text>
+<g transform="translate(84, 224)" class="key trans keypos-40">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key trans"/>
+<use href="#mdi:transfer" xlink:href="#mdi:transfer" x="-9" y="-13" height="18" width="18.0" class="key trans tap glyph mdi:transfer"/>
 </g>
 <g transform="translate(140, 203)" class="key keypos-41">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1448,23 +1434,17 @@ rect.held, rect.combo.held {
 <path d="M321,220 l56,60" class="combo"/>
 <path d="M321,220 l-56,-60" class="combo"/>
 <rect rx="6" ry="6" x="307" y="208" width="28" height="26" class="combo"/>
-<a href="#symbol">
-<text x="321" y="220" class="combo tap layer-activator">symbol</text>
+<a href="#num_arrow">
+<text x="321" y="220" class="combo tap layer-activator"><tspan style="font-size: 67%">num_arrow</tspan></text>
 </a><text x="321" y="232" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-4">
 <path d="M603,220 l-56,60" class="combo"/>
 <path d="M603,220 l56,-60" class="combo"/>
 <rect rx="6" ry="6" x="589" y="208" width="28" height="26" class="combo"/>
-<a href="#num_arrow">
-<text x="603" y="220" class="combo tap layer-activator"><tspan style="font-size: 67%">num_arrow</tspan></text>
+<a href="#symbol">
+<text x="603" y="220" class="combo tap layer-activator">symbol</text>
 </a><text x="603" y="232" class="combo hold">toggle</text>
-</g>
-<g class="combo combopos-5">
-<rect rx="6" ry="6" x="854" y="99" width="28" height="26" class="combo"/>
-<a href="#ganary">
-<text x="868" y="112" class="combo tap layer-activator">ganary</text>
-</a><text x="868" y="123" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -1827,23 +1807,17 @@ rect.held, rect.combo.held {
 <path d="M321,220 l56,60" class="combo"/>
 <path d="M321,220 l-56,-60" class="combo"/>
 <rect rx="6" ry="6" x="307" y="208" width="28" height="26" class="combo"/>
-<a href="#symbol">
-<text x="321" y="220" class="combo tap layer-activator">symbol</text>
+<a href="#num_arrow">
+<text x="321" y="220" class="combo tap layer-activator"><tspan style="font-size: 67%">num_arrow</tspan></text>
 </a><text x="321" y="232" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-4">
 <path d="M603,220 l-56,60" class="combo"/>
 <path d="M603,220 l56,-60" class="combo"/>
 <rect rx="6" ry="6" x="589" y="208" width="28" height="26" class="combo"/>
-<a href="#num_arrow">
-<text x="603" y="220" class="combo tap layer-activator"><tspan style="font-size: 67%">num_arrow</tspan></text>
+<a href="#symbol">
+<text x="603" y="220" class="combo tap layer-activator">symbol</text>
 </a><text x="603" y="232" class="combo hold">toggle</text>
-</g>
-<g class="combo combopos-5">
-<rect rx="6" ry="6" x="854" y="99" width="28" height="26" class="combo"/>
-<a href="#ganary">
-<text x="868" y="112" class="combo tap layer-activator">ganary</text>
-</a><text x="868" y="123" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -2200,23 +2174,17 @@ rect.held, rect.combo.held {
 <path d="M321,220 l56,60" class="combo"/>
 <path d="M321,220 l-56,-60" class="combo"/>
 <rect rx="6" ry="6" x="307" y="208" width="28" height="26" class="combo"/>
-<a href="#symbol">
-<text x="321" y="220" class="combo tap layer-activator">symbol</text>
+<a href="#num_arrow">
+<text x="321" y="220" class="combo tap layer-activator"><tspan style="font-size: 67%">num_arrow</tspan></text>
 </a><text x="321" y="232" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-4">
 <path d="M603,220 l-56,60" class="combo"/>
 <path d="M603,220 l56,-60" class="combo"/>
 <rect rx="6" ry="6" x="589" y="208" width="28" height="26" class="combo"/>
-<a href="#num_arrow">
-<text x="603" y="220" class="combo tap layer-activator"><tspan style="font-size: 67%">num_arrow</tspan></text>
+<a href="#symbol">
+<text x="603" y="220" class="combo tap layer-activator">symbol</text>
 </a><text x="603" y="232" class="combo hold">toggle</text>
-</g>
-<g class="combo combopos-5">
-<rect rx="6" ry="6" x="854" y="99" width="28" height="26" class="combo"/>
-<a href="#ganary">
-<text x="868" y="112" class="combo tap layer-activator">ganary</text>
-</a><text x="868" y="123" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -2567,23 +2535,17 @@ rect.held, rect.combo.held {
 <path d="M321,220 l56,60" class="combo"/>
 <path d="M321,220 l-56,-60" class="combo"/>
 <rect rx="6" ry="6" x="307" y="208" width="28" height="26" class="combo"/>
-<a href="#symbol">
-<text x="321" y="220" class="combo tap layer-activator">symbol</text>
+<a href="#num_arrow">
+<text x="321" y="220" class="combo tap layer-activator"><tspan style="font-size: 67%">num_arrow</tspan></text>
 </a><text x="321" y="232" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-4">
 <path d="M603,220 l-56,60" class="combo"/>
 <path d="M603,220 l56,-60" class="combo"/>
 <rect rx="6" ry="6" x="589" y="208" width="28" height="26" class="combo"/>
-<a href="#num_arrow">
-<text x="603" y="220" class="combo tap layer-activator"><tspan style="font-size: 67%">num_arrow</tspan></text>
+<a href="#symbol">
+<text x="603" y="220" class="combo tap layer-activator">symbol</text>
 </a><text x="603" y="232" class="combo hold">toggle</text>
-</g>
-<g class="combo combopos-5">
-<rect rx="6" ry="6" x="854" y="99" width="28" height="26" class="combo"/>
-<a href="#ganary">
-<text x="868" y="112" class="combo tap layer-activator">ganary</text>
-</a><text x="868" y="123" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -2944,23 +2906,17 @@ rect.held, rect.combo.held {
 <path d="M321,220 l56,60" class="combo"/>
 <path d="M321,220 l-56,-60" class="combo"/>
 <rect rx="6" ry="6" x="307" y="208" width="28" height="26" class="combo"/>
-<a href="#symbol">
-<text x="321" y="220" class="combo tap layer-activator">symbol</text>
+<a href="#num_arrow">
+<text x="321" y="220" class="combo tap layer-activator"><tspan style="font-size: 67%">num_arrow</tspan></text>
 </a><text x="321" y="232" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-4">
 <path d="M603,220 l-56,60" class="combo"/>
 <path d="M603,220 l56,-60" class="combo"/>
 <rect rx="6" ry="6" x="589" y="208" width="28" height="26" class="combo"/>
-<a href="#num_arrow">
-<text x="603" y="220" class="combo tap layer-activator"><tspan style="font-size: 67%">num_arrow</tspan></text>
+<a href="#symbol">
+<text x="603" y="220" class="combo tap layer-activator">symbol</text>
 </a><text x="603" y="232" class="combo hold">toggle</text>
-</g>
-<g class="combo combopos-5">
-<rect rx="6" ry="6" x="854" y="99" width="28" height="26" class="combo"/>
-<a href="#ganary">
-<text x="868" y="112" class="combo tap layer-activator">ganary</text>
-</a><text x="868" y="123" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
