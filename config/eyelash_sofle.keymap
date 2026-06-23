@@ -188,7 +188,7 @@
 &mt LEFT_ALT ESC        &kp Q   &kp W         &kp E         &kp R            &kp T          &kp DOWN_ARROW   &kp Y      &kp U           &kp I         &kp O          &kp P      &kp SEMI
 &mt LCTRL TAB           &kp A   &kp S         &kp D         &kp F            &kp G          &kp LEFT_ARROW   &kp H      &kp J           &kp K         &kp L          &kp MINUS  &kp EQUAL
 &capword_hold LSHIFT 0  &kp Z   &kp X         &kp C         &kp V            &kp B          &kp RIGHT_ARROW  &kp N      &kp M           &kp COMMA     &kp DOT        &kp FSLH   &mt RSHIFT RET
-&kp C_MUTE              &mo 6   &kp LEFT_GUI  &f13_ctr_lay  &mt LSHIFT BSPC  &lt 3 SPACE    &kp END          &lt 3 RET  &mt RSHIFT DEL  &f14_ctr_lay  &kp RIGHT_WIN  &mo 6
+&kp C_MUTE              &mo 6   &kp LEFT_GUI  &f13_ctr_lay  &mt LSHIFT BSPC  &lt 2 SPACE    &kp END          &lt 3 RET  &mt RSHIFT DEL  &f14_ctr_lay  &kp RIGHT_WIN  &mo 6
             >;
 
             sensor-bindings = <&rsr_vol>, <&rsr_trans>;
@@ -200,7 +200,7 @@
 &mt LEFT_ALT ESC        &kp P   &kp M         &kp R         &kp K            &kp B          &kp DOWN_ARROW   &kp J      &kp U           &kp O         &kp Y          &kp F     &kp SEMI
 &mt LCTRL TAB           &kp D   &kp S         &kp N         &kp T            &kp G          &kp LEFT_ARROW   &kp MINUS  &kp E           &kp I         &kp A          &kp H     &kp EQUAL
 &capword_hold LSHIFT 0  &kp Z   &kp W         &kp L         &kp C            &kp V          &kp RIGHT_ARROW  &kp X      &kp Q           &kp COMMA     &kp DOT        &kp FSLH  &mt RSHIFT RET
-&kp C_MUTE              &mo 6   &kp LEFT_GUI  &f13_ctr_lay  &mt LSHIFT BSPC  &lt 3 SPACE    &kp END          &lt 3 RET  &mt RSHIFT DEL  &f14_ctr_lay  &kp RIGHT_WIN  &mo 6
+&kp C_MUTE              &mo 6   &kp LEFT_GUI  &f13_ctr_lay  &mt LSHIFT BSPC  &lt 2 SPACE    &kp END          &lt 3 RET  &mt RSHIFT DEL  &f14_ctr_lay  &kp RIGHT_WIN  &mo 6
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
