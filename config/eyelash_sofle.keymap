@@ -255,11 +255,11 @@
 
         ARROW2 {
             bindings = <
-&trans           &trans         &trans            &trans            &trans  &trans         &trans  &trans           &trans                            &trans             &trans             &trans    &trans
-&kp LS(LC(ESC))  &kp LS(LG(S))  &trans            &trans            &trans  &soft_off      &trans  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF                   &trans             &trans             &kp END   &trans
-&kp HOME         &kp UP         &kp END           &kp LC(EQUAL)     &trans  &sys_reset     &trans  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI                   &trans             &trans             &kp UP    &trans
-&kp LEFT         &kp DOWN       &kp RIGHT         &kp LC(MINUS)     &trans  &bootloader    &trans  &rgb_ug RGB_TOG  &rgb_ug RGB_COLOR_HSB(122,0,100)  &trans             &kp LEFT           &kp DOWN  &kp RIGHT
-&trans           &trans         &kp LG(LEFT_ALT)  &kp LC(LEFT_ALT)  &trans  &trans         &trans  &trans           &trans                            &kp RC(RIGHT_ALT)  &kp RG(RIGHT_ALT)  &trans
+&trans           &trans         &trans            &trans            &trans            &trans         &trans  &trans           &trans                            &trans             &trans             &trans    &trans
+&kp LS(LC(ESC))  &kp LS(LG(S))  &trans            &trans            &trans            &soft_off      &trans  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF                   &trans             &trans             &kp END   &trans
+&kp HOME         &kp UP         &kp END           &kp LC(EQUAL)     &trans            &sys_reset     &trans  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI                   &trans             &trans             &kp UP    &trans
+&kp LEFT         &kp DOWN       &kp RIGHT         &kp LC(MINUS)     &trans            &bootloader    &trans  &rgb_ug RGB_TOG  &rgb_ug RGB_COLOR_HSB(122,0,100)  &trans             &kp LEFT           &kp DOWN  &kp RIGHT
+&trans           &trans         &kp LG(LEFT_ALT)  &kp LC(LEFT_ALT)  &kp LS(LEFT_ALT)  &trans         &trans  &trans           &kp RS(RIGHT_ALT)                 &kp RC(RIGHT_ALT)  &kp RG(RIGHT_ALT)  &trans
             >;
         };
     };
