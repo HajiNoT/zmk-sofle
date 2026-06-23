@@ -72,7 +72,7 @@
         };
 
         qwerty {
-            bindings = <&tog 8>;
+            bindings = <&tog 0>;
             key-positions = <11 12>;
         };
 
@@ -113,10 +113,10 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&mt LCTRL LANG_HANGEUL &mo 3>,
+                <&mt LCTRL LANG_HANGEUL &mo 4>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mt LCTRL LANGUAGE_1 &mo 3>;
+                <&mt LCTRL LANGUAGE_1 &mo 4>;
 
             label = "LAN1_CTR_LAY";
         };
@@ -126,10 +126,10 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&mt LCTRL LANGUAGE_2 &mo 3>,
+                <&mt LCTRL LANGUAGE_2 &mo 4>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mt LCTRL LANGUAGE_2 &mo 3>;
+                <&mt LCTRL LANGUAGE_2 &mo 4>;
 
             label = "LAN2_CTR_LAY";
         };
@@ -139,10 +139,10 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&mt LCTRL F14 &mo 3>,
+                <&mt LCTRL F14 &mo 4>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mt LCTRL F14 &mo 3>;
+                <&mt LCTRL F14 &mo 4>;
 
             label = "F14_CTR_LAY";
         };
@@ -152,10 +152,10 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&mt LCTRL F13 &mo 3>,
+                <&mt LCTRL F13 &mo 4>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mt LCTRL F13 &mo 3>;
+                <&mt LCTRL F13 &mo 4>;
 
             label = "F13_CTR_LAY";
         };
@@ -164,17 +164,17 @@
     keymap {
         compatible = "zmk,keymap";
 
-        layer0 {
+        GANARY {
             bindings = <
-&kp GRAVE     &kp N1     &kp N2        &kp N3        &kp N4           &kp N5         &kp UP_ARROW     &kp N6     &kp N7          &kp N8        &kp N9        &kp N0    &kp BACKSPACE
-&kp ESC       &kp P      &kp M         &kp R         &kp K            &kp B          &kp DOWN_ARROW   &kp J      &kp U           &kp O         &kp Y         &kp F     &kp SEMI
-&kp TAB       &kp D      &kp S         &kp N         &kp T            &kp G          &kp LEFT_ARROW   &kp MINUS  &kp E           &kp I         &kp A         &kp H     &kp EQUAL
-&kp LEFT_ALT  &kp Z      &kp W         &kp L         &kp C            &kp V          &kp RIGHT_ARROW  &kp X      &kp Q           &kp COMMA     &kp DOT       &kp FSLH  &kp RIGHT_ALT
-&kp C_MUTE    &kp LCTRL  &kp LEFT_GUI  &f13_ctr_lay  &mt LSHIFT BSPC  &lt 1 SPACE    &kp ENTER        &lt 2 RET  &mt RSHIFT DEL  &f14_ctr_lay  &kp LEFT_WIN  &mo 5
+&kp GRAVE   &kp N1  &kp N2        &kp N3        &kp N4    &kp N5         &kp UP_ARROW     &kp N6     &kp N7   &kp N8        &kp N9         &kp N0    &kp BACKSPACE
+&kp ESC     &kp P   &kp M         &kp R         &kp K     &kp B          &kp DOWN_ARROW   &kp J      &kp U    &kp O         &kp Y          &kp F     &kp SEMI
+&kp TAB     &kp D   &kp S         &kp N         &kp T     &kp G          &kp LEFT_ARROW   &kp MINUS  &kp E    &kp I         &kp A          &kp H     &kp EQUAL
+&kp LSHIFT  &kp Z   &kp W         &kp L         &kp C     &kp V          &kp RIGHT_ARROW  &kp X      &kp Q    &kp COMMA     &kp DOT        &kp FSLH  &kp RSHIFT
+&kp C_MUTE  &mo 5   &kp LEFT_GUI  &f13_ctr_lay  &kp BSPC  &lt 1 SPACE    &kp END          &lt 2 RET  &kp DEL  &f14_ctr_lay  &kp RIGHT_ALT  &mo 5
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
-            display-name = "LAYER0";
+            display-name = "ganary";
         };
 
         NUM {
@@ -203,6 +203,16 @@
             sensor-bindings = <&rsr_vol &rsr_trans>;
         };
 
+        FUNCTION {
+            bindings = <
+&trans  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LG(UP)     &trans   &trans   &trans  &trans  &trans   &trans
+&trans  &bt BT_CLR    &bt BT_CLR_ALL  &trans        &out OUT_USB  &out OUT_BLE    &kp LG(DOWN)   &kp F1   &kp F2   &kp F3  &kp F4  &kp F5   &trans
+&trans  &trans        &trans          &trans        &trans        &trans          &kp LG(LEFT)   &kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &trans
+&trans  &trans        &trans          &trans        &trans        &trans          &kp LG(RIGHT)  &kp F11  &kp F12  &trans  &trans  &trans   &trans
+&trans  &trans        &trans          &trans        &trans        &trans          &kp LG(D)      &trans   &trans   &trans  &trans  &trans
+            >;
+        };
+
         CTR {
             bindings = <
 &trans       &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans     &trans   &trans     &trans
@@ -213,23 +223,13 @@
             >;
         };
 
-        FUNCTION {
-            bindings = <
-&trans           &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LG(UP)     &trans   &trans   &trans  &trans  &trans   &trans
-&kp LC(LS(ESC))  &bt BT_CLR    &bt BT_CLR_ALL  &trans        &out OUT_USB  &out OUT_BLE    &kp LG(DOWN)   &kp F1   &kp F2   &kp F3  &kp F4  &kp F5   &trans
-&trans           &trans        &kp LG(LS(S))   &trans        &trans        &soft_off       &kp LG(LEFT)   &kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &trans
-&trans           &trans        &trans          &trans        &trans        &trans          &kp LG(RIGHT)  &kp F11  &kp F12  &trans  &trans  &trans   &trans
-&trans           &trans        &trans          &trans        &trans        &trans          &kp LG(D)      &trans   &trans   &trans  &trans  &trans
-            >;
-        };
-
         ARROW2 {
             bindings = <
-&trans  &trans           &trans           &trans           &trans           &trans                               &trans  &trans  &trans  &trans  &trans    &trans    &trans
-&trans  &rgb_ug RGB_HUD  &rgb_ug RGB_HUI  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI  &rgb_ug RGB_COLOR_HSB(131,100,50)    &trans  &trans  &trans  &trans  &trans    &kp END   &trans
-&trans  &rgb_ug RGB_SPD  &rgb_ug RGB_SPI  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG                      &trans  &trans  &trans  &trans  &trans    &kp UP    &trans
-&trans  &rgb_ug RGB_SAD  &rgb_ug RGB_SAI  &trans           &sys_reset       &bootloader                          &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT
-&trans  &trans           &trans           &trans           &trans           &trans                               &trans  &trans  &trans  &trans  &trans    &trans
+&trans           &trans         &trans     &trans         &trans  &trans         &trans  &trans           &trans                             &trans  &trans    &trans    &trans
+&kp LS(LC(ESC))  &kp LS(LG(S))  &trans     &trans         &trans  &soft_off      &trans  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF                    &trans  &trans    &kp END   &trans
+&kp HOME         &kp UP         &kp END    &kp LC(EQUAL)  &trans  &sys_reset     &trans  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI                    &trans  &trans    &kp UP    &trans
+&kp LEFT         &kp DOWN       &kp RIGHT  &kp LC(MINUS)  &trans  &bootloader    &trans  &rgb_ug RGB_TOG  &rgb_ug RGB_COLOR_HSB(122,100,50)  &trans  &kp LEFT  &kp DOWN  &kp RIGHT
+&trans           &trans         &trans     &trans         &trans  &trans         &trans  &trans           &trans                             &trans  &trans    &trans
             >;
         };
 
@@ -258,29 +258,6 @@
             display-name = "LAYERblu";
             sensor-bindings = <&rsr_vol &rsr_trans>;
         };
-
-        QWERTY {
-            display-name = "qwerrty";
-            bindings = <
-&kp GRAVE     &kp N1     &kp N2        &kp N3        &kp N4           &kp N5         &kp UP_ARROW     &kp N6     &kp N7          &kp N8        &kp N9        &kp N0     &kp BACKSPACE
-&kp ESC       &kp Q      &kp W         &kp E         &kp R            &kp T          &kp DOWN_ARROW   &kp Y      &kp U           &kp I         &kp O         &kp P      &kp SEMI
-&kp TAB       &kp A      &kp S         &kp D         &kp F            &kp G          &kp LEFT_ARROW   &kp H      &kp J           &kp K         &kp L         &kp MINUS  &kp EQUAL
-&kp LEFT_ALT  &kp Z      &kp X         &kp C         &kp V            &kp B          &kp RIGHT_ARROW  &kp N      &kp M           &kp COMMA     &kp DOT       &kp FSLH   &kp RIGHT_ALT
-&kp C_MUTE    &kp LCTRL  &kp LEFT_GUI  &f14_ctr_lay  &mt LSHIFT BSPC  &lt 1 SPACE    &kp ENTER        &lt 2 RET  &mt RSHIFT DEL  &f13_ctr_lay  &kp LEFT_WIN  &mo 5
-            >;
-
-            sensor-bindings = <&rsr_vol>, <&rsr_trans>;
-        };
-
-        layer_9 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
     };
 
     conditional_layers {
@@ -288,7 +265,7 @@
 
         lay4 {
             if-layers = <1 2>;
-            then-layer = <4>;
+            then-layer = <3>;
         };
     };
 };
