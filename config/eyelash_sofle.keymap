@@ -237,11 +237,11 @@
 
         FUNCTION {
             bindings = <
-&trans  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LG(UP)     &trans   &trans   &trans  &trans  &trans   &trans
-&trans  &bt BT_CLR    &bt BT_CLR_ALL  &trans        &out OUT_USB  &out OUT_BLE    &kp LG(DOWN)   &kp F1   &kp F2   &kp F3  &kp F4  &kp F5   &trans
-&trans  &trans        &trans          &trans        &trans        &trans          &kp LG(LEFT)   &kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &trans
-&trans  &trans        &trans          &trans        &trans        &trans          &kp LG(RIGHT)  &kp F11  &kp F12  &trans  &trans  &trans   &trans
-&trans  &trans        &trans          &trans        &trans        &trans          &kp LG(D)      &trans   &trans   &trans  &trans  &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LG(UP)     &trans   &trans   &trans  &trans      &trans   &trans
+&trans  &bt BT_CLR    &bt BT_CLR_ALL  &trans        &out OUT_USB  &out OUT_BLE    &kp LG(DOWN)   &kp F1   &kp F2   &kp F3  &kp F4      &kp F5   &trans
+&trans  &trans        &trans          &trans        &trans        &trans          &kp LG(LEFT)   &kp F6   &kp F7   &kp F8  &kp F9      &kp F10  &trans
+&trans  &trans        &trans          &trans        &trans        &trans          &kp LG(RIGHT)  &kp F11  &kp F12  &trans  &kp LA(F4)  &trans   &trans
+&trans  &trans        &trans          &trans        &trans        &trans          &kp LG(D)      &trans   &trans   &trans  &trans      &trans
             >;
         };
 
@@ -257,11 +257,11 @@
 
         ARROW2 {
             bindings = <
-&trans           &trans         &trans            &trans            &trans            &trans         &trans  &trans           &trans                            &trans                &trans             &trans       &trans
-&kp LS(LC(ESC))  &kp LS(LG(S))  &kp LG(H)         &trans            &trans            &soft_off      &trans  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF                   &trans                &kp C_PREV         &kp C_PAUSE  &kp C_NEXT
-&kp HOME         &kp UP         &kp END           &kp LC(EQUAL)     &trans            &sys_reset     &trans  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI                   &kp C_BRIGHTNESS_INC  &kp HOME           &kp UP       &kp END
-&kp LEFT         &kp DOWN       &kp RIGHT         &kp LC(MINUS)     &trans            &bootloader    &trans  &rgb_ug RGB_TOG  &rgb_ug RGB_COLOR_HSB(122,0,100)  &kp C_BRIGHTNESS_DEC  &kp LEFT           &kp DOWN     &kp RIGHT
-&trans           &trans         &kp LG(LEFT_ALT)  &kp LC(LEFT_ALT)  &kp LS(LEFT_ALT)  &trans         &trans  &trans           &kp RS(RIGHT_ALT)                 &kp RC(RIGHT_ALT)     &kp RG(RIGHT_ALT)  &trans
+&trans           &trans         &trans            &trans            &trans            &trans         &kp LG(LC(D))      &trans           &trans                            &trans                &trans             &trans       &trans
+&kp LS(LC(ESC))  &kp LS(LG(S))  &kp LG(H)         &trans            &trans            &soft_off      &kp LG(LC(F4))     &rgb_ug RGB_EFR  &rgb_ug RGB_EFF                   &trans                &kp C_PREV         &kp C_PAUSE  &kp C_NEXT
+&kp HOME         &kp UP         &kp END           &kp LC(EQUAL)     &trans            &sys_reset     &kp LG(LC(LEFT))   &rgb_ug RGB_BRD  &rgb_ug RGB_BRI                   &kp C_BRIGHTNESS_INC  &kp HOME           &kp UP       &kp END
+&kp LEFT         &kp DOWN       &kp RIGHT         &kp LC(MINUS)     &trans            &bootloader    &kp LG(LC(RIGHT))  &rgb_ug RGB_TOG  &rgb_ug RGB_COLOR_HSB(122,0,100)  &kp C_BRIGHTNESS_DEC  &kp LEFT           &kp DOWN     &kp RIGHT
+&trans           &trans         &kp LG(LEFT_ALT)  &kp LC(LEFT_ALT)  &kp LS(LEFT_ALT)  &trans         &kp LG(TAB)        &trans           &kp RS(RIGHT_ALT)                 &kp RC(RIGHT_ALT)     &kp RG(RIGHT_ALT)  &trans
             >;
         };
     };
