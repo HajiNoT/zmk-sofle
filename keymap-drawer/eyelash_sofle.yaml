@@ -406,7 +406,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - Sft+Ctl+$$mdi:keyboard-esc$$
   - Sft+Gui+S
-  - {t: '$$mdi:transfer$$', type: trans}
+  - Gui+H
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '&soft_off'
