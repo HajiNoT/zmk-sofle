@@ -161,11 +161,11 @@
 
         GANARY {
             bindings = <
-&kp GRAVE   &kp N1  &kp N2        &kp N3        &kp N4    &kp N5         &kp UP_ARROW     &kp N6     &kp N7   &kp N8        &kp N9         &kp N0    &kp BACKSPACE
-&kp ESC     &kp P   &kp M         &kp R         &kp K     &kp B          &kp DOWN_ARROW   &kp J      &kp U    &kp O         &kp Y          &kp F     &kp SEMI
-&kp TAB     &kp D   &kp S         &kp N         &kp T     &kp G          &kp LEFT_ARROW   &kp MINUS  &kp E    &kp I         &kp A          &kp H     &kp EQUAL
-&kp LSHIFT  &kp Z   &kp W         &kp L         &kp C     &kp V          &kp RIGHT_ARROW  &kp X      &kp Q    &kp COMMA     &kp DOT        &kp FSLH  &kp RSHIFT
-&kp C_MUTE  &mo 5   &kp LEFT_GUI  &f13_ctr_lay  &kp BSPC  &lt 1 SPACE    &kp END          &lt 2 RET  &kp DEL  &f14_ctr_lay  &kp RIGHT_ALT  &mo 5
+&kp GRAVE         &kp N1  &kp N2        &kp N3        &kp N4    &kp N5         &kp UP_ARROW     &kp N6     &kp N7   &kp N8        &kp N9         &kp N0    &kp BACKSPACE
+&mt LEFT_ALT ESC  &kp P   &kp M         &kp R         &kp K     &kp B          &kp DOWN_ARROW   &kp J      &kp U    &kp O         &kp Y          &kp F     &kp SEMI
+&mt LCTRL TAB     &kp D   &kp S         &kp N         &kp T     &kp G          &kp LEFT_ARROW   &kp MINUS  &kp E    &kp I         &kp A          &kp H     &kp EQUAL
+&kp LSHIFT        &kp Z   &kp W         &kp L         &kp C     &kp V          &kp RIGHT_ARROW  &kp X      &kp Q    &kp COMMA     &kp DOT        &kp FSLH  &kp RSHIFT
+&kp C_MUTE        &mo 5   &kp LEFT_GUI  &f13_ctr_lay  &kp BSPC  &lt 1 SPACE    &kp END          &lt 2 RET  &kp DEL  &f14_ctr_lay  &kp RIGHT_WIN  &mo 5
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
@@ -174,11 +174,11 @@
 
         NUM {
             bindings = <
-&trans         &trans         &trans   &trans  &trans  &trans       &mmv MOVE_UP     &trans        &trans         &trans     &trans                &trans    &trans
-&trans         &kp FSLH       &kp N7   &kp N8  &kp N9  &kp ASTRK    &mmv MOVE_DOWN   &kp CARET     &kp AMPERSAND  &kp ASTRK  &kp SQT               &kp DQT   &trans
-&trans         &kp MINUS      &kp N4   &kp N5  &kp N6  &kp PLUS     &mmv MOVE_LEFT   &kp NUMBER_6  &kp N7         &kp N8     &kp N9                &kp N0    &trans
-&kp LC(EQUAL)  &kp LC(MINUS)  &kp N1   &kp N2  &kp N3  &kp EQUAL    &mmv MOVE_RIGHT  &kp RPAR      &kp RBRC       &kp RBKT   &kp NON_US_BACKSLASH  &kp PIPE  &trans
-&trans         &kp N0         &kp DOT  &trans  &trans  &trans       &mkp LCLK        &trans        &trans         &trans     &trans                &trans
+&trans  &trans     &trans   &trans  &trans  &trans       &mmv MOVE_UP     &trans        &trans         &trans     &trans                &trans    &trans
+&trans  &kp FSLH   &kp N7   &kp N8  &kp N9  &kp ASTRK    &mmv MOVE_DOWN   &kp CARET     &kp AMPERSAND  &kp ASTRK  &kp SQT               &kp DQT   &trans
+&trans  &kp MINUS  &kp N4   &kp N5  &kp N6  &kp PLUS     &mmv MOVE_LEFT   &kp NUMBER_6  &kp N7         &kp N8     &kp N9                &kp N0    &trans
+&trans  &kp N0     &kp N1   &kp N2  &kp N3  &kp EQUAL    &mmv MOVE_RIGHT  &kp RPAR      &kp RBRC       &kp RBKT   &kp NON_US_BACKSLASH  &kp PIPE  &trans
+&trans  &kp N0     &kp DOT  &trans  &trans  &trans       &mkp LCLK        &trans        &trans         &trans     &trans                &trans
             >;
 
             display-name = "num";
@@ -220,11 +220,11 @@
 
         ARROW2 {
             bindings = <
-&trans           &trans         &trans     &trans         &trans  &trans         &trans  &trans           &trans                             &trans  &trans    &trans    &trans
-&kp LS(LC(ESC))  &kp LS(LG(S))  &trans     &trans         &trans  &soft_off      &trans  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF                    &trans  &trans    &kp END   &trans
-&kp HOME         &kp UP         &kp END    &kp LC(EQUAL)  &trans  &sys_reset     &trans  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI                    &trans  &trans    &kp UP    &trans
-&kp LEFT         &kp DOWN       &kp RIGHT  &kp LC(MINUS)  &trans  &bootloader    &trans  &rgb_ug RGB_TOG  &rgb_ug RGB_COLOR_HSB(122,100,50)  &trans  &kp LEFT  &kp DOWN  &kp RIGHT
-&trans           &trans         &trans     &trans         &trans  &trans         &trans  &trans           &trans                             &trans  &trans    &trans
+&trans           &trans         &trans            &trans            &trans  &trans         &trans  &trans           &trans                             &trans             &trans             &trans    &trans
+&kp LS(LC(ESC))  &kp LS(LG(S))  &trans            &trans            &trans  &soft_off      &trans  &rgb_ug RGB_EFR  &rgb_ug RGB_EFF                    &trans             &trans             &kp END   &trans
+&kp HOME         &kp UP         &kp END           &kp LC(EQUAL)     &trans  &sys_reset     &trans  &rgb_ug RGB_BRD  &rgb_ug RGB_BRI                    &trans             &trans             &kp UP    &trans
+&kp LEFT         &kp DOWN       &kp RIGHT         &kp LC(MINUS)     &trans  &bootloader    &trans  &rgb_ug RGB_TOG  &rgb_ug RGB_COLOR_HSB(122,100,50)  &trans             &kp LEFT           &kp DOWN  &kp RIGHT
+&trans           &trans         &kp LG(LEFT_ALT)  &kp LC(LEFT_ALT)  &trans  &trans         &trans  &trans           &trans                             &kp RC(RIGHT_ALT)  &kp RG(RIGHT_ALT)  &trans
             >;
         };
 
