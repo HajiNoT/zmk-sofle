@@ -81,40 +81,40 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - P
-  - M
-  - R
+  - W
   - K
-  - B
+  - R
+  - M
   - {t: '$$mdi:transfer$$', type: trans}
-  - J
-  - U
-  - O
   - Y
+  - U
+  - I
+  - O
   - F
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - D
-  - S
   - N
+  - S
+  - D
   - T
   - G
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '-', s: _}
-  - E
-  - I
-  - A
+  - J
   - H
+  - E
+  - A
+  - {t: '-', s: _}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - Z
-  - W
-  - L
+  - X
   - C
   - V
+  - B
   - {t: '$$mdi:transfer$$', type: trans}
-  - X
   - Q
-  - {t: ',', s: <}
+  - L
+  - O
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: '$$mdi:transfer$$', type: trans}
