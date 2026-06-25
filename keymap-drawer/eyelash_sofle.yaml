@@ -84,7 +84,7 @@ layers:
   - W
   - K
   - R
-  - M
+  - T
   - {t: '$$mdi:transfer$$', type: trans}
   - Y
   - U
@@ -93,14 +93,14 @@ layers:
   - F
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - D
+  - M
   - S
+  - D
   - N
-  - T
   - G
   - {t: '$$mdi:transfer$$', type: trans}
-  - J
   - H
+  - J
   - E
   - A
   - {t: '-', s: _}
@@ -114,7 +114,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - Q
   - L
-  - O
+  - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: '$$mdi:transfer$$', type: trans}
