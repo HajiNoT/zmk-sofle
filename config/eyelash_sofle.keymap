@@ -73,6 +73,15 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        lay_tog_mom: lay_tog_mom {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LAY_TOG_MOM";
+            bindings = <&mo>, <&tog>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+        };
     };
 
     combos {
@@ -186,11 +195,11 @@
         QWERTY {
             display-name = "QWERTY";
             bindings = <
-&kp GRAVE               &kp N1  &kp N2        &kp N3        &kp N4           &kp N5         &kp UP_ARROW     &kp N6     &kp N7          &kp N8        &kp N9         &kp N0     &kp BACKSPACE
-&mt LEFT_ALT ESC        &kp Q   &kp W         &kp E         &kp R            &kp T          &kp DOWN_ARROW   &kp Y      &kp U           &kp I         &kp O          &kp P      &mt RIGHT_ALT SEMI
-&mt LCTRL TAB           &kp A   &kp S         &kp D         &kp F            &kp G          &kp LEFT_ARROW   &kp H      &kp J           &kp K         &kp L          &kp MINUS  &mt RCTRL EQUAL
-&capword_hold LSHIFT 0  &kp Z   &kp X         &kp C         &kp V            &kp B          &kp RIGHT_ARROW  &kp N      &kp M           &kp COMMA     &kp DOT        &kp FSLH   &mt RSHIFT RET
-&kp C_MUTE              &mo 6   &kp LEFT_GUI  &f13_ctr_lay  &mt LSHIFT BSPC  &lt 2 SPACE    &kp RET          &lt 3 RET  &mt RSHIFT DEL  &f14_ctr_lay  &kp RIGHT_WIN  &mo 6
+&kp GRAVE               &kp N1            &kp N2        &kp N3        &kp N4           &kp N5       &kp UP_ARROW     &kp N6       &kp N7          &kp N8        &kp N9         &kp N0            &kp BACKSPACE
+&mt LEFT_ALT ESC        &kp Q             &kp W         &kp E         &kp R            &kp T        &kp DOWN_ARROW   &kp Y        &kp U           &kp I         &kp O          &kp P             &mt RIGHT_ALT SEMI
+&mt LCTRL TAB           &kp A             &kp S         &kp D         &kp F            &kp G        &kp LEFT_ARROW   &kp H        &kp J           &kp K         &kp L          &kp MINUS         &mt RCTRL EQUAL
+&capword_hold LSHIFT 0  &kp Z             &kp X         &kp C         &kp V            &kp B        &kp RIGHT_ARROW  &kp N        &kp M           &kp COMMA     &kp DOT        &kp FSLH          &mt RSHIFT RET
+&kp C_MUTE              &lay_tog_mom 6 6  &kp LEFT_GUI  &f13_ctr_lay  &mt LSHIFT BSPC  &lt 2 RET    &kp RET          &lt 3 SPACE  &mt RSHIFT DEL  &f14_ctr_lay  &kp RIGHT_WIN  &lay_tog_mom 6 6
             >;
 
             sensor-bindings = <&rsr_vol>, <&rsr_trans>;
@@ -198,11 +207,11 @@
 
         GANARY {
             bindings = <
-&kp GRAVE               &kp N1  &kp N2        &kp N3        &kp N4           &kp N5         &kp UP_ARROW     &kp N6     &kp N7          &kp N8        &kp N9         &kp N0    &kp BACKSPACE
-&mt LEFT_ALT ESC        &kp P   &kp M         &kp R         &kp K            &kp B          &kp DOWN_ARROW   &kp J      &kp U           &kp O         &kp Y          &kp F     &kp SEMI
-&mt LCTRL TAB           &kp D   &kp S         &kp N         &kp T            &kp G          &kp LEFT_ARROW   &kp MINUS  &kp E           &kp I         &kp A          &kp H     &kp EQUAL
-&capword_hold LSHIFT 0  &kp Z   &kp W         &kp L         &kp C            &kp V          &kp RIGHT_ARROW  &kp X      &kp Q           &kp COMMA     &kp DOT        &kp FSLH  &mt RSHIFT RET
-&kp C_MUTE              &mo 6   &kp LEFT_GUI  &f13_ctr_lay  &mt LSHIFT BSPC  &lt 2 SPACE    &kp RET          &lt 3 RET  &mt RSHIFT DEL  &f14_ctr_lay  &kp RIGHT_WIN  &mo 6
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans  &trans     &trans   &trans    &trans
+&trans  &kp P   &kp M   &kp R   &kp K   &kp B     &trans  &kp J      &kp U   &kp O      &kp Y    &kp F     &trans
+&trans  &kp D   &kp S   &kp N   &kp T   &kp G     &trans  &kp MINUS  &kp E   &kp I      &kp A    &kp H     &trans
+&trans  &kp Z   &kp W   &kp L   &kp C   &kp V     &trans  &kp X      &kp Q   &kp COMMA  &kp DOT  &kp FSLH  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans  &trans     &trans   &trans
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
@@ -211,11 +220,11 @@
 
         NUM_ARROW {
             bindings = <
-&trans  &trans     &trans   &trans  &trans   &trans       &mmv MOVE_UP     &trans        &trans         &trans    &trans       &trans         &trans
-&trans  &kp FSLH   &kp N7   &kp N8  &kp N9   &kp ASTRK    &mmv MOVE_DOWN   &kp LC(HOME)  &kp HOME       &kp UP    &kp END      &kp LC(END)    &trans
-&trans  &kp MINUS  &kp N4   &kp N5  &kp N6   &kp PLUS     &mmv MOVE_LEFT   &kp LC(LEFT)  &kp LEFT       &kp DOWN  &kp RIGHT    &kp LC(RIGHT)  &trans
-&trans  &trans     &kp N1   &kp N2  &kp N3   &kp EQUAL    &mmv MOVE_RIGHT  &trans        &kp PAGE_DOWN  &trans    &kp PAGE_UP  &trans         &trans
-&trans  &kp N0     &kp DOT  &trans  &kp DEL  &trans       &mkp MB1         &trans        &kp BSPC       &trans    &trans       &trans
+&trans   &trans     &trans   &trans  &trans   &trans       &mmv MOVE_UP     &trans        &trans         &trans    &trans       &trans         &trans
+&trans   &kp FSLH   &kp N7   &kp N8  &kp N9   &kp ASTRK    &mmv MOVE_DOWN   &kp LC(HOME)  &kp HOME       &kp UP    &kp END      &kp LC(END)    &trans
+&trans   &kp MINUS  &kp N4   &kp N5  &kp N6   &kp PLUS     &mmv MOVE_LEFT   &kp LC(LEFT)  &kp LEFT       &kp DOWN  &kp RIGHT    &kp LC(RIGHT)  &trans
+&kp DOT  &kp N0     &kp N1   &kp N2  &kp N3   &kp EQUAL    &mmv MOVE_RIGHT  &trans        &kp PAGE_DOWN  &trans    &kp PAGE_UP  &trans         &trans
+&trans   &kp N0     &kp DOT  &trans  &kp DEL  &trans       &mkp MB1         &trans        &kp BSPC       &trans    &trans       &trans
             >;
 
             display-name = "num_arrow";
