@@ -208,7 +208,7 @@
         GANARY {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans   &trans     &trans
-&trans  &kp P   &kp W   &kp R   &kp K   &kp M     &trans  &kp Y   &kp U   &kp I   &kp O    &kp F      &trans
+&trans  &kp P   &kp W   &kp K   &kp R   &kp M     &trans  &kp Y   &kp U   &kp I   &kp O    &kp F      &trans
 &trans  &kp D   &kp S   &kp N   &kp T   &kp G     &trans  &kp J   &kp H   &kp E   &kp A    &kp MINUS  &trans
 &trans  &kp Z   &kp X   &kp C   &kp V   &kp B     &trans  &kp Q   &kp L   &kp O   &kp DOT  &kp FSLH   &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans   &trans
