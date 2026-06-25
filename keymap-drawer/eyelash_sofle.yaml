@@ -82,8 +82,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - P
   - W
-  - R
   - K
+  - R
   - M
   - {t: '$$mdi:transfer$$', type: trans}
   - Y
