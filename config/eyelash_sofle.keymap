@@ -102,14 +102,19 @@
             key-positions = <39 51>;
         };
 
-        TG_LAY2 {
+        tog_num {
             bindings = <&tog 2>;
             key-positions = <57 30>;
         };
 
-        TG_LAY3 {
+        tog_syb {
             bindings = <&tog 3>;
             key-positions = <59 34>;
+        };
+
+        tog_ar2 {
+            bindings = <&tog 6>;
+            key-positions = <12 63>;
         };
     };
 
@@ -195,11 +200,11 @@
         QWERTY {
             display-name = "QWERTY";
             bindings = <
-&kp GRAVE               &kp N1            &kp N2        &kp N3        &kp N4           &kp N5         &kp UP_ARROW     &kp N6     &kp N7          &kp N8        &kp N9         &kp N0            &kp BACKSPACE
-&mt LEFT_ALT ESC        &kp Q             &kp W         &kp E         &kp R            &kp T          &kp DOWN_ARROW   &kp Y      &kp U           &kp I         &kp O          &kp P             &mt RIGHT_ALT SEMI
-&mt LCTRL TAB           &kp A             &kp S         &kp D         &kp F            &kp G          &kp LEFT_ARROW   &kp H      &kp J           &kp K         &kp L          &kp MINUS         &mt RCTRL EQUAL
-&capword_hold LSHIFT 0  &kp Z             &kp X         &kp C         &kp V            &kp B          &kp RIGHT_ARROW  &kp N      &kp M           &kp COMMA     &kp DOT        &kp FSLH          &mt RSHIFT RET
-&kp C_MUTE              &lay_tog_mom 6 6  &kp LEFT_GUI  &f13_ctr_lay  &mt LSHIFT BSPC  &lt 2 SPACE    &kp RET          &lt 3 RET  &mt RSHIFT DEL  &f14_ctr_lay  &kp RIGHT_WIN  &lay_tog_mom 6 6
+&kp GRAVE               &kp N1  &kp N2        &kp N3        &kp N4           &kp N5         &kp UP_ARROW     &kp N6     &kp N7          &kp N8        &kp N9         &kp N0     &kp BACKSPACE
+&mt LEFT_ALT ESC        &kp Q   &kp W         &kp E         &kp R            &kp T          &kp DOWN_ARROW   &kp Y      &kp U           &kp I         &kp O          &kp P      &mt RIGHT_ALT SEMI
+&mt LCTRL TAB           &kp A   &kp S         &kp D         &kp F            &kp G          &kp LEFT_ARROW   &kp H      &kp J           &kp K         &kp L          &kp MINUS  &mt RCTRL EQUAL
+&capword_hold LSHIFT 0  &kp Z   &kp X         &kp C         &kp V            &kp B          &kp RIGHT_ARROW  &kp N      &kp M           &kp COMMA     &kp DOT        &kp FSLH   &mt RSHIFT RET
+&kp C_MUTE              &mo 6   &kp LEFT_GUI  &f13_ctr_lay  &mt LSHIFT BSPC  &lt 2 SPACE    &kp RET          &lt 3 RET  &mt RSHIFT DEL  &f14_ctr_lay  &kp RIGHT_WIN  &mo 6
             >;
 
             sensor-bindings = <&rsr_vol>, <&rsr_trans>;
