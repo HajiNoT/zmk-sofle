@@ -54,7 +54,7 @@ layers:
   - {t: /, s: '?'}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:volume-off$$
-  - {t: arrow2, h: arrow2}
+  - arrow2
   - $$mdi:apple-keyboard-command$$
   - '&f13_ctr_lay'
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-shift$$'}
@@ -64,7 +64,7 @@ layers:
   - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-shift$$'}
   - '&f14_ctr_lay'
   - RIGHT WIN
-  - {t: arrow2, h: arrow2}
+  - arrow2
   ganary:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -466,3 +466,5 @@ combos:
   k: {t: num_arrow, h: toggle}
 - p: [59, 34]
   k: {t: symbol, h: toggle}
+- p: [12, 63]
+  k: {t: arrow2, h: toggle}
