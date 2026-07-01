@@ -93,6 +93,24 @@
             tapping-term-ms = <180>;
             quick-tap-ms = <170>;
         };
+
+        arw2_windows: arw2_windows {
+            compatible = "zmk,behavior-tap-dance";
+            label = "ARW2_WINDOWS";
+            #binding-cells = <0>;
+            bindings = <&mo 5>, <&kp LWIN>;
+
+            tapping-term-ms = <180>;
+        };
+
+        n2_at: n2_at {
+            compatible = "zmk,behavior-mod-morph";
+            label = "N2_AT";
+            bindings = <&kp N2>, <&kp AT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     combos {
@@ -204,11 +222,11 @@
         QWERTY {
             display-name = "QWERTY";
             bindings = <
-&kp GRAVE         &kp N1  &kp N2        &kp N3        &kp N4           &kp N5         &kp UP_ARROW     &kp N6     &kp N7          &kp N8        &kp N9         &kp N0     &kp BACKSPACE
-&mt LEFT_ALT ESC  &kp Q   &kp W         &kp E         &kp R            &kp T          &kp DOWN_ARROW   &kp Y      &kp U           &kp I         &kp O          &kp P      &mt RIGHT_ALT EQUAL
-&mt LCTRL TAB     &kp A   &kp S         &kp D         &kp F            &kp G          &kp LEFT_ARROW   &kp H      &kp J           &kp K         &kp L          &kp MINUS  &mt RCTRL SEMI
-&mt LSHIFT RET    &kp Z   &kp X         &kp C         &kp V            &kp B          &kp RIGHT_ARROW  &kp N      &kp M           &kp COMMA     &kp DOT        &kp FSLH   &mt RSHIFT RET
-&kp C_MUTE        &mo 6   &kp LEFT_GUI  &f13_ctr_lay  &mt LSHIFT BSPC  &lt 2 SPACE    &kp RET          &lt 3 RET  &mt RSHIFT DEL  &f14_ctr_lay  &kp RIGHT_WIN  &mo 6
+&kp GRAVE         &kp N1  &kp N2         &kp N3        &kp N4           &kp N5         &kp UP_ARROW     &kp N6     &kp N7          &kp N8        &kp N9         &kp N0     &kp BACKSPACE
+&mt LEFT_ALT ESC  &kp Q   &kp W          &kp E         &kp R            &kp T          &kp DOWN_ARROW   &kp Y      &kp U           &kp I         &kp O          &kp P      &mt RIGHT_ALT EQUAL
+&mt LCTRL TAB     &kp A   &kp S          &kp D         &kp F            &kp G          &kp LEFT_ARROW   &kp H      &kp J           &kp K         &kp L          &kp MINUS  &mt RCTRL SEMI
+&mt LSHIFT RET    &kp Z   &kp X          &kp C         &kp V            &kp B          &kp RIGHT_ARROW  &kp N      &kp M           &kp COMMA     &kp DOT        &kp FSLH   &mt RSHIFT RET
+&kp C_MUTE        &mo 6   &arw2_windows  &f13_ctr_lay  &mt LSHIFT BSPC  &lt 2 SPACE    &kp RET          &lt 3 RET  &mt RSHIFT DEL  &f14_ctr_lay  &arw2_windows  &mo 6
             >;
 
             sensor-bindings = <&rsr_vol>, <&rsr_trans>;
@@ -287,16 +305,6 @@
             >;
 
             label = "arrow2";
-        };
-
-        layer_7 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-            >;
         };
     };
 
