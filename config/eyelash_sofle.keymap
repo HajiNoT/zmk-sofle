@@ -73,6 +73,26 @@
             #binding-cells = <2>;
             tapping-term-ms = <180>;
         };
+
+        tap_shiftmclk: tap_shiftmclk {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAP_SHIFTMCLK";
+            bindings = <&SHIFT_MCLK>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            quick-tap-ms = <170>;
+        };
+
+        tap_mkp: tap_mkp {
+            compatible = "zmk,behavior-hold-tap";
+            label = "TAP_MKP";
+            bindings = <&mkp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            quick-tap-ms = <170>;
+        };
     };
 
     combos {
@@ -176,13 +196,6 @@
 
             label = "F13_CTR_LAY";
         };
-
-        num_stick: num_stick {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&sl 2 &to 3>;
-            label = "NUM_STICK";
-        };
     };
 
     keymap {
@@ -216,11 +229,11 @@
 
         NUM {
             bindings = <
-&trans   &trans     &trans     &trans     &trans              &trans       &mmv MOVE_UP     &trans                 &trans           &trans             &trans    &trans             &trans
-&kp DOT  &kp N6     &kp N7     &kp N8     &kp N9              &kp N0       &mmv MOVE_DOWN   &kp CARET              &kp AMPERSAND    &kp ASTRK          &kp SQT   &kp DOUBLE_QUOTES  &kp PIPE
-&trans   &kp N1     &kp N2     &kp N3     &kp N4              &kp N5       &mmv MOVE_LEFT   &kp N6                 &kp N7           &kp N8             &kp N9    &kp N0             &kp BACKSLASH
-&trans   &kp SLASH  &kp ASTRK  &kp MINUS  &kp PLUS            &kp EQUAL    &mmv MOVE_RIGHT  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp EXCL  &kp QMARK          &trans
-&trans   &trans     &trans     &trans     &mt LEFT_SHIFT DEL  &trans       &mkp MB1         &trans                 &trans           &trans             &trans    &trans
+&trans   &trans     &trans     &trans               &trans              &trans       &mmv MOVE_UP     &trans                 &trans           &trans             &trans    &trans             &trans
+&kp DOT  &kp N6     &kp N7     &tap_shiftmclk 0 N8  &tap_mkp MB3 N9     &kp N0       &mmv MOVE_DOWN   &kp CARET              &kp AMPERSAND    &kp ASTRK          &kp SQT   &kp DOUBLE_QUOTES  &kp PIPE
+&trans   &kp N1     &kp N2     &kp N3               &kp N4              &kp N5       &mmv MOVE_LEFT   &kp N6                 &kp N7           &kp N8             &kp N9    &kp N0             &kp BACKSLASH
+&trans   &kp SLASH  &kp ASTRK  &kp MINUS            &kp PLUS            &kp EQUAL    &mmv MOVE_RIGHT  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp EXCL  &kp QMARK          &trans
+&trans   &trans     &trans     &trans               &mt LEFT_SHIFT DEL  &trans       &mkp MB1         &trans                 &trans           &trans             &trans    &trans
             >;
 
             display-name = "num";
@@ -274,6 +287,16 @@
             >;
 
             label = "arrow2";
+        };
+
+        layer_7 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+            >;
         };
     };
 
