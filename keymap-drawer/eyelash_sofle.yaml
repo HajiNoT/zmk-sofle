@@ -56,13 +56,13 @@ layers:
   - $$mdi:volume-off$$
   - media
   - '&arw2_windows'
-  - '&f13_ctr_lay'
+  - '&int4_ctr_lay'
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:keyboard-space$$', h: num}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', h: arrow}
   - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - '&f14_ctr_lay'
+  - '&int5_ctr_lay'
   - '&arw2_windows'
   - media
   ganary:
