@@ -310,11 +310,11 @@
 
         NUM {
             bindings = <
-&trans   &trans     &trans        &trans               &trans              &trans           &mmv MOVE_UP     &trans          &trans             &trans         &trans      &trans      &trans
-&kp DOT  &kp N6     &kp N7        &kp N8               &kp N9              &kp N0           &mmv MOVE_DOWN   &kp EQUAL       &kp LS(N6)         &kp LS(APOS)   &kp LS(N7)  &kp LS(N2)  &kp LS(INT3)
-&trans   &kp N1     &kp N2        &tap_shiftmclk 0 N3  &tap_mkp MB3 N4     &kp N5           &mmv MOVE_LEFT   &kp N6          &kp N7             &kp N8         &kp N9      &kp N0      &kp INT3
-&trans   &kp SLASH  &kp LS(APOS)  &kp MINUS            &kp LS(SEMI)        &kp LS(MINUS)    &mmv MOVE_RIGHT  &kp LS(N9)      &kp LS(BACKSLASH)  &kp BACKSLASH  &kp EXCL    &kp QMARK   &trans
-&trans   &trans     &trans        &trans               &mt LEFT_SHIFT DEL  &trans           &mkp MB2         &mkp_lay 3 MB1  &mkp MB3           &trans         &trans      &trans
+&trans      &trans     &trans        &trans               &trans              &trans           &mmv MOVE_UP     &trans          &trans             &trans         &trans      &trans      &trans
+&kp DOT     &kp N6     &kp N7        &kp N8               &kp N9              &kp N0           &mmv MOVE_DOWN   &kp EQUAL       &kp LS(N6)         &kp LS(APOS)   &kp LS(N7)  &kp LS(N2)  &kp LS(INT3)
+&trans      &kp N1     &kp N2        &tap_shiftmclk 0 N3  &tap_mkp MB3 N4     &kp N5           &mmv MOVE_LEFT   &kp N6          &kp N7             &kp N8         &kp N9      &kp N0      &kp INT3
+&trans      &kp SLASH  &kp LS(APOS)  &kp MINUS            &kp LS(SEMI)        &kp LS(MINUS)    &mmv MOVE_RIGHT  &kp LS(N9)      &kp LS(BACKSLASH)  &kp BACKSLASH  &kp EXCL    &kp QMARK   &trans
+&kp LC(N0)  &trans     &trans        &trans               &mt LEFT_SHIFT DEL  &trans           &mkp MB2         &mkp_lay 3 MB1  &mkp MB3           &trans         &trans      &trans
             >;
 
             display-name = "num";
@@ -336,11 +336,11 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans        &trans          &trans        &trans        &trans          &kp LG(UP)     &trans   &trans   &trans  &trans      &trans   &trans
-&trans  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LG(DOWN)   &kp F1   &kp F2   &kp F3  &kp F4      &kp F5   &trans
-&trans  &bt BT_CLR    &bt BT_CLR_ALL  &trans        &out OUT_USB  &out OUT_BLE    &kp LG(LEFT)   &kp F6   &kp F7   &kp F8  &kp F9      &kp F10  &trans
-&trans  &trans        &trans          &bootloader   &sys_reset    &soft_off       &kp LG(RIGHT)  &kp F11  &kp F12  &trans  &kp LA(F4)  &trans   &trans
-&trans  &trans        &trans          &trans        &trans        &trans          &kp LG(D)      &trans   &trans   &trans  &trans      &trans
+&trans        &trans        &trans           &trans           &trans           &trans                               &kp LG(UP)     &trans   &trans   &trans  &trans      &trans   &trans
+&out OUT_USB  &out OUT_BLE  &bt BT_CLR_ALL   &bt BT_CLR       &bt BT_PRV       &bt BT_NXT                           &kp LG(DOWN)   &kp F1   &kp F2   &kp F3  &kp F4      &kp F5   &trans
+&trans        &trans        &rgb_ug RGB_EFF  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG                      &kp LG(LEFT)   &kp F6   &kp F7   &kp F8  &kp F9      &kp F10  &trans
+&trans        &trans        &rgb_ug RGB_EFR  &rgb_ug RGB_SPD  &rgb_ug RGB_BRD  &rgb_ug RGB_COLOR_HSB(227,100,50)    &kp LG(RIGHT)  &kp F11  &kp F12  &trans  &kp LA(F4)  &trans   &trans
+&trans        &trans        &trans           &trans           &trans           &trans                               &kp LG(D)      &trans   &trans   &trans  &trans      &trans
             >;
 
             label = "function";
@@ -360,11 +360,11 @@
 
         MEDIA {
             bindings = <
-&trans           &trans         &trans            &trans            &trans            &trans    &kp LG(LC(D))      &trans           &trans                            &trans                &trans             &trans       &trans
-&kp LS(LC(ESC))  &kp LS(LG(S))  &kp LG(H)         &trans            &trans            &trans    &kp LG(LC(F4))     &rgb_ug RGB_EFR  &rgb_ug RGB_EFF                   &trans                &kp C_PREV         &kp C_PAUSE  &kp C_NEXT
-&kp HOME         &kp UP         &kp END           &trans            &trans            &trans    &kp LG(LC(LEFT))   &rgb_ug RGB_BRD  &rgb_ug RGB_BRI                   &kp C_BRIGHTNESS_INC  &kp HOME           &kp UP       &kp END
-&kp LEFT         &kp DOWN       &kp RIGHT         &trans            &trans            &trans    &kp LG(LC(RIGHT))  &rgb_ug RGB_TOG  &rgb_ug RGB_COLOR_HSB(122,0,100)  &kp C_BRIGHTNESS_DEC  &kp LEFT           &kp DOWN     &kp RIGHT
-&trans           &trans         &kp LG(LEFT_ALT)  &kp LC(LEFT_ALT)  &kp LS(LEFT_ALT)  &trans    &kp LG(TAB)        &trans           &kp RS(RIGHT_ALT)                 &kp RC(RIGHT_ALT)     &kp RG(RIGHT_ALT)  &trans
+&trans           &trans         &trans            &trans            &trans            &trans         &kp LG(LC(D))      &trans       &trans             &trans                &trans             &trans       &trans
+&kp LS(LC(ESC))  &kp LS(LG(S))  &kp LG(H)         &trans            &trans            &sys_reset     &kp LG(LC(F4))     &sys_reset   &trans             &trans                &kp C_PREV         &kp C_PAUSE  &kp C_NEXT
+&kp HOME         &kp UP         &kp END           &trans            &trans            &bootloader    &kp LG(LC(LEFT))   &bootloader  &trans             &kp C_BRIGHTNESS_INC  &kp HOME           &kp UP       &kp END
+&kp LEFT         &kp DOWN       &kp RIGHT         &trans            &trans            &soft_off      &kp LG(LC(RIGHT))  &soft_off    &trans             &kp C_BRIGHTNESS_DEC  &kp LEFT           &kp DOWN     &kp RIGHT
+&trans           &trans         &kp LG(LEFT_ALT)  &kp LC(LEFT_ALT)  &kp LS(LEFT_ALT)  &trans         &kp LG(TAB)        &trans       &kp RS(RIGHT_ALT)  &kp RC(RIGHT_ALT)     &kp RG(RIGHT_ALT)  &trans
             >;
 
             label = "media";
