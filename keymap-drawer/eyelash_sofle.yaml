@@ -55,15 +55,15 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:volume-off$$
   - media
-  - '&arw2_windows'
-  - '&int4_ctr_lay'
-  - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:keyboard-space$$', h: num}
+  - '&int4_lay6_win'
+  - '&bspc_ctr_lay'
+  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:keyboard-return$$', h: num}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', h: arrow}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - '&int5_ctr_lay'
-  - '&arw2_windows'
+  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - '&del_ctr_lay'
+  - '&int5_lay6_win'
   - media
   ganary:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -591,7 +591,7 @@ combos:
 - p: [11, 12]
   k: {t: ganary, h: toggle}
 - p: [61, 55]
-  k: $$mdi:apple-keyboard-caps$$
+  k: Sft+$$mdi:apple-keyboard-caps$$
 - p: [57, 30]
   k: {t: num, h: toggle}
 - p: [59, 34]
