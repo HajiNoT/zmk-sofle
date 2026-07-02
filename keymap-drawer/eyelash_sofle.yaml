@@ -26,7 +26,7 @@ layers:
   - I
   - O
   - P
-  - {t: Sft+-, h: '$$mdi:apple-keyboard-option$$', s: Sft+=}
+  - {t: Sft+-, h: '$$mdi:apple-keyboard-option$$', s: Sft+;}
   - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-control$$'}
   - A
   - S
@@ -39,7 +39,7 @@ layers:
   - K
   - L
   - {t: '-', s: Sft+INT1}
-  - {t: ;, h: '$$mdi:apple-keyboard-control$$', s: Sft+'}
+  - {t: ;, h: '$$mdi:apple-keyboard-control$$', s: ''''}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - Z
   - X
@@ -240,7 +240,7 @@ layers:
   - Sft+{
   - {t: ']', s: '}'}
   - {t: 'Sft+]', s: 'Sft+}'}
-  - {t: Sft+9, s: Sft+(}
+  - {t: Sft+8, s: Sft+*}
   - Sft+Gui+$$mdi:arrow-right-bold$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:keyboard-space$$
@@ -364,7 +364,7 @@ layers:
   - K
   - L
   - {t: '-', s: _}
-  - {t: '=', s: +}
+  - {t: ;, s: ':'}
   - $$mdi:keyboard-tab-reverse$$
   - Z
   - Y
