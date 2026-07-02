@@ -148,6 +148,20 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        int4_lay6_win: int4_lay6_win {
+            compatible = "zmk,behavior-tap-dance";
+            label = "INT4_LAY6_WIN";
+            #binding-cells = <0>;
+            bindings = <&lt 6 INT4>, <&kp LEFT_WIN>;
+        };
+
+        int5_lay6_win: int5_lay6_win {
+            compatible = "zmk,behavior-tap-dance";
+            label = "INT5_LAY6_WIN";
+            #binding-cells = <0>;
+            bindings = <&lt 6 INT5>, <&kp LEFT_WIN>;
+        };
     };
 
     combos {
@@ -164,7 +178,7 @@
         };
 
         caps {
-            bindings = <&kp CAPS>;
+            bindings = <&kp LS(CAPS)>;
             key-positions = <61 55>;
         };
 
@@ -190,9 +204,7 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LEFT_SHIFT>,
-                <&macro_press>,
-                <&mkp MB3>,
+                <&kp LEFT_SHIFT &mkp MB3>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
                 <&kp LEFT_SHIFT &mkp MB3>;
@@ -277,6 +289,32 @@
 
             label = "INT5_CTR_LAY";
         };
+
+        bspc_ctr_lay: bspc_ctr_lay {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&mt LCTRL BSPC &mo 5>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&mt LCTRL BSPC &mo 5>;
+
+            label = "BSPC_CTR_LAY";
+        };
+
+        del_ctr_lay: del_ctr_lay {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&mt LCTRL DEL &mo 5>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&mt LCTRL DEL &mo 5>;
+
+            label = "DEL_CTR_LAY";
+        };
     };
 
     keymap {
@@ -285,11 +323,11 @@
         QWERTY {
             display-name = "QWERTY";
             bindings = <
-&kp GRAVE         &kp N1  &kp N2         &kp N3         &kp N4           &kp N5         &kp UP_ARROW     &kp N6     &kp N7          &kp N8         &kp N9         &kp N0                 &kp BACKSPACE
-&mt LEFT_ALT ESC  &kp Q   &kp W          &kp E          &kp R            &kp T          &kp DOWN_ARROW   &kp Y      &kp U           &kp I          &kp O          &kp P                  &jis_eq_plus_hold RIGHT_ALT 0
-&mt LCTRL TAB     &kp A   &kp S          &kp D          &kp F            &kp G          &kp LEFT_ARROW   &kp H      &kp J           &kp K          &kp L          &jis_minus_underscore  &jis_semi_colon_hold RCTRL 0
-&mt LSHIFT RET    &kp Z   &kp X          &kp C          &kp V            &kp B          &kp RIGHT_ARROW  &kp N      &kp M           &kp COMMA      &kp DOT        &kp FSLH               &mt RSHIFT RET
-&kp C_MUTE        &mo 6   &arw2_windows  &int4_ctr_lay  &mt LSHIFT BSPC  &lt 2 SPACE    &kp RET          &lt 3 RET  &mt RSHIFT DEL  &int5_ctr_lay  &arw2_windows  &mo 6
+&kp GRAVE         &kp N1  &kp N2          &kp N3         &kp N4            &kp N5       &kp UP_ARROW     &kp N6     &kp N7            &kp N8        &kp N9          &kp N0                 &kp BACKSPACE
+&mt LEFT_ALT ESC  &kp Q   &kp W           &kp E          &kp R             &kp T        &kp DOWN_ARROW   &kp Y      &kp U             &kp I         &kp O           &kp P                  &jis_eq_plus_hold RIGHT_ALT 0
+&mt LCTRL TAB     &kp A   &kp S           &kp D          &kp F             &kp G        &kp LEFT_ARROW   &kp H      &kp J             &kp K         &kp L           &jis_minus_underscore  &jis_semi_colon_hold RCTRL 0
+&mt LSHIFT RET    &kp Z   &kp X           &kp C          &kp V             &kp B        &kp RIGHT_ARROW  &kp N      &kp M             &kp COMMA     &kp DOT         &kp FSLH               &mt RSHIFT RET
+&kp C_MUTE        &mo 6   &int4_lay6_win  &bspc_ctr_lay  &mt LSHIFT SPACE  &lt 2 RET    &kp RET          &lt 3 RET  &mt RSHIFT SPACE  &del_ctr_lay  &int5_lay6_win  &mo 6
             >;
 
             sensor-bindings = <&rsr_vol>, <&rsr_trans>;
