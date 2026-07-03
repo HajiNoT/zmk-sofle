@@ -302,11 +302,11 @@
         QWERTY {
             display-name = "QWERTY";
             bindings = <
-&kp GRAVE            &kp N1  &kp N2  &kp N3         &kp N4           &kp N5         &kp UP_ARROW     &kp N6     &kp N7          &kp N8         &kp N9   &kp N0                 &kp BACKSPACE
-&mt LEFT_ALT ESC     &kp Q   &kp W   &kp E          &kp R            &kp T          &kp DOWN_ARROW   &kp Y      &kp U           &kp I          &kp O    &kp P                  &jis_eq_plus_hold RIGHT_ALT 0
-&mt LCTRL TAB        &kp A   &kp S   &kp D          &kp F            &kp G          &kp LEFT_ARROW   &kp H      &kp J           &kp K          &kp L    &jis_minus_underscore  &jis_semi_colon_hold RCTRL 0
-&mt LSHIFT LS(CAPS)  &kp Z   &kp X   &kp C          &kp V            &kp B          &kp RIGHT_ARROW  &kp N      &kp M           &kp COMMA      &kp DOT  &kp FSLH               &mt RSHIFT RET
-&kp C_MUTE           &mo 6   &none   &int4_ctr_lay  &mt LSHIFT BSPC  &lt 2 SPACE    &kp RET          &lt 3 RET  &mt RSHIFT DEL  &int5_ctr_lay  &none    &mo 6
+&kp GRAVE            &kp N1  &kp N2         &kp N3         &kp N4           &kp N5         &kp UP_ARROW     &kp N6     &kp N7          &kp N8         &kp N9     &kp N0                 &kp BACKSPACE
+&mt LEFT_ALT ESC     &kp Q   &kp W          &kp E          &kp R            &kp T          &kp DOWN_ARROW   &kp Y      &kp U           &kp I          &kp O      &kp P                  &jis_eq_plus_hold RIGHT_ALT 0
+&mt LCTRL TAB        &kp A   &kp S          &kp D          &kp F            &kp G          &kp LEFT_ARROW   &kp H      &kp J           &kp K          &kp L      &jis_minus_underscore  &jis_semi_colon_hold RCTRL 0
+&mt LSHIFT LS(CAPS)  &kp Z   &kp X          &kp C          &kp V            &kp B          &kp RIGHT_ARROW  &kp N      &kp M           &kp COMMA      &kp DOT    &kp FSLH               &mt RSHIFT RET
+&kp C_MUTE           &mo 6   &lt 6 LA(TAB)  &int4_ctr_lay  &mt LSHIFT BSPC  &lt 2 SPACE    &kp RET          &lt 3 RET  &mt RSHIFT DEL  &int5_ctr_lay  &lt 6 TAB  &mo 6
             >;
 
             sensor-bindings = <&rsr_vol>, <&rsr_trans>;
@@ -327,11 +327,11 @@
 
         NUM {
             bindings = <
-&trans      &trans     &trans        &trans               &trans              &trans           &mmv MOVE_UP     &trans          &trans             &trans         &trans      &trans      &trans
-&kp DOT     &kp N6     &kp N7        &kp N8               &kp N9              &kp N0           &mmv MOVE_DOWN   &kp EQUAL       &kp LS(N6)         &kp LS(APOS)   &kp LS(N7)  &kp LS(N2)  &kp LS(INT3)
-&trans      &kp N1     &kp N2        &tap_shiftmclk 0 N3  &tap_mkp MB3 N4     &kp N5           &mmv MOVE_LEFT   &kp N6          &kp N7             &kp N8         &kp N9      &kp N0      &kp INT3
-&trans      &kp SLASH  &kp LS(APOS)  &kp MINUS            &kp LS(SEMI)        &kp LS(MINUS)    &mmv MOVE_RIGHT  &kp LS(N9)      &kp LS(BACKSLASH)  &kp BACKSLASH  &kp EXCL    &kp QMARK   &trans
-&kp LC(N0)  &trans     &trans        &trans               &mt LEFT_SHIFT DEL  &trans           &mkp MB2         &mkp_lay 3 MB1  &mkp MB3           &trans         &trans      &trans
+&trans      &trans        &trans     &trans        &trans              &trans         &mmv MOVE_UP     &trans          &trans             &trans         &trans      &trans      &trans
+&kp DOT     &kp N6        &kp N7     &kp N8        &kp N9              &kp N0         &mmv MOVE_DOWN   &kp EQUAL       &kp LS(N6)         &kp LS(APOS)   &kp LS(N7)  &kp LS(N2)  &kp LS(INT3)
+&trans      &kp N1        &kp N2     &kp N3        &kp N4              &kp N5         &mmv MOVE_LEFT   &kp N6          &kp N7             &kp N8         &kp N9      &kp N0      &kp INT3
+&kp SLASH   &kp LS(APOS)  &kp MINUS  &kp LS(SEMI)  &kp LS(MINUS)       &kp LS(RET)    &mmv MOVE_RIGHT  &kp LS(N9)      &kp LS(BACKSLASH)  &kp BACKSLASH  &kp EXCL    &kp QMARK   &trans
+&kp LC(N0)  &trans        &trans     &trans        &mt LEFT_SHIFT DEL  &trans         &mkp MB2         &mkp_lay 3 MB1  &mkp MB3           &trans         &trans      &trans
             >;
 
             display-name = "num";
