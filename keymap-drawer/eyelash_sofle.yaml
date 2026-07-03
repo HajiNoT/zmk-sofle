@@ -55,15 +55,15 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:volume-off$$
   - media
-  - '&int4_lay6_win'
-  - '&bspc_ctr_lay'
-  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:keyboard-return$$', h: num}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&int4_ctr_lay'
+  - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:keyboard-space$$', h: num}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', h: arrow}
-  - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - '&del_ctr_lay'
-  - '&int5_lay6_win'
+  - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - '&int5_ctr_lay'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - media
   ganary:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -248,7 +248,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:apple-keyboard-shift$$
+  - Ctl+$$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -510,7 +510,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:volume-off$$
   - media
-  - '&int4_lay6_win'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&bspc_ctr_lay'
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:keyboard-return$$', h: num}
@@ -518,7 +518,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: arrow}
   - {t: '$$mdi:keyboard-space$$', h: '$$mdi:apple-keyboard-shift$$'}
   - '&del_ctr_lay'
-  - '&int5_lay6_win'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - media
   num_us:
   - {t: '$$mdi:transfer$$', type: trans}
