@@ -55,7 +55,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:volume-off$$
   - media
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: 'Alt+$$mdi:keyboard-tab$$', h: media}
   - '&int4_ctr_lay'
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:keyboard-space$$', h: num}
@@ -63,7 +63,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: arrow}
   - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-shift$$'}
   - '&int5_ctr_lay'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:keyboard-tab$$', h: media}
   - media
   ganary:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -160,8 +160,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
-  - {t: '3', h: '&SHIFT_MCLK', s: '#'}
-  - {t: '4', h: '&mkp MB3', s: $}
+  - {t: '3', s: '#'}
+  - {t: '4', s: $}
   - {t: '5', s: '%'}
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - {t: '6', s: ^}
@@ -170,12 +170,12 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - INT3
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: /, s: '?'}
   - {t: Sft+', s: Sft+"}
   - {t: '-', s: _}
   - {t: Sft+;, s: 'Sft+:'}
   - {t: Sft+-, s: Sft+_}
+  - {t: 'Sft+$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: Sft+9, s: Sft+(}
   - {t: Sft+\, s: Sft+|}
@@ -445,7 +445,7 @@ layers:
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - Gui+$$mdi:apple-keyboard-option$$
+  - {t: 'Gui+$$mdi:apple-keyboard-option$$', type: held alternate}
   - Ctl+$$mdi:apple-keyboard-option$$
   - Sft+$$mdi:apple-keyboard-option$$
   - {t: '$$mdi:transfer$$', type: trans}
@@ -453,7 +453,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - Sft+$$mdi:apple-keyboard-option$$
   - Ctl+$$mdi:apple-keyboard-option$$
-  - Gui+$$mdi:apple-keyboard-option$$
+  - {t: 'Gui+$$mdi:apple-keyboard-option$$', type: held alternate}
   - {type: held alternate}
   qwerty_us:
   - {t: '`', s: '~'}
