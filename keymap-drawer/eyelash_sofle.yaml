@@ -469,7 +469,7 @@ combos:
 - p: [42, 43]
   k: Alt+LEFT WIN
 - p: [43, 44]
-  k: Alt+$$mdi:apple-keyboard-control$$
+  k: Alt+Ctl+LEFT WIN
 - p: [42, 44]
   k: Gui+H
 - p: [29, 30]
