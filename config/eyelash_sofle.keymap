@@ -156,8 +156,8 @@
             key-positions = <42 43>;
         };
 
-        ctr_alt {
-            bindings = <&kp LA(LCTRL)>;
+        win_alt_ctr {
+            bindings = <&kp LA(LC(LEFT_WIN))>;
             key-positions = <43 44>;
         };
 
