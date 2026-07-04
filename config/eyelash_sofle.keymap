@@ -151,28 +151,23 @@
             key-positions = <26 39>;
         };
 
-        qwerty {
-            bindings = <&tog 1>;
-            key-positions = <11 12>;
-        };
-
         caps {
             bindings = <&caps_word>;
             key-positions = <61 55>;
         };
 
         tog_num {
-            bindings = <&tog 2>;
+            bindings = <&tog 1>;
             key-positions = <57 30>;
         };
 
         tog_syb {
-            bindings = <&tog 3>;
+            bindings = <&tog 2>;
             key-positions = <59 34>;
         };
 
         tog_ar2 {
-            bindings = <&tog 6>;
+            bindings = <&tog 5>;
             key-positions = <12 63>;
         };
     };
@@ -196,10 +191,10 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&mt LCTRL LANG_HANGEUL &mo 5>,
+                <&mt LCTRL LANG_HANGEUL &mo 4>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mt LCTRL LANGUAGE_1 &mo 5>;
+                <&mt LCTRL LANGUAGE_1 &mo 4>;
 
             label = "LAN1_CTR_LAY";
         };
@@ -209,10 +204,10 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&mt LCTRL LANGUAGE_2 &mo 5>,
+                <&mt LCTRL LANGUAGE_2 &mo 4>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mt LCTRL LANGUAGE_2 &mo 5>;
+                <&mt LCTRL LANGUAGE_2 &mo 4>;
 
             label = "LAN2_CTR_LAY";
         };
@@ -222,10 +217,10 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&mt LCTRL F13 &mo 5>,
+                <&mt LCTRL F13 &mo 4>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mt LCTRL F13 &mo 5>;
+                <&mt LCTRL F13 &mo 4>;
 
             label = "F13_CTR_LAY";
         };
@@ -235,10 +230,10 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&mt LCTRL F14 &mo 5>,
+                <&mt LCTRL F14 &mo 4>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mt LCTRL F14 &mo 5>;
+                <&mt LCTRL F14 &mo 4>;
 
             label = "F14_CTR_LAY";
         };
@@ -248,10 +243,10 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&mt LCTRL INT4 &mo 5>,
+                <&mt LCTRL INT4 &mo 4>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mt LCTRL INT4 &mo 5>;
+                <&mt LCTRL INT4 &mo 4>;
 
             label = "INT4_CTR_LAY";
         };
@@ -261,10 +256,10 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&mt LCTRL INT5 &mo 5>,
+                <&mt LCTRL INT5 &mo 4>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mt LCTRL INT5 &mo 5>;
+                <&mt LCTRL INT5 &mo 4>;
 
             label = "INT5_CTR_LAY";
         };
@@ -274,10 +269,10 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&mt LCTRL BSPC &mo 5>,
+                <&mt LCTRL BSPC &mo 4>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mt LCTRL BSPC &mo 5>;
+                <&mt LCTRL BSPC &mo 4>;
 
             label = "BSPC_CTR_LAY";
         };
@@ -287,10 +282,10 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&mt LCTRL DEL &mo 5>,
+                <&mt LCTRL DEL &mo 4>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&mt LCTRL DEL &mo 5>;
+                <&mt LCTRL DEL &mo 4>;
 
             label = "DEL_CTR_LAY";
         };
@@ -306,32 +301,19 @@
 &mt LEFT_ALT ESC     &kp Q   &kp W      &kp E          &kp R            &kp T          &kp DOWN_ARROW   &kp Y      &kp U           &kp I          &kp O      &kp P                  &jis_eq_plus_hold RIGHT_ALT 0
 &mt LEFT_WIN TAB     &kp A   &kp S      &kp D          &kp F            &kp G          &kp LEFT_ARROW   &kp H      &kp J           &kp K          &kp L      &jis_minus_underscore  &jis_semi_colon_hold RIGHT_WIN 0
 &mt LSHIFT LS(CAPS)  &kp Z   &kp X      &kp C          &kp V            &kp B          &kp RIGHT_ARROW  &kp N      &kp M           &kp COMMA      &kp DOT    &kp FSLH               &mt RSHIFT RET
-&kp C_MUTE           &mo 6   &lt 6 TAB  &int4_ctr_lay  &mt LSHIFT BSPC  &lt 2 SPACE    &kp RET          &lt 3 RET  &mt RSHIFT DEL  &int5_ctr_lay  &lt 6 TAB  &mo 6
+&kp C_MUTE           &mo 6   &lt 6 TAB  &int4_ctr_lay  &mt LSHIFT BSPC  &lt 1 SPACE    &kp RET          &lt 2 RET  &mt RSHIFT DEL  &int5_ctr_lay  &lt 5 TAB  &mo 5
             >;
 
             sensor-bindings = <&rsr_vol>, <&rsr_trans>;
         };
 
-        GANARY {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans     &trans   &trans    &trans
-&trans  &kp P   &kp W   &kp K   &kp R   &kp T     &trans  &kp Y   &kp U   &kp I      &kp O    &kp F     &trans
-&trans  &kp M   &kp S   &kp D   &kp N   &kp G     &trans  &kp H   &kp J   &kp E      &kp A    &trans    &trans
-&trans  &kp Z   &kp X   &kp C   &kp V   &kp B     &trans  &kp Q   &kp L   &kp COMMA  &kp DOT  &kp FSLH  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans     &trans   &trans
-            >;
-
-            sensor-bindings = <&rsr_vol &rsr_trans>;
-            display-name = "ganary";
-        };
-
         NUM {
             bindings = <
-&trans      &trans        &trans     &trans        &trans              &trans         &mmv MOVE_UP     &trans          &trans             &trans         &trans      &trans      &trans
-&kp DOT     &kp N6        &kp N7     &kp N8        &kp N9              &kp N0         &mmv MOVE_DOWN   &kp EQUAL       &kp LS(N6)         &kp LS(APOS)   &kp LS(N7)  &kp LS(N2)  &kp LS(INT3)
-&trans      &kp N1        &kp N2     &kp N3        &kp N4              &kp N5         &mmv MOVE_LEFT   &kp N6          &kp N7             &kp N8         &kp N9      &kp N0      &kp INT3
-&kp SLASH   &kp LS(APOS)  &kp MINUS  &kp LS(SEMI)  &kp LS(MINUS)       &kp LS(RET)    &mmv MOVE_RIGHT  &kp LS(N9)      &kp LS(BACKSLASH)  &kp BACKSLASH  &kp EXCL    &kp QMARK   &trans
-&kp LC(N0)  &trans        &trans     &trans        &mt LEFT_SHIFT DEL  &trans         &mkp MB2         &mkp_lay 3 MB1  &mkp MB3           &trans         &trans      &trans
+&trans      &trans     &trans        &trans     &trans        &trans           &mmv MOVE_UP     &trans                 &trans             &trans      &trans      &trans     &trans
+&kp DOT     &kp N6     &kp N7        &kp N8     &kp N9        &kp N0           &mmv MOVE_DOWN   &kp RIGHT_BRACKET      &kp LS(BACKSLASH)  &kp LS(N8)  &kp LS(N9)  &kp EXCL   &trans
+&trans      &kp N1     &kp N2        &kp N3     &kp N4        &kp N5           &mmv MOVE_LEFT   &kp N6                 &kp N7             &kp N8      &kp N9      &kp N0     &trans
+&trans      &kp SLASH  &kp LS(APOS)  &kp MINUS  &kp LS(SEMI)  &kp LS(MINUS)    &mmv MOVE_RIGHT  &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)  &kp LT      &kp GT      &kp QMARK  &trans
+&kp LC(N0)  &trans     &trans        &kp RET    &kp DEL       &trans           &mkp MB2         &mkp_lay 2 MB1         &mkp MB3           &trans      &trans      &trans
             >;
 
             display-name = "num";
@@ -340,11 +322,11 @@
 
         ARROW {
             bindings = <
-&trans              &kp LS(EXCL)     &kp LS(AT)          &kp LS(POUND)      &kp LS(DLLR)           &kp LS(PRCNT)    &kp C_VOL_UP            &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)   &trans
-&kp QMARK           &kp EXCLAMATION  &kp LEFT_BRACKET    &kp HASH           &kp DOLLAR             &kp PERCENT      &kp C_VOL_DN            &kp LC(HOME)   &kp HOME      &kp UP        &kp END       &kp LC(END)    &kp PG_UP
-&trans              &kp N1           &kp N2              &kp N3             &kp N4                 &kp N5           &kp LG(LS(LEFT_ARROW))  &kp LC(LEFT)   &kp LEFT      &kp DOWN      &kp RIGHT     &kp LC(RIGHT)  &kp PG_DN
-&trans              &kp LS(EQUAL)    &kp LS(LEFT_BRACE)  &kp RIGHT_BRACKET  &kp LS(RIGHT_BRACKET)  &kp LS(N8)       &kp LS(LG(RIGHT))       &kp BACKSPACE  &kp SPACE     &trans        &trans        &trans         &trans
-&kp LC(LEFT_SHIFT)  &trans           &trans              &trans             &trans                 &trans           &kp K_MUTE              &trans         &trans        &trans        &trans        &trans
+&trans              &kp LS(EXCL)  &kp LS(AT)          &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &kp C_VOL_UP            &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)   &trans
+&trans              &kp EQUAL     &kp LS(N6)          &kp LS(APOS)   &kp LS(N7)    &kp LS(N2)       &kp C_VOL_DN            &kp LC(HOME)   &kp HOME      &kp UP        &kp END       &kp LC(END)    &kp PG_UP
+&trans              &kp EXCL      &kp LEFT_BRACKET    &kp HASH       &kp DOLLAR    &kp PERCENT      &kp LG(LS(LEFT_ARROW))  &kp LC(LEFT)   &kp LEFT      &kp DOWN      &kp RIGHT     &kp LC(RIGHT)  &kp PG_DN
+&trans              &kp QUESTION  &kp LS(LEFT_BRACE)  &kp LS(EQUAL)  &kp INT3      &kp LS(INT3)     &kp LS(LG(RIGHT))       &trans         &trans        &trans        &trans        &trans         &trans
+&kp LC(LEFT_SHIFT)  &trans        &trans              &trans         &trans        &trans           &kp K_MUTE              &trans         &kp BSPC      &kp SPACE     &trans        &trans
             >;
 
             display-name = "arrow";
@@ -353,11 +335,11 @@
 
         FUNCTION {
             bindings = <
-&trans        &trans        &trans           &trans           &trans           &trans                               &kp LG(UP)     &trans   &trans   &trans  &trans      &trans   &trans
-&out OUT_USB  &out OUT_BLE  &bt BT_CLR_ALL   &bt BT_CLR       &bt BT_PRV       &bt BT_NXT                           &kp LG(DOWN)   &kp F1   &kp F2   &kp F3  &kp F4      &kp F5   &trans
-&trans        &trans        &rgb_ug RGB_EFF  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG                      &kp LG(LEFT)   &kp F6   &kp F7   &kp F8  &kp F9      &kp F10  &trans
-&trans        &trans        &rgb_ug RGB_EFR  &rgb_ug RGB_SPD  &rgb_ug RGB_BRD  &rgb_ug RGB_COLOR_HSB(227,100,50)    &kp LG(RIGHT)  &kp F11  &kp F12  &trans  &kp LA(F4)  &trans   &trans
-&trans        &trans        &trans           &trans           &trans           &trans                               &kp LG(D)      &trans   &trans   &trans  &trans      &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LG(UP)     &trans   &trans   &trans  &trans      &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LG(DOWN)   &kp F1   &kp F2   &kp F3  &kp F4      &kp F5   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LG(LEFT)   &kp F6   &kp F7   &kp F8  &kp F9      &kp F10  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LG(RIGHT)  &kp F11  &kp F12  &trans  &kp LA(F4)  &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LG(D)      &trans   &trans   &trans  &trans      &trans
             >;
 
             label = "function";
@@ -377,24 +359,24 @@
 
         MEDIA {
             bindings = <
-&trans           &trans         &trans            &trans            &trans            &trans         &kp LG(LC(D))      &trans       &trans             &trans                &trans             &trans       &trans
-&kp LS(LC(ESC))  &kp LS(LG(S))  &kp LG(H)         &trans            &trans            &sys_reset     &kp LG(LC(F4))     &sys_reset   &trans             &trans                &kp C_PREV         &kp C_PAUSE  &kp C_NEXT
-&kp HOME         &kp UP         &kp END           &trans            &trans            &bootloader    &kp LG(LC(LEFT))   &bootloader  &trans             &kp C_BRIGHTNESS_INC  &kp HOME           &kp UP       &kp END
-&kp LEFT         &kp DOWN       &kp RIGHT         &trans            &trans            &soft_off      &kp LG(LC(RIGHT))  &soft_off    &trans             &kp C_BRIGHTNESS_DEC  &kp LEFT           &kp DOWN     &kp RIGHT
-&trans           &trans         &kp LG(LEFT_ALT)  &kp LC(LEFT_ALT)  &kp LS(LEFT_ALT)  &trans         &kp LG(TAB)        &trans       &kp RS(RIGHT_ALT)  &kp RC(RIGHT_ALT)     &kp RG(RIGHT_ALT)  &trans
+&trans           &trans           &trans            &trans            &trans            &trans                               &kp LG(LC(D))      &trans       &trans             &trans             &trans             &trans       &trans
+&out OUT_USB     &out OUT_BLE     &bt BT_CLR_ALL    &bt BT_CLR        &bt BT_PRV        &bt BT_NXT                           &kp LG(LC(F4))     &sys_reset   &trans             &kp C_BRI_UP       &kp C_PREV         &kp C_PAUSE  &kp C_NEXT
+&rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_SPI   &rgb_ug RGB_BRI   &rgb_ug RGB_EFF   &rgb_ug RGB_TOG                      &kp LG(LC(LEFT))   &bootloader  &trans             &kp C_BRI_DN       &kp HOME           &kp UP       &kp END
+&rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_SPD   &rgb_ug RGB_BRD   &rgb_ug RGB_EFR   &rgb_ug RGB_COLOR_HSB(239,100,50)    &kp LG(LC(RIGHT))  &soft_off    &trans             &trans             &kp LEFT           &kp DOWN     &kp RIGHT
+&trans           &trans           &kp LG(LEFT_ALT)  &kp LC(LEFT_ALT)  &kp LS(LEFT_ALT)  &trans                               &kp LG(TAB)        &trans       &kp RS(RIGHT_ALT)  &kp RC(RIGHT_ALT)  &kp RG(RIGHT_ALT)  &trans
             >;
 
             label = "media";
         };
 
-        layer_10 {
-            label = "media";
+        SYSTEM {
+            label = "system";
             bindings = <
-&trans           &trans         &trans            &trans            &trans            &trans         &kp LG(LC(D))      &trans       &trans             &trans                &trans             &trans       &trans
-&kp LS(LC(ESC))  &kp LS(LG(S))  &kp LG(H)         &trans            &trans            &sys_reset     &kp LG(LC(F4))     &sys_reset   &trans             &trans                &kp C_PREV         &kp C_PAUSE  &kp C_NEXT
-&kp HOME         &kp UP         &kp END           &trans            &trans            &bootloader    &kp LG(LC(LEFT))   &bootloader  &trans             &kp C_BRIGHTNESS_INC  &kp HOME           &kp UP       &kp END
-&kp LEFT         &kp DOWN       &kp RIGHT         &trans            &trans            &soft_off      &kp LG(LC(RIGHT))  &soft_off    &trans             &kp C_BRIGHTNESS_DEC  &kp LEFT           &kp DOWN     &kp RIGHT
-&trans           &trans         &kp LG(LEFT_ALT)  &kp LC(LEFT_ALT)  &kp LS(LEFT_ALT)  &trans         &kp LG(TAB)        &trans       &kp RS(RIGHT_ALT)  &kp RC(RIGHT_ALT)     &kp RG(RIGHT_ALT)  &trans
+&trans           &trans         &trans            &trans            &trans            &trans         &kp LG(LC(D))      &trans  &trans             &trans             &trans             &trans  &trans
+&kp LS(LC(ESC))  &kp LS(LG(S))  &kp LG(H)         &trans            &trans            &sys_reset     &kp LG(LC(F4))     &trans  &trans             &trans             &trans             &trans  &trans
+&kp HOME         &kp UP         &kp END           &trans            &trans            &bootloader    &kp LG(LC(LEFT))   &trans  &trans             &trans             &trans             &trans  &trans
+&kp LEFT         &kp DOWN       &kp RIGHT         &trans            &trans            &soft_off      &kp LG(LC(RIGHT))  &trans  &trans             &trans             &trans             &trans  &trans
+&trans           &trans         &kp LG(LEFT_ALT)  &kp LC(LEFT_ALT)  &kp LS(LEFT_ALT)  &trans         &kp LG(TAB)        &trans  &kp RS(RIGHT_ALT)  &kp RC(RIGHT_ALT)  &kp RG(RIGHT_ALT)  &trans
             >;
         };
 
@@ -405,7 +387,7 @@
 &mt LEFT_ALT ESC     &kp Q   &kp W   &kp E          &kp R             &kp T        &kp DOWN_ARROW   &kp Y      &kp U             &kp I         &kp O    &kp P      &mt RIGHT_ALT EQUAL
 &mt LCTRL TAB        &kp A   &kp S   &kp D          &kp F             &kp G        &kp LEFT_ARROW   &kp H      &kp J             &kp K         &kp L    &kp MINUS  &mt RCTRL SEMI
 &mt LSHIFT LS(CAPS)  &kp Z   &kp X   &kp C          &kp V             &kp B        &kp RIGHT_ARROW  &kp N      &kp M             &kp COMMA     &kp DOT  &kp FSLH   &mt RSHIFT RET
-&kp C_MUTE           &mo 6   &none   &bspc_ctr_lay  &mt LSHIFT SPACE  &lt 2 RET    &kp RET          &lt 3 RET  &mt RSHIFT SPACE  &del_ctr_lay  &none    &mo 6
+&kp C_MUTE           &mo 5   &none   &bspc_ctr_lay  &mt LSHIFT SPACE  &lt 1 RET    &kp RET          &lt 2 RET  &mt RSHIFT SPACE  &del_ctr_lay  &none    &mo 5
             >;
 
             sensor-bindings = <&rsr_vol>, <&rsr_trans>;
@@ -418,7 +400,7 @@
 &kp DOT  &kp N6     &kp N7     &kp N8               &kp N9              &kp N0       &mmv MOVE_DOWN   &kp CARET              &kp AMPERSAND    &kp ASTRK          &kp SQT   &kp DOUBLE_QUOTES  &kp PIPE
 &trans   &kp N1     &kp N2     &tap_shiftmclk 0 N3  &tap_mkp MB3 N4     &kp N5       &mmv MOVE_LEFT   &kp N6                 &kp N7           &kp N8             &kp N9    &kp N0             &kp BACKSLASH
 &trans   &kp SLASH  &kp ASTRK  &kp MINUS            &kp PLUS            &kp EQUAL    &mmv MOVE_RIGHT  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp EXCL  &kp QMARK          &trans
-&trans   &trans     &trans     &trans               &mt LEFT_SHIFT DEL  &trans       &mkp MB2         &mkp_lay 3 MB1         &mkp MB3         &trans             &trans    &trans
+&trans   &trans     &trans     &trans               &mt LEFT_SHIFT DEL  &trans       &mkp MB2         &mkp_lay 2 MB1         &mkp MB3         &trans             &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(SEMI) LC(MINUS)>, <&rsr_trans>;
@@ -442,8 +424,8 @@
         compatible = "zmk,conditional-layers";
 
         lay4 {
-            if-layers = <2 3>;
-            then-layer = <4>;
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
