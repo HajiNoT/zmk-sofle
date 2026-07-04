@@ -156,7 +156,7 @@ layers:
   - $$mdi:arrow-up-bold$$
   - END
   - Ctl+END
-  - PG UP
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '!'
   - {t: '[', s: '{'}
@@ -169,7 +169,7 @@ layers:
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
   - Ctl+$$mdi:arrow-right-bold$$
-  - PG DN
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '?'
   - INT3
@@ -180,8 +180,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - PgUp
+  - PgDn
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+$$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:transfer$$', type: trans}
