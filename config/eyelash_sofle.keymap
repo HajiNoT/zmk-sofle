@@ -167,8 +167,23 @@
         };
 
         tog_ar2 {
-            bindings = <&tog 5>;
+            bindings = <&tog 0>;
             key-positions = <12 63>;
+        };
+
+        win_alt {
+            bindings = <&kp LA(LEFT_WIN)>;
+            key-positions = <42 43>;
+        };
+
+        ctr_alt {
+            bindings = <&kp LA(LCTRL)>;
+            key-positions = <43 44>;
+        };
+
+        win_h {
+            bindings = <&kp LG(H)>;
+            key-positions = <42 44>;
         };
     };
 
@@ -301,7 +316,7 @@
 &mt LEFT_ALT ESC     &kp Q   &kp W      &kp E          &kp R            &kp T          &kp DOWN_ARROW   &kp Y      &kp U           &kp I          &kp O      &kp P                  &jis_eq_plus_hold RIGHT_ALT 0
 &mt LEFT_WIN TAB     &kp A   &kp S      &kp D          &kp F            &kp G          &kp LEFT_ARROW   &kp H      &kp J           &kp K          &kp L      &jis_minus_underscore  &jis_semi_colon_hold RIGHT_WIN 0
 &mt LSHIFT LS(CAPS)  &kp Z   &kp X      &kp C          &kp V            &kp B          &kp RIGHT_ARROW  &kp N      &kp M           &kp COMMA      &kp DOT    &kp FSLH               &mt RSHIFT RET
-&kp C_MUTE           &mo 6   &lt 6 TAB  &int4_ctr_lay  &mt LSHIFT BSPC  &lt 1 SPACE    &kp RET          &lt 2 RET  &mt RSHIFT DEL  &int5_ctr_lay  &lt 5 TAB  &mo 5
+&kp C_MUTE           &mo 5   &lt 5 TAB  &int4_ctr_lay  &mt LSHIFT BSPC  &lt 1 SPACE    &kp RET          &lt 2 RET  &mt RSHIFT DEL  &int5_ctr_lay  &lt 0 TAB  &mo 0
             >;
 
             sensor-bindings = <&rsr_vol>, <&rsr_trans>;
@@ -357,6 +372,17 @@
             label = "ctr+";
         };
 
+        L_MEDIA {
+            label = "l_media";
+            bindings = <
+&trans           &trans         &trans            &trans            &trans            &trans         &kp LG(LC(D))      &trans  &trans             &trans             &trans             &trans  &trans
+&kp LS(LC(ESC))  &kp LS(LG(S))  &kp LG(H)         &trans            &trans            &sys_reset     &kp LG(LC(F4))     &trans  &trans             &trans             &trans             &trans  &trans
+&kp HOME         &kp UP         &kp END           &trans            &trans            &bootloader    &kp LG(LC(LEFT))   &trans  &trans             &trans             &trans             &trans  &trans
+&kp LEFT         &kp DOWN       &kp RIGHT         &trans            &trans            &soft_off      &kp LG(LC(RIGHT))  &trans  &trans             &trans             &trans             &trans  &trans
+&trans           &trans         &kp LG(LEFT_ALT)  &kp LC(LEFT_ALT)  &kp LS(LEFT_ALT)  &trans         &kp LG(TAB)        &trans  &kp RS(RIGHT_ALT)  &kp RC(RIGHT_ALT)  &kp RG(RIGHT_ALT)  &trans
+            >;
+        };
+
         MEDIA {
             bindings = <
 &trans           &trans           &trans            &trans            &trans            &trans                               &kp LG(LC(D))      &trans       &trans             &trans             &trans             &trans       &trans
@@ -367,56 +393,6 @@
             >;
 
             label = "media";
-        };
-
-        SYSTEM {
-            label = "system";
-            bindings = <
-&trans           &trans         &trans            &trans            &trans            &trans         &kp LG(LC(D))      &trans  &trans             &trans             &trans             &trans  &trans
-&kp LS(LC(ESC))  &kp LS(LG(S))  &kp LG(H)         &trans            &trans            &sys_reset     &kp LG(LC(F4))     &trans  &trans             &trans             &trans             &trans  &trans
-&kp HOME         &kp UP         &kp END           &trans            &trans            &bootloader    &kp LG(LC(LEFT))   &trans  &trans             &trans             &trans             &trans  &trans
-&kp LEFT         &kp DOWN       &kp RIGHT         &trans            &trans            &soft_off      &kp LG(LC(RIGHT))  &trans  &trans             &trans             &trans             &trans  &trans
-&trans           &trans         &kp LG(LEFT_ALT)  &kp LC(LEFT_ALT)  &kp LS(LEFT_ALT)  &trans         &kp LG(TAB)        &trans  &kp RS(RIGHT_ALT)  &kp RC(RIGHT_ALT)  &kp RG(RIGHT_ALT)  &trans
-            >;
-        };
-
-        QWRTY_US {
-            display-name = "qwerty_us";
-            bindings = <
-&kp GRAVE            &kp N1  &kp N2  &kp N3         &kp N4            &kp N5       &kp UP_ARROW     &kp N6     &kp N7            &kp N8        &kp N9   &kp N0     &kp BACKSPACE
-&mt LEFT_ALT ESC     &kp Q   &kp W   &kp E          &kp R             &kp T        &kp DOWN_ARROW   &kp Y      &kp U             &kp I         &kp O    &kp P      &mt RIGHT_ALT EQUAL
-&mt LCTRL TAB        &kp A   &kp S   &kp D          &kp F             &kp G        &kp LEFT_ARROW   &kp H      &kp J             &kp K         &kp L    &kp MINUS  &mt RCTRL SEMI
-&mt LSHIFT LS(CAPS)  &kp Z   &kp X   &kp C          &kp V             &kp B        &kp RIGHT_ARROW  &kp N      &kp M             &kp COMMA     &kp DOT  &kp FSLH   &mt RSHIFT RET
-&kp C_MUTE           &mo 5   &none   &bspc_ctr_lay  &mt LSHIFT SPACE  &lt 1 RET    &kp RET          &lt 2 RET  &mt RSHIFT SPACE  &del_ctr_lay  &none    &mo 5
-            >;
-
-            sensor-bindings = <&rsr_vol>, <&rsr_trans>;
-        };
-
-        NUM_US {
-            display-name = "num_us";
-            bindings = <
-&trans   &trans     &trans     &trans               &trans              &trans       &mmv MOVE_UP     &trans                 &trans           &trans             &trans    &trans             &trans
-&kp DOT  &kp N6     &kp N7     &kp N8               &kp N9              &kp N0       &mmv MOVE_DOWN   &kp CARET              &kp AMPERSAND    &kp ASTRK          &kp SQT   &kp DOUBLE_QUOTES  &kp PIPE
-&trans   &kp N1     &kp N2     &tap_shiftmclk 0 N3  &tap_mkp MB3 N4     &kp N5       &mmv MOVE_LEFT   &kp N6                 &kp N7           &kp N8             &kp N9    &kp N0             &kp BACKSLASH
-&trans   &kp SLASH  &kp ASTRK  &kp MINUS            &kp PLUS            &kp EQUAL    &mmv MOVE_RIGHT  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp EXCL  &kp QMARK          &trans
-&trans   &trans     &trans     &trans               &mt LEFT_SHIFT DEL  &trans       &mkp MB2         &mkp_lay 2 MB1         &mkp MB3         &trans             &trans    &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp LC(SEMI) LC(MINUS)>, <&rsr_trans>;
-        };
-
-        ARROW_US {
-            display-name = "arrow_us";
-            bindings = <
-&trans     &kp LS(EXCL)     &kp LS(AT)   &kp LS(POUND)  &kp LS(DLLR)  &kp LS(PRCNT)    &kp C_VOL_UP            &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)   &trans
-&kp QMARK  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH       &kp DOLLAR    &kp PERCENT      &kp C_VOL_DN            &kp LC(HOME)   &kp HOME      &kp UP        &kp END       &kp LC(END)    &kp PG_UP
-&trans     &kp N1           &kp N2       &kp N3         &kp N4        &kp N5           &kp LG(LS(LEFT_ARROW))  &kp LC(LEFT)   &kp LEFT      &kp DOWN      &kp RIGHT     &kp LC(RIGHT)  &kp PG_DN
-&trans     &kp TILDE        &kp GRAVE    &kp LBKT       &kp LBRC      &kp LPAR         &kp LS(LG(RIGHT))       &kp BACKSPACE  &kp SPACE     &trans        &trans        &trans         &trans
-&trans     &trans           &trans       &trans         &trans        &trans           &kp K_MUTE              &trans         &trans        &trans        &trans        &trans
-            >;
-
-            sensor-bindings = <&rsr_vol>, <&rsr_trans>;
         };
     };
 
