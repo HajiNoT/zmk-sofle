@@ -63,8 +63,8 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: symbol}
   - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-shift$$'}
   - '&int5_ctr_lay'
-  - {t: '$$mdi:keyboard-tab$$', h: base}
-  - base
+  - {t: '$$mdi:keyboard-tab$$', h: r_media}
+  - r_media
   num:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -390,7 +390,7 @@ layers:
   - Ctl+$$mdi:apple-keyboard-option$$
   - Gui+$$mdi:apple-keyboard-option$$
   - {t: '$$mdi:transfer$$', type: trans}
-  media:
+  r_media:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -453,8 +453,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - Sft+$$mdi:apple-keyboard-option$$
   - Ctl+$$mdi:apple-keyboard-option$$
-  - Gui+$$mdi:apple-keyboard-option$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: 'Gui+$$mdi:apple-keyboard-option$$', type: held}
+  - {type: held alternate}
 combos:
 - p: [26, 39]
   k: Alt+Ctl+$$mdi:keyboard-tab$$
@@ -472,3 +472,7 @@ combos:
   k: Alt+$$mdi:apple-keyboard-control$$
 - p: [42, 44]
   k: Gui+H
+- p: [29, 30]
+  k: '&mkp MB3'
+- p: [30, 31]
+  k: '&SHIFT_MCLK'
