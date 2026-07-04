@@ -249,11 +249,11 @@
 
         SYMBOL {
             bindings = <
-&trans              &trans        &trans            &trans        &trans              &trans           &kp C_VOL_UP            &trans        &trans    &trans     &trans     &trans         &trans
-&trans              &kp EQUAL     &kp LS(N6)        &kp LS(APOS)  &kp LS(N7)          &kp LS(N2)       &kp C_VOL_DN            &kp LC(HOME)  &kp HOME  &kp UP     &kp END    &kp LC(END)    &kp PG_UP
-&trans              &kp EXCL      &kp LEFT_BRACKET  &kp HASH      &kp DOLLAR          &kp PERCENT      &kp LG(LS(LEFT_ARROW))  &kp LC(LEFT)  &kp LEFT  &kp DOWN   &kp RIGHT  &kp LC(RIGHT)  &kp PG_DN
-&trans              &kp QUESTION  &kp INT3          &kp LS(INT3)  &kp LS(LEFT_BRACE)  &kp LS(EQUAL)    &kp LS(LG(RIGHT))       &trans        &trans    &trans     &trans     &trans         &trans
-&kp LC(LEFT_SHIFT)  &trans        &trans            &trans        &trans              &trans           &kp K_MUTE              &trans        &kp BSPC  &kp SPACE  &trans     &trans
+&trans              &trans        &trans            &trans        &trans              &trans           &kp C_VOL_UP            &trans        &trans    &trans     &trans       &trans         &trans
+&trans              &kp EQUAL     &kp LS(N6)        &kp LS(APOS)  &kp LS(N7)          &kp LS(N2)       &kp C_VOL_DN            &kp LC(HOME)  &kp HOME  &kp UP     &kp END      &kp LC(END)    &trans
+&trans              &kp EXCL      &kp LEFT_BRACKET  &kp HASH      &kp DOLLAR          &kp PERCENT      &kp LG(LS(LEFT_ARROW))  &kp LC(LEFT)  &kp LEFT  &kp DOWN   &kp RIGHT    &kp LC(RIGHT)  &trans
+&trans              &kp QUESTION  &kp INT3          &kp LS(INT3)  &kp LS(LEFT_BRACE)  &kp LS(EQUAL)    &kp LS(LG(RIGHT))       &trans        &trans    &trans     &kp PAGE_UP  &kp PAGE_DOWN  &trans
+&kp LC(LEFT_SHIFT)  &trans        &trans            &trans        &trans              &trans           &kp K_MUTE              &trans        &kp BSPC  &kp SPACE  &trans       &trans
             >;
 
             display-name = "symbol";
