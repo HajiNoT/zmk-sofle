@@ -87,7 +87,7 @@ layers:
   - {t: '0', s: )}
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - {t: ']', s: '}'}
-  - {t: Sft+\, s: Sft+|}
+  - {t: \, s: '|'}
   - {t: Sft+8, s: Sft+*}
   - {t: Sft+9, s: Sft+(}
   - '!'
@@ -172,10 +172,10 @@ layers:
   - PG DN
   - {t: '$$mdi:transfer$$', type: trans}
   - '?'
-  - Sft+{
-  - {t: Sft+=, s: Sft++}
   - INT3
   - Sft+INT3
+  - Sft+{
+  - {t: Sft+=, s: Sft++}
   - Sft+Gui+$$mdi:arrow-right-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
