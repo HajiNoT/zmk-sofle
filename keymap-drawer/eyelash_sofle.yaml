@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: eyelash_sofle}
 layers:
-  QWERTY:
+  base:
   - {t: '`', s: '~'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -63,8 +63,8 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: symbol}
   - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-shift$$'}
   - '&int5_ctr_lay'
-  - {t: '$$mdi:keyboard-tab$$', h: QWERTY}
-  - QWERTY
+  - {t: '$$mdi:keyboard-tab$$', h: base}
+  - base
   num:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -465,7 +465,7 @@ combos:
 - p: [59, 34]
   k: {t: symbol, h: toggle}
 - p: [12, 63]
-  k: {t: QWERTY, h: toggle}
+  k: {t: base, h: toggle}
 - p: [42, 43]
   k: Alt+LEFT WIN
 - p: [43, 44]
