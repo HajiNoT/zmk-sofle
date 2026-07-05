@@ -126,11 +126,6 @@
     combos {
         compatible = "zmk,combos";
 
-        alt_ctr_tab {
-            bindings = <&kp LA(LC(TAB))>;
-            key-positions = <26 39>;
-        };
-
         caps {
             bindings = <&caps_word>;
             key-positions = <61 55>;
@@ -146,7 +141,7 @@
             key-positions = <59 34>;
         };
 
-        tog_ar2 {
+        tog_med {
             bindings = <&tog 0>;
             key-positions = <12 63>;
         };
@@ -174,6 +169,11 @@
         shift_mclk {
             bindings = <&SHIFT_MCLK>;
             key-positions = <30 31>;
+        };
+
+        tog_nav {
+            bindings = <&tog 5>;
+            key-positions = <0 53>;
         };
     };
 
