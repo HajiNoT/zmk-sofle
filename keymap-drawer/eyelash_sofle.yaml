@@ -180,8 +180,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - PgUp
   - PgDn
+  - PgUp
   - {t: '$$mdi:transfer$$', type: trans}
   - Ctl+$$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:transfer$$', type: trans}
@@ -340,7 +340,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - PgUp
+  - {t: '$$mdi:transfer$$', type: trans}
   - HOME
   - $$mdi:arrow-up-bold$$
   - END
@@ -357,7 +357,7 @@ layers:
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - PgUp
   - Gui+Ctl+$$mdi:arrow-left-bold$$
   - RGB COLOR HSB(239,100,50)
   - RGB EFR
