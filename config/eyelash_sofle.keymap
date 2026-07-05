@@ -287,21 +287,21 @@
         L_NAV {
             label = "l_nav";
             bindings = <
-&trans           &trans         &trans            &trans            &trans            &trans         &kp LG(LC(D))      &trans  &trans             &trans             &trans             &trans  &trans
-&kp LS(LC(ESC))  &kp LS(LG(S))  &kp LG(H)         &trans            &trans            &sys_reset     &kp LG(LC(F4))     &trans  &trans             &trans             &trans             &trans  &trans
-&kp HOME         &kp UP         &kp END           &trans            &trans            &bootloader    &kp LG(LC(LEFT))   &trans  &trans             &trans             &trans             &trans  &trans
-&kp LEFT         &kp DOWN       &kp RIGHT         &trans            &trans            &soft_off      &kp LG(LC(RIGHT))  &trans  &trans             &trans             &trans             &trans  &trans
-&trans           &trans         &kp LG(LEFT_ALT)  &kp LC(LEFT_ALT)  &kp LS(LEFT_ALT)  &trans         &kp LG(TAB)        &trans  &kp RS(RIGHT_ALT)  &kp RC(RIGHT_ALT)  &kp RG(RIGHT_ALT)  &trans
+&trans           &trans         &trans            &trans            &trans            &trans         &kp LG(LC(D))      &trans                             &trans             &trans             &trans             &trans           &trans
+&kp LS(LC(ESC))  &kp LS(LG(S))  &kp LG(H)         &trans            &trans            &sys_reset     &kp LG(LC(F4))     &trans                             &trans             &trans             &trans             &trans           &trans
+&kp HOME         &kp UP         &kp END           &trans            &trans            &bootloader    &kp LG(LC(LEFT))   &rgb_ug RGB_TOG                    &rgb_ug RGB_EFF    &rgb_ug RGB_BRI    &rgb_ug RGB_SPI    &rgb_ug RGB_HUI  &rgb_ug RGB_SAI
+&kp LEFT         &kp DOWN       &kp RIGHT         &trans            &trans            &soft_off      &kp LG(LC(RIGHT))  &rgb_ug RGB_COLOR_HSB(239,100,50)  &rgb_ug RGB_EFR    &rgb_ug RGB_BRD    &rgb_ug RGB_BRD    &rgb_ug RGB_HUD  &rgb_ug RGB_SAD
+&trans           &trans         &kp LG(LEFT_ALT)  &kp LC(LEFT_ALT)  &kp LS(LEFT_ALT)  &trans         &kp LG(TAB)        &trans                             &kp RS(RIGHT_ALT)  &kp RC(RIGHT_ALT)  &kp RG(RIGHT_ALT)  &trans
             >;
         };
 
         R_MEDIA {
             bindings = <
-&trans           &trans           &trans            &trans            &trans            &trans                               &kp LG(LC(D))      &trans       &trans             &trans             &trans             &trans       &trans
-&out OUT_USB     &out OUT_BLE     &bt BT_CLR_ALL    &bt BT_CLR        &bt BT_PRV        &bt BT_NXT                           &kp LG(LC(F4))     &sys_reset   &trans             &kp C_BRI_UP       &kp C_PREV         &kp C_PAUSE  &kp C_NEXT
-&rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_SPI   &rgb_ug RGB_BRI   &rgb_ug RGB_EFF   &rgb_ug RGB_TOG                      &kp LG(LC(LEFT))   &bootloader  &trans             &kp C_BRI_DN       &kp HOME           &kp UP       &kp END
-&rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_SPD   &rgb_ug RGB_BRD   &rgb_ug RGB_EFR   &rgb_ug RGB_COLOR_HSB(239,100,50)    &kp LG(LC(RIGHT))  &soft_off    &trans             &trans             &kp LEFT           &kp DOWN     &kp RIGHT
-&trans           &trans           &kp LG(LEFT_ALT)  &kp LC(LEFT_ALT)  &kp LS(LEFT_ALT)  &trans                               &kp LG(TAB)        &trans       &kp RS(RIGHT_ALT)  &kp RC(RIGHT_ALT)  &kp RG(RIGHT_ALT)  &trans
+&trans  &trans        &trans            &trans            &trans            &trans          &kp LG(LC(D))      &trans       &trans             &trans             &trans             &trans       &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3      &bt BT_SEL 4    &kp LG(LC(F4))     &sys_reset   &trans             &kp C_BRI_UP       &kp C_PREV         &kp C_PAUSE  &kp C_NEXT
+&trans  &out OUT_USB  &out OUT_BLE      &trans            &bt BT_CLR_ALL    &bt BT_CLR      &kp LG(LC(LEFT))   &bootloader  &trans             &kp C_BRI_DN       &kp HOME           &kp UP       &kp END
+&trans  &trans        &trans            &trans            &trans            &trans          &kp LG(LC(RIGHT))  &soft_off    &trans             &trans             &kp LEFT           &kp DOWN     &kp RIGHT
+&trans  &trans        &kp LG(LEFT_ALT)  &kp LC(LEFT_ALT)  &kp LS(LEFT_ALT)  &trans          &kp LG(TAB)        &trans       &kp RS(RIGHT_ALT)  &kp RC(RIGHT_ALT)  &kp RG(RIGHT_ALT)  &trans
             >;
 
             label = "r_media";
