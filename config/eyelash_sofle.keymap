@@ -224,11 +224,11 @@
         BASE {
             display-name = "base";
             bindings = <
-&kp GRAVE            &kp N1  &kp N2     &kp N3         &kp N4           &kp N5         &kp UP_ARROW     &kp N6     &kp N7          &kp N8         &kp N9     &kp N0                 &kp BACKSPACE
-&mt LEFT_ALT ESC     &kp Q   &kp W      &kp E          &kp R            &kp T          &kp DOWN_ARROW   &kp Y      &kp U           &kp I          &kp O      &kp P                  &jis_eq_plus_hold RIGHT_ALT 0
-&mt LEFT_WIN TAB     &kp A   &kp S      &kp D          &kp F            &kp G          &kp LEFT_ARROW   &kp H      &kp J           &kp K          &kp L      &jis_minus_underscore  &jis_semi_colon_hold RIGHT_WIN 0
-&mt LSHIFT LS(CAPS)  &kp Z   &kp X      &kp C          &kp V            &kp B          &kp RIGHT_ARROW  &kp N      &kp M           &kp COMMA      &kp DOT    &kp FSLH               &mt RSHIFT RET
-&kp C_MUTE           &mo 5   &lt 5 TAB  &int4_ctr_lay  &mt LSHIFT BSPC  &lt 1 SPACE    &kp RET          &lt 2 RET  &mt RSHIFT DEL  &int5_ctr_lay  &lt 6 TAB  &mo 6
+&kp GRAVE              &kp N1  &kp N2     &kp N3         &kp N4           &kp N5         &kp UP_ARROW     &kp N6     &kp N7          &kp N8         &kp N9     &kp N0                 &kp BACKSPACE
+&mt LEFT_ALT ESC       &kp Q   &kp W      &kp E          &kp R            &kp T          &kp DOWN_ARROW   &kp Y      &kp U           &kp I          &kp O      &kp P                  &jis_eq_plus_hold RIGHT_ALT 0
+&mt LEFT_SHIFT TAB     &kp A   &kp S      &kp D          &kp F            &kp G          &kp LEFT_ARROW   &kp H      &kp J           &kp K          &kp L      &jis_minus_underscore  &jis_semi_colon_hold RIGHT_SHIFT 0
+&mt LEFT_WIN LS(CAPS)  &kp Z   &kp X      &kp C          &kp V            &kp B          &kp RIGHT_ARROW  &kp N      &kp M           &kp COMMA      &kp DOT    &kp FSLH               &mt RIGHT_WIN RET
+&kp C_MUTE             &mo 5   &lt 5 TAB  &int4_ctr_lay  &mt LSHIFT BSPC  &lt 1 SPACE    &kp RET          &lt 2 RET  &mt RSHIFT DEL  &int5_ctr_lay  &lt 6 TAB  &mo 6
             >;
 
             sensor-bindings = <&rsr_vol>, <&rsr_trans>;
@@ -275,7 +275,7 @@
         CTR+ {
             bindings = <
 &trans       &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans     &trans   &trans     &trans
-&kp LS(T)    &kp P   &kp W   &kp E   &kp R   &kp T     &trans  &kp Q   &kp U   &kp I      &kp O    &kp B      &trans
+&kp LS(T)    &kp B   &kp W   &kp E   &kp R   &kp T     &trans  &kp Q   &kp U   &kp I      &kp O    &kp P      &trans
 &trans       &kp A   &kp S   &kp D   &kp F   &kp G     &trans  &kp H   &kp J   &kp K      &kp L    &kp MINUS  &kp SEMI
 &kp LS(TAB)  &kp Z   &kp Y   &kp C   &kp V   &kp X     &trans  &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH   &trans
 &trans       &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans     &trans   &trans
@@ -284,8 +284,8 @@
             label = "ctr+";
         };
 
-        L_MEDIA {
-            label = "l_media";
+        L_NAV {
+            label = "l_nav";
             bindings = <
 &trans           &trans         &trans            &trans            &trans            &trans         &kp LG(LC(D))      &trans  &trans             &trans             &trans             &trans  &trans
 &kp LS(LC(ESC))  &kp LS(LG(S))  &kp LG(H)         &trans            &trans            &sys_reset     &kp LG(LC(F4))     &trans  &trans             &trans             &trans             &trans  &trans
