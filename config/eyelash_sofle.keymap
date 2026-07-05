@@ -216,6 +216,13 @@
 
             label = "INT5_CTR_LAY";
         };
+
+        Hello: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(H) &kp E &kp L &kp L &kp O &kp EXCL>;
+            label = "NEW_MACRO";
+        };
     };
 
     keymap {
@@ -262,11 +269,11 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LG(UP)     &trans   &trans   &trans  &trans      &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LG(DOWN)   &kp F1   &kp F2   &kp F3  &kp F4      &kp F5   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LG(LEFT)   &kp F6   &kp F7   &kp F8  &kp F9      &kp F10  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LG(RIGHT)  &kp F11  &kp F12  &trans  &kp LA(F4)  &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LG(D)      &trans   &trans   &trans  &trans      &trans
+&trans  &trans           &trans         &trans     &trans  &trans    &kp LG(UP)     &trans   &trans   &trans  &trans      &trans   &trans
+&trans  &trans           &trans         &trans     &trans  &trans    &kp LG(DOWN)   &kp F1   &kp F2   &kp F3  &kp F4      &kp F5   &trans
+&trans  &kp LS(LC(ESC))  &kp LS(LG(S))  &kp LG(H)  &Hello  &trans    &kp LG(LEFT)   &kp F6   &kp F7   &kp F8  &kp F9      &kp F10  &trans
+&trans  &trans           &trans         &trans     &trans  &trans    &kp LG(RIGHT)  &kp F11  &kp F12  &trans  &kp LA(F4)  &trans   &trans
+&trans  &trans           &trans         &trans     &trans  &trans    &kp LG(D)      &trans   &trans   &trans  &trans      &trans
             >;
 
             label = "function";
