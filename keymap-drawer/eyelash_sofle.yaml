@@ -366,10 +366,10 @@ layers:
   - RGB HUI
   - RGB SAI
   - {t: '$$mdi:transfer$$', type: trans}
-  - Sft+Ctl+$$mdi:keyboard-esc$$
-  - Sft+Gui+S
   - Alt+$$mdi:arrow-left-bold$$
   - Alt+$$mdi:arrow-right-bold$$
+  - Gui+$$mdi:arrow-left-bold$$
+  - Gui+$$mdi:arrow-right-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - Gui+Ctl+$$mdi:arrow-right-bold$$
   - RGB COLOR HSB(239,100,50)
