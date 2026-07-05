@@ -456,8 +456,6 @@ layers:
   - {t: 'Gui+$$mdi:apple-keyboard-option$$', type: held}
   - {type: held alternate}
 combos:
-- p: [26, 39]
-  k: Alt+Ctl+$$mdi:keyboard-tab$$
 - p: [61, 55]
   k: $$mdi:alpha-w-box$$
 - p: [57, 30]
@@ -476,3 +474,5 @@ combos:
   k: '&mkp MB3'
 - p: [30, 31]
   k: '&SHIFT_MCLK'
+- p: [0, 53]
+  k: {t: l_nav, h: toggle}
