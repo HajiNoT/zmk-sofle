@@ -547,3 +547,5 @@ combos:
   k: {t: nav_ten, h: toggle}
 - p: [0, 55]
   k: {t: nav_ten, h: toggle}
+- p: [57, 44]
+  k: $$mdi:keyboard-space$$
