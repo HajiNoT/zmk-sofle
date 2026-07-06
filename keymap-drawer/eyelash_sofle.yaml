@@ -55,15 +55,15 @@ layers:
   - {t: '$$mdi:keyboard-return$$', h: RIGHT WIN}
   - $$mdi:volume-off$$
   - l_nav
-  - {t: INTERNATIONAL 4, h: l_nav}
+  - {t: LANG2, h: l_nav}
   - '&lag2_ctr_ret'
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:keyboard-space$$', h: num}
+  - {t: '$$mdi:keyboard-return$$', h: num}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:keyboard-return$$', h: symbol}
+  - {t: '$$mdi:keyboard-space$$', h: symbol}
   - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-shift$$'}
   - '&lag1_ctr'
-  - {t: INT5, h: r_media}
+  - {t: LANG1, h: r_media}
   - r_media
   num:
   - {t: '$$mdi:transfer$$', type: trans}
