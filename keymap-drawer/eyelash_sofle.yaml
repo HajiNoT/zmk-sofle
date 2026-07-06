@@ -121,7 +121,7 @@ layers:
   - {t: Ctl+0, s: Ctl+)}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:keyboard-space$$
   - $$mdi:backspace-reverse-outline$$
   - {type: held}
   - '&mkp MB2'
@@ -177,8 +177,8 @@ layers:
   - Sft+{
   - {t: Sft+=, s: Sft++}
   - Sft+Gui+$$mdi:arrow-right-bold$$
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:transfer$$', type: trans}
   - PgDn
   - PgUp
@@ -191,8 +191,8 @@ layers:
   - {type: held alternate}
   - MUTE
   - {type: held}
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   function:
@@ -494,10 +494,10 @@ layers:
   - KP 5
   - KP 6
   - {t: Sft+', s: Sft+"}
+  - KP NLCK
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - Alt+PgDn
-  - Alt+PgUp
+  - PgDn
+  - PgUp
   - {t: '$$mdi:transfer$$', type: trans}
   - Gui+$$mdi:arrow-left-bold$$
   - Gui+$$mdi:arrow-right-bold$$
@@ -544,4 +544,6 @@ combos:
 - p: [39, 26]
   k: Gui+$$mdi:keyboard-tab$$
 - p: [61, 12]
+  k: {t: nav_ten, h: toggle}
+- p: [0, 55]
   k: {t: nav_ten, h: toggle}
