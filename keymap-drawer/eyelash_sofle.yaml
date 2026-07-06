@@ -472,13 +472,9 @@ combos:
   k: Gui+H
 - p: [29, 30]
   k: '&mkp MB3'
-- p: [30, 31]
-  k: '&SHIFT_MCLK'
 - p: [0, 53]
   k: {t: l_nav, h: toggle}
 - p: [26, 27]
   k: Alt+Ctl+$$mdi:keyboard-tab$$
 - p: [39, 26]
   k: Gui+$$mdi:keyboard-tab$$
-- p: [44, 57]
-  k: $$mdi:keyboard-space$$
