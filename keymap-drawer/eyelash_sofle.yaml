@@ -476,9 +476,9 @@ combos:
   k: '&SHIFT_MCLK'
 - p: [0, 53]
   k: {t: l_nav, h: toggle}
-- p: [13, 13, 26]
+- p: [26, 27]
   k: Alt+Ctl+$$mdi:keyboard-tab$$
 - p: [39, 26]
   k: Gui+$$mdi:keyboard-tab$$
 - p: [44, 57]
-  k: {t: '$$mdi:keyboard-return$$', type: enter}
+  k: $$mdi:keyboard-space$$
