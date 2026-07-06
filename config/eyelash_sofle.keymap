@@ -178,7 +178,7 @@
 
         alt_ctr_tab {
             bindings = <&kp LA(LC(TAB))>;
-            key-positions = <13 13 26>;
+            key-positions = <26 27>;
         };
 
         win_tab {
@@ -186,8 +186,8 @@
             key-positions = <39 26>;
         };
 
-        ret {
-            bindings = <&kp RET>;
+        spa {
+            bindings = <&kp SPACE>;
             key-positions = <44 57>;
         };
     };
