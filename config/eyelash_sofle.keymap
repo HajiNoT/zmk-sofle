@@ -166,11 +166,6 @@
             key-positions = <29 30>;
         };
 
-        shift_mclk {
-            bindings = <&SHIFT_MCLK>;
-            key-positions = <30 31>;
-        };
-
         tog_nav {
             bindings = <&tog 5>;
             key-positions = <0 53>;
@@ -184,11 +179,6 @@
         win_tab {
             bindings = <&kp LG(TAB)>;
             key-positions = <39 26>;
-        };
-
-        spa {
-            bindings = <&kp SPACE>;
-            key-positions = <44 57>;
         };
     };
 
