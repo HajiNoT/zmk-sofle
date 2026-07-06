@@ -122,31 +122,25 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        ctr_dub_lay: ctr_dub_lay {
+        none_dub_lay: none_dub_lay {
             compatible = "zmk,behavior-tap-dance";
-            label = "CTR_DUB_LAY";
+            label = "NONE_DUB_LAY";
             #binding-cells = <0>;
             bindings = <&kp LCTRL>, <&mo 7>;
-
-            tapping-term-ms = <180>;
         };
 
-        int4_ctr_dub: int4_ctr_dub {
+        int4_lay_dub: int4_lay_dub {
             compatible = "zmk,behavior-tap-dance";
-            label = "INT4_CTR_DUB";
+            label = "INT4_LAY_DUB";
             #binding-cells = <0>;
-            bindings = <&mt LCTRL INT4>, <&none>;
-
-            tapping-term-ms = <180>;
+            bindings = <&lt 4 INT4>, <&none>;
         };
 
-        int5_ctr_dub: int5_ctr_dub {
+        int5_lay_dub: int5_lay_dub {
             compatible = "zmk,behavior-tap-dance";
-            label = "INT5_CTR_DUB";
+            label = "INT5_LAY_DUB";
             #binding-cells = <0>;
-            bindings = <&mt LCTRL INT5>, <&none>;
-
-            tapping-term-ms = <180>;
+            bindings = <&lt 4 INT5>, <&none>;
         };
     };
 
@@ -212,6 +206,11 @@
             bindings = <&tog 7>;
             key-positions = <61 12>;
         };
+
+        navi_ten {
+            bindings = <&tog 7>;
+            key-positions = <0 55>;
+        };
     };
 
     macros {
@@ -240,10 +239,10 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&int4_ctr_dub &ctr_dub_lay>,
+                <&int4_lay_dub &none_dub_lay>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&int4_ctr_dub &ctr_dub_lay>;
+                <&int4_lay_dub &none_dub_lay>;
 
             label = "INT4_CTR_RET";
         };
@@ -253,10 +252,10 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&int5_ctr_dub &ctr_dub_lay>,
+                <&int5_lay_dub &none_dub_lay>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&int5_ctr_dub &ctr_dub_lay>;
+                <&int5_lay_dub &none_dub_lay>;
 
             label = "INT5_CTR";
         };
@@ -284,7 +283,7 @@
 &kp DOT     &kp N6     &kp N7        &kp N8     &kp N9        &kp N0           &mmv MOVE_DOWN   &kp RIGHT_BRACKET      &kp BACKSLASH      &kp LS(N8)  &kp LS(N9)  &kp EXCL   &trans
 &trans      &kp N1     &kp N2        &kp N3     &kp N4        &kp N5           &mmv MOVE_LEFT   &kp N6                 &kp N7             &kp N8      &kp N9      &kp N0     &trans
 &trans      &kp SLASH  &kp LS(APOS)  &kp MINUS  &kp LS(SEMI)  &kp LS(MINUS)    &mmv MOVE_RIGHT  &kp LS(RIGHT_BRACKET)  &kp LS(BACKSLASH)  &kp LT      &kp GT      &kp QMARK  &trans
-&kp LC(N0)  &trans     &trans        &trans     &kp DEL       &trans           &mkp MB2         &mkp_lay 2 MB1         &mkp MB3           &trans      &trans      &trans
+&kp LC(N0)  &trans     &trans        &kp SPACE  &kp DEL       &trans           &mkp MB2         &mkp_lay 2 MB1         &mkp MB3           &trans      &trans      &trans
             >;
 
             display-name = "num";
@@ -293,11 +292,11 @@
 
         SYMBOL {
             bindings = <
-&trans              &trans        &trans            &trans        &trans              &trans           &kp C_VOL_UP            &trans        &trans    &trans     &trans         &trans         &trans
-&trans              &kp EQUAL     &kp LS(N6)        &kp LS(APOS)  &kp LS(N7)          &kp LS(N2)       &kp C_VOL_DN            &kp LC(HOME)  &kp HOME  &kp UP     &kp END        &kp LC(END)    &trans
-&trans              &kp EXCL      &kp LEFT_BRACKET  &kp HASH      &kp DOLLAR          &kp PERCENT      &kp LG(LS(LEFT_ARROW))  &kp LC(LEFT)  &kp LEFT  &kp DOWN   &kp RIGHT      &kp LC(RIGHT)  &trans
-&trans              &kp QUESTION  &kp INT3          &kp LS(INT3)  &kp LS(LEFT_BRACE)  &kp LS(EQUAL)    &kp LS(LG(RIGHT))       &trans        &trans    &trans     &kp PAGE_DOWN  &kp PAGE_UP    &trans
-&kp LC(LEFT_SHIFT)  &trans        &trans            &trans        &trans              &trans           &kp K_MUTE              &trans        &kp BSPC  &kp SPACE  &trans         &trans
+&trans              &trans        &trans            &trans        &trans              &trans           &kp C_VOL_UP            &trans        &trans    &trans    &trans         &trans         &trans
+&trans              &kp EQUAL     &kp LS(N6)        &kp LS(APOS)  &kp LS(N7)          &kp LS(N2)       &kp C_VOL_DN            &kp LC(HOME)  &kp HOME  &kp UP    &kp END        &kp LC(END)    &trans
+&trans              &kp EXCL      &kp LEFT_BRACKET  &kp HASH      &kp DOLLAR          &kp PERCENT      &kp LG(LS(LEFT_ARROW))  &kp LC(LEFT)  &kp LEFT  &kp DOWN  &kp RIGHT      &kp LC(RIGHT)  &trans
+&trans              &kp QUESTION  &kp INT3          &kp LS(INT3)  &kp LS(LEFT_BRACE)  &kp LS(EQUAL)    &kp LS(LG(RIGHT))       &kp BSPC      &kp RET   &trans    &kp PAGE_DOWN  &kp PAGE_UP    &trans
+&kp LC(LEFT_SHIFT)  &trans        &trans            &trans        &trans              &trans           &kp K_MUTE              &trans        &trans    &trans    &trans         &trans
             >;
 
             display-name = "symbol";
@@ -353,11 +352,11 @@
 
         NAV_TEN {
             bindings = <
-&trans  &trans             &trans           &trans    &trans              &trans                 &trans  &trans     &trans           &trans           &trans           &trans         &trans
-&trans  &kp LC(HOME)       &kp HOME         &kp UP    &kp END             &kp LC(END)            &trans  &kp MINUS  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp LS(SEMI)   &trans
-&trans  &kp LC(LEFT)       &kp LEFT         &kp DOWN  &kp RIGHT           &kp LC(RIGHT)          &trans  &kp SLASH  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LS(APOS)   &trans
-&trans  &kp LA(PAGE_DOWN)  &kp LA(PAGE_UP)  &trans    &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)    &trans  &kp DOT    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LS(MINUS)  &trans
-&trans  &trans             &trans           &trans    &trans              &trans                 &trans  &trans     &trans           &trans           &trans           &trans
+&trans  &trans         &trans       &trans    &trans              &trans                 &trans  &trans     &trans           &trans           &trans           &trans         &trans
+&trans  &kp LC(HOME)   &kp HOME     &kp UP    &kp END             &kp LC(END)            &trans  &kp MINUS  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp LS(SEMI)   &trans
+&trans  &kp LC(LEFT)   &kp LEFT     &kp DOWN  &kp RIGHT           &kp LC(RIGHT)          &trans  &kp SLASH  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LS(APOS)   &kp KP_NLCK
+&trans  &kp PAGE_DOWN  &kp PAGE_UP  &trans    &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)    &trans  &kp DOT    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LS(MINUS)  &trans
+&trans  &trans         &trans       &trans    &trans              &trans                 &trans  &trans     &trans           &trans           &trans           &trans
             >;
 
             label = "nav_ten";
