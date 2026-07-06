@@ -56,13 +56,13 @@ layers:
   - $$mdi:volume-off$$
   - l_nav
   - {t: INTERNATIONAL 4, h: l_nav}
-  - '&lang2_ctr_lay'
-  - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - '&BSPC_ctr_lay'
+  - '&lan2_shif_ret'
   - {t: '$$mdi:keyboard-space$$', h: num}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', h: symbol}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - '&lang1_ctr_lay'
+  - '&lan1_shif_spa'
+  - '&DEL_ctr_lay'
   - {t: INT5, h: r_media}
   - r_media
   num:
