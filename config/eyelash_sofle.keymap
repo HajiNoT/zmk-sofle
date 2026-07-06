@@ -126,21 +126,21 @@
             compatible = "zmk,behavior-tap-dance";
             label = "CTR_DUB_LAY";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL>, <&mo 7>;
+            bindings = <&mo 4>, <&none>;
         };
 
         int4_lay_dub: int4_lay_dub {
             compatible = "zmk,behavior-tap-dance";
             label = "INT4_LAY_DUB";
             #binding-cells = <0>;
-            bindings = <&lt 4 INT4>, <&none>;
+            bindings = <&mt LCTRL INT4>, <&mo 7>;
         };
 
         int5_lay_dub: int5_lay_dub {
             compatible = "zmk,behavior-tap-dance";
             label = "INT5_LAY_DUB";
             #binding-cells = <0>;
-            bindings = <&lt 4 INT5>, <&none>;
+            bindings = <&mt RCTRL INT5>, <&mo 7>;
         };
     };
 
@@ -211,6 +211,11 @@
             bindings = <&tog 7>;
             key-positions = <0 55>;
         };
+
+        spa {
+            bindings = <&kp SPACE>;
+            key-positions = <57 44>;
+        };
     };
 
     macros {
@@ -237,7 +242,12 @@
         int4_ctr_mcro: int4_ctr_mcro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&int4_lay_dub &ctr_dub_lay>;
+            bindings =
+                <&macro_tap>,
+                <&int4_lay_dub &ctr_dub_lay>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&int4_lay_dub &ctr_dub_lay>;
 
             label = "int4_ctr_mcro";
         };
@@ -245,7 +255,12 @@
         int5_ctr_mcro: int5_ctr_mcro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&int5_lay_dub &ctr_dub_lay>;
+            bindings =
+                <&macro_tap>,
+                <&int5_lay_dub &ctr_dub_lay>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&int5_lay_dub &ctr_dub_lay>;
 
             label = "int5_ctr_mcro";
         };
