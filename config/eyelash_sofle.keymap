@@ -243,7 +243,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_tap>,
+                <&macro_press>,
                 <&int4_lay_dub>,
                 <&macro_press>,
                 <&ctr_dub_lay>,
@@ -258,7 +258,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_tap>,
+                <&macro_press>,
                 <&ctr_dub_lay>,
                 <&macro_press>,
                 <&int5_lay_dub>,
