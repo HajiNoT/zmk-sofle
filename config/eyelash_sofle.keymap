@@ -180,6 +180,11 @@
             bindings = <&kp LG(TAB)>;
             key-positions = <39 26>;
         };
+
+        NAV_TEN {
+            bindings = <&tog 7>;
+            key-positions = <61 12>;
+        };
     };
 
     macros {
@@ -317,6 +322,18 @@
             >;
 
             label = "r_media";
+        };
+
+        NAV_TEN {
+            bindings = <
+&trans  &trans             &trans           &trans    &trans              &trans                 &trans  &trans     &trans           &trans           &trans           &trans         &trans
+&trans  &kp LC(HOME)       &kp HOME         &kp UP    &kp END             &kp LC(END)            &trans  &kp MINUS  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp LS(SEMI)   &trans
+&trans  &kp LC(LEFT)       &kp LEFT         &kp DOWN  &kp RIGHT           &kp LC(RIGHT)          &trans  &kp SLASH  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp LS(APOS)   &trans
+&trans  &kp LA(PAGE_DOWN)  &kp LA(PAGE_UP)  &trans    &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)    &trans  &kp DOT    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp LS(MINUS)  &trans
+&trans  &trans             &trans           &trans    &trans              &trans                 &trans  &trans     &trans           &trans           &trans           &trans
+            >;
+
+            label = "nav_ten";
         };
     };
 
