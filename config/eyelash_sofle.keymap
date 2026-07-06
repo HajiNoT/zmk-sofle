@@ -122,9 +122,9 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        none_dub_lay: none_dub_lay {
+        ctr_dub_lay: ctr_dub_lay {
             compatible = "zmk,behavior-tap-dance";
-            label = "NONE_DUB_LAY";
+            label = "CTR_DUB_LAY";
             #binding-cells = <0>;
             bindings = <&kp LCTRL>, <&mo 7>;
         };
@@ -234,30 +234,20 @@
             label = "Hello";
         };
 
-        int4_ctr_mcro: int4_ctr_ret {
+        int4_ctr_mcro: int4_ctr_mcro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&int4_lay_dub &none_dub_lay>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&int4_lay_dub &none_dub_lay>;
+            bindings = <&macro_tap>, <&int4_lay_dub &ctr_dub_lay>;
 
-            label = "INT4_CTR_RET";
+            label = "int4_ctr_mcro";
         };
 
-        int5_ctr_mcro: int5_ctr {
+        int5_ctr_mcro: int5_ctr_mcro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&int5_lay_dub &none_dub_lay>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&int5_lay_dub &none_dub_lay>;
+            bindings = <&macro_tap>, <&int5_lay_dub &ctr_dub_lay>;
 
-            label = "INT5_CTR";
+            label = "int5_ctr_mcro";
         };
     };
 
