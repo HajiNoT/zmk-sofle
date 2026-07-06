@@ -274,11 +274,11 @@
         BASE {
             display-name = "base";
             bindings = <
-&kp GRAVE              &kp N1  &kp N2       &kp N3          &kp N4                    &kp N5       &kp UP_ARROW     &kp N6       &kp N7               &kp N8          &kp N9       &kp N0                 &kp BACKSPACE
-&mt LEFT_ALT ESC       &kp Q   &kp W        &kp E           &kp R                     &kp T        &kp DOWN_ARROW   &kp Y        &kp U                &kp I           &kp O        &kp P                  &jis_eq_plus_hold RIGHT_ALT 0
-&mt LEFT_SHIFT TAB     &kp A   &kp S        &kp D           &kp F                     &kp G        &kp LEFT_ARROW   &kp H        &kp J                &kp K           &kp L        &jis_minus_underscore  &jis_semi_colon_hold RIGHT_SHIFT 0
-&mt LEFT_WIN LS(CAPS)  &kp Z   &kp X        &kp C           &kp V                     &kp B        &kp RIGHT_ARROW  &kp N        &kp M                &kp COMMA       &kp DOT      &kp FSLH               &mt RIGHT_WIN RET
-&kp C_MUTE             &mo 5   &lt 5 LANG2  &int4_ctr_mcro  &mt LEFT_SHIFT BACKSPACE  &lt 1 RET    &kp RET          &lt 2 SPACE  &mt RIGHT_SHIFT DEL  &int5_ctr_mcro  &lt 6 LANG1  &mo 6
+&kp GRAVE                &kp N1  &kp N2       &kp N3          &kp N4                    &kp N5       &kp UP_ARROW     &kp N6       &kp N7               &kp N8          &kp N9       &kp N0                 &kp BACKSPACE
+&mt LEFT_ALT ESC         &kp Q   &kp W        &kp E           &kp R                     &kp T        &kp DOWN_ARROW   &kp Y        &kp U                &kp I           &kp O        &kp P                  &jis_eq_plus_hold RIGHT_ALT 0
+&mt LEFT_WIN TAB         &kp A   &kp S        &kp D           &kp F                     &kp G        &kp LEFT_ARROW   &kp H        &kp J                &kp K           &kp L        &jis_minus_underscore  &jis_semi_colon_hold RIGHT_WIN 0
+&mt LEFT_SHIFT LS(CAPS)  &kp Z   &kp X        &kp C           &kp V                     &kp B        &kp RIGHT_ARROW  &kp N        &kp M                &kp COMMA       &kp DOT      &kp FSLH               &mt RIGHT_SHIFT RET
+&kp C_MUTE               &mo 5   &lt 5 LANG2  &int4_ctr_mcro  &mt LEFT_SHIFT BACKSPACE  &lt 1 RET    &kp RET          &lt 2 SPACE  &mt RIGHT_SHIFT DEL  &int5_ctr_mcro  &lt 6 LANG1  &mo 6
             >;
 
             sensor-bindings = <&rsr_vol>, <&rsr_trans>;
