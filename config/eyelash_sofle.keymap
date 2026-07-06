@@ -126,7 +126,14 @@
             compatible = "zmk,behavior-tap-dance";
             label = "DUBT_RET";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL>, <&kp RET>;
+            bindings = <&kp RCTRL>, <&kp RET>;
+        };
+
+        dobt_spa: dobt_spa {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DOBT_SPA";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL>, <&kp SPACE>;
         };
     };
 
@@ -251,10 +258,10 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&lt 4 INT4 &kp LCTRL>,
+                <&lt 4 INT4 &dobt_spa>,
                 <&macro_pause_for_release>,
                 <&macro_release>,
-                <&lt 4 INT4 &kp LCTRL>;
+                <&lt 4 INT4 &dobt_spa>;
 
             label = "INT4_CTR_RET";
         };
