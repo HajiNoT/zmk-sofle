@@ -455,6 +455,71 @@ layers:
   - Ctl+$$mdi:apple-keyboard-option$$
   - {t: 'Gui+$$mdi:apple-keyboard-option$$', type: held}
   - {type: held alternate}
+  nav_ten:
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+HOME
+  - HOME
+  - $$mdi:arrow-up-bold$$
+  - END
+  - Ctl+END
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '-', s: _}
+  - KP 7
+  - KP 8
+  - KP 9
+  - {t: Sft+;, s: 'Sft+:'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Ctl+$$mdi:arrow-left-bold$$
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
+  - Ctl+$$mdi:arrow-right-bold$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: /, s: '?'}
+  - KP 4
+  - KP 5
+  - KP 6
+  - {t: Sft+', s: Sft+"}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Alt+PgDn
+  - Alt+PgUp
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Gui+$$mdi:arrow-left-bold$$
+  - Gui+$$mdi:arrow-right-bold$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: ., s: '>'}
+  - KP 1
+  - KP 2
+  - KP 3
+  - {t: Sft+-, s: Sft+_}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [61, 55]
   k: $$mdi:alpha-w-box$$
@@ -478,3 +543,5 @@ combos:
   k: Alt+Ctl+$$mdi:keyboard-tab$$
 - p: [39, 26]
   k: Gui+$$mdi:keyboard-tab$$
+- p: [61, 12]
+  k: {t: nav_ten, h: toggle}
