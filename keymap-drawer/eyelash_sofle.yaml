@@ -528,7 +528,7 @@ combos:
 - p: [59, 34]
   k: {t: symbol, h: toggle}
 - p: [12, 63]
-  k: {t: base, h: toggle}
+  k: {t: r_media, h: toggle}
 - p: [42, 43]
   k: Alt+LEFT WIN
 - p: [43, 44]

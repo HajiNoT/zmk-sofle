@@ -687,8 +687,8 @@ rect.held, rect.combo.held {
 <path d="M840,158 l47,-85" class="combo"/>
 <path d="M840,158 l-47,85" class="combo"/>
 <rect rx="6" ry="6" x="826" y="145" width="28" height="26" class="combo"/>
-<a href="#base">
-<text x="840" y="158" class="combo tap layer-activator">base</text>
+<a href="#r_media">
+<text x="840" y="158" class="combo tap layer-activator"><tspan style="font-size: 86%">r_media</tspan></text>
 </a><text x="840" y="169" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-4">
@@ -1144,8 +1144,8 @@ rect.held, rect.combo.held {
 <path d="M840,158 l47,-85" class="combo"/>
 <path d="M840,158 l-47,85" class="combo"/>
 <rect rx="6" ry="6" x="826" y="145" width="28" height="26" class="combo"/>
-<a href="#base">
-<text x="840" y="158" class="combo tap layer-activator">base</text>
+<a href="#r_media">
+<text x="840" y="158" class="combo tap layer-activator"><tspan style="font-size: 86%">r_media</tspan></text>
 </a><text x="840" y="169" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-4">
@@ -1573,8 +1573,8 @@ rect.held, rect.combo.held {
 <path d="M840,158 l47,-85" class="combo"/>
 <path d="M840,158 l-47,85" class="combo"/>
 <rect rx="6" ry="6" x="826" y="145" width="28" height="26" class="combo"/>
-<a href="#base">
-<text x="840" y="158" class="combo tap layer-activator">base</text>
+<a href="#r_media">
+<text x="840" y="158" class="combo tap layer-activator"><tspan style="font-size: 86%">r_media</tspan></text>
 </a><text x="840" y="169" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-4">
@@ -1992,8 +1992,8 @@ rect.held, rect.combo.held {
 <path d="M840,158 l47,-85" class="combo"/>
 <path d="M840,158 l-47,85" class="combo"/>
 <rect rx="6" ry="6" x="826" y="145" width="28" height="26" class="combo"/>
-<a href="#base">
-<text x="840" y="158" class="combo tap layer-activator">base</text>
+<a href="#r_media">
+<text x="840" y="158" class="combo tap layer-activator"><tspan style="font-size: 86%">r_media</tspan></text>
 </a><text x="840" y="169" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-4">
@@ -2414,8 +2414,8 @@ rect.held, rect.combo.held {
 <path d="M840,158 l47,-85" class="combo"/>
 <path d="M840,158 l-47,85" class="combo"/>
 <rect rx="6" ry="6" x="826" y="145" width="28" height="26" class="combo"/>
-<a href="#base">
-<text x="840" y="158" class="combo tap layer-activator">base</text>
+<a href="#r_media">
+<text x="840" y="158" class="combo tap layer-activator"><tspan style="font-size: 86%">r_media</tspan></text>
 </a><text x="840" y="169" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-4">
@@ -2858,8 +2858,8 @@ rect.held, rect.combo.held {
 <path d="M840,158 l47,-85" class="combo"/>
 <path d="M840,158 l-47,85" class="combo"/>
 <rect rx="6" ry="6" x="826" y="145" width="28" height="26" class="combo"/>
-<a href="#base">
-<text x="840" y="158" class="combo tap layer-activator">base</text>
+<a href="#r_media">
+<text x="840" y="158" class="combo tap layer-activator"><tspan style="font-size: 86%">r_media</tspan></text>
 </a><text x="840" y="169" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-4">
@@ -3289,8 +3289,8 @@ rect.held, rect.combo.held {
 <path d="M840,158 l47,-85" class="combo"/>
 <path d="M840,158 l-47,85" class="combo"/>
 <rect rx="6" ry="6" x="826" y="145" width="28" height="26" class="combo"/>
-<a href="#base">
-<text x="840" y="158" class="combo tap layer-activator">base</text>
+<a href="#r_media">
+<text x="840" y="158" class="combo tap layer-activator"><tspan style="font-size: 86%">r_media</tspan></text>
 </a><text x="840" y="169" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-4">
@@ -3736,8 +3736,8 @@ rect.held, rect.combo.held {
 <path d="M840,158 l47,-85" class="combo"/>
 <path d="M840,158 l-47,85" class="combo"/>
 <rect rx="6" ry="6" x="826" y="145" width="28" height="26" class="combo"/>
-<a href="#base">
-<text x="840" y="158" class="combo tap layer-activator">base</text>
+<a href="#r_media">
+<text x="840" y="158" class="combo tap layer-activator"><tspan style="font-size: 86%">r_media</tspan></text>
 </a><text x="840" y="169" class="combo hold">toggle</text>
 </g>
 <g class="combo combopos-4">
