@@ -143,6 +143,8 @@
             label = "TD_RET_LAYA_LAY";
             #binding-cells = <0>;
             bindings = <&lt 1 RET>, <&mo 7>;
+
+            tapping-term-ms = <180>;
         };
 
         kp_ctr: kp_ctr {
@@ -174,7 +176,7 @@
         };
 
         tog_med {
-            bindings = <&tog 0>;
+            bindings = <&tog 6>;
             key-positions = <12 63>;
         };
 
