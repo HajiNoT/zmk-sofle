@@ -56,13 +56,13 @@ layers:
   - $$mdi:volume-off$$
   - l_nav
   - {t: LANG2, h: l_nav}
-  - '&int4_ctr_mcro'
+  - {t: INT4, h: '&ctr_lay'}
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '$$mdi:keyboard-return$$', h: num}
+  - '&td_ret_laya_lay'
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-space$$', h: symbol}
   - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - '&int5_ctr_mcro'
+  - '&td_int5_lay'
   - {t: LANG1, h: r_media}
   - r_media
   num:
@@ -123,7 +123,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-space$$
   - $$mdi:backspace-reverse-outline$$
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - '&mkp MB2'
   - {t: '&mkp MB1', h: symbol}
   - '&mkp MB3'
@@ -188,7 +188,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - MUTE
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -253,7 +253,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: D, h: '$$mdi:apple-keyboard-command$$'}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
