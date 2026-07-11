@@ -54,17 +54,17 @@ layers:
   - {t: /, s: '?'}
   - {t: '$$mdi:arrow-right-bold$$', h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:volume-off$$
-  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '$$mdi:keyboard-tab$$', h: l_nav}
   - {t: LANG2, h: LEFT WIN}
-  - {t: INT4, h: '&ctr_lay'}
+  - '&td_int4_lay'
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:keyboard-return$$', h: num}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-space$$', h: symbol}
   - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: INT4, h: '&ctr_lay'}
+  - '&td_int5_lay'
   - {t: LANG1, h: RIGHT WIN}
-  - r_media
+  - {t: '$$mdi:keyboard-tab$$', h: r_media}
   num:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -379,10 +379,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - Gui+$$mdi:apple-keyboard-option$$
-  - {t: 'Ctl+$$mdi:apple-keyboard-option$$', type: held}
-  - {t: 'Sft+$$mdi:apple-keyboard-option$$', type: held}
+  - {t: 'Ctl+$$mdi:apple-keyboard-option$$', type: held alternate}
+  - {t: 'Sft+$$mdi:apple-keyboard-option$$', type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - Gui+$$mdi:keyboard-tab$$
   - {t: '$$mdi:transfer$$', type: trans}
