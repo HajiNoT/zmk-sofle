@@ -502,7 +502,7 @@ layers:
   - Gui+$$mdi:arrow-left-bold$$
   - Gui+$$mdi:arrow-right-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: ., s: '>'}
+  - KP 0
   - KP 1
   - KP 2
   - KP 3
