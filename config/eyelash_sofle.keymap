@@ -137,7 +137,7 @@
             #binding-cells = <0>;
             bindings = <&tap_ctr_lay 0 LANG2>, <&mo 7>;
 
-            tapping-term-ms = <210>;
+            tapping-term-ms = <220>;
         };
 
         kp_ctr: kp_ctr {
@@ -155,7 +155,7 @@
             #binding-cells = <0>;
             bindings = <&tap_ctr_lay 0 LANG1>, <&mo 7>;
 
-            tapping-term-ms = <210>;
+            tapping-term-ms = <220>;
         };
     };
 
