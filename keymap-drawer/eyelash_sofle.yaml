@@ -56,13 +56,13 @@ layers:
   - $$mdi:volume-off$$
   - {t: '$$mdi:keyboard-tab$$', h: l_nav}
   - {t: INT4, h: l_nav}
-  - '&td_lang1_lay'
+  - '&td_lang2_lay'
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:keyboard-return$$', h: num}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-space$$', h: symbol}
   - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - '&td_lang2_lay'
+  - '&td_lang1_lay'
   - {t: INT5, h: r_media}
   - {t: '$$mdi:keyboard-tab$$', h: r_media}
   num:
@@ -381,9 +381,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: 'Gui+$$mdi:apple-keyboard-option$$', type: held alternate}
-  - {t: 'Ctl+$$mdi:apple-keyboard-option$$', type: held alternate}
+  - Ctl+$$mdi:apple-keyboard-option$$
   - {t: 'Sft+$$mdi:apple-keyboard-option$$', type: held alternate}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - Gui+$$mdi:keyboard-tab$$
   - {t: '$$mdi:transfer$$', type: trans}
   - Sft+$$mdi:apple-keyboard-option$$
@@ -551,5 +551,5 @@ combos:
   k: $$mdi:keyboard-space$$
 - p: [56, 60]
   k: $$mdi:alpha-w-box$$
-- p: [55, 56]
+- p: [56, 57]
   k: l_nav
