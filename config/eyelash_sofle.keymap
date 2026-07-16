@@ -187,8 +187,8 @@
             key-positions = <42 43>;
         };
 
-        win_alt_ctr {
-            bindings = <&kp LA(LC(LEFT_WIN))>;
+        win_shift {
+            bindings = <&kp LA(LEFT_SHIFT)>;
             key-positions = <43 44>;
         };
 
