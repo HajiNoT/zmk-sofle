@@ -539,7 +539,7 @@ combos:
   k: '&mkp MB3'
 - p: [0, 53]
   k: {t: l_nav, h: toggle}
-- p: [26, 27]
+- p: [26, 13]
   k: Alt+Ctl+$$mdi:keyboard-tab$$
 - p: [39, 26]
   k: Gui+$$mdi:keyboard-tab$$
