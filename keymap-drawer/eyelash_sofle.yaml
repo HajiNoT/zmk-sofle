@@ -121,8 +121,8 @@ layers:
   - {t: Ctl+0, s: Ctl+)}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:keyboard-space$$
   - $$mdi:backspace-reverse-outline$$
+  - $$mdi:keyboard-space$$
   - {type: held}
   - '&mkp MB2'
   - {t: '&mkp MB1', h: symbol}
@@ -178,7 +178,7 @@ layers:
   - {t: Sft+=, s: Sft++}
   - Sft+Gui+$$mdi:arrow-right-bold$$
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - PgDn
   - PgUp
@@ -191,7 +191,7 @@ layers:
   - {type: held alternate}
   - MUTE
   - {type: held}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
