@@ -414,9 +414,9 @@ layers:
   - '&soft_off'
   - $$mdi:brightness-7$$
   - $$mdi:brightness-5$$
-  - $$mdi:skip-previous$$
+  - {t: Sft+Ctl+8, s: Sft+Ctl+*}
   - PAUSE
-  - $$mdi:skip-next$$
+  - {t: Sft+Ctl+9, s: Sft+Ctl+(}
   - {t: '$$mdi:transfer$$', type: trans}
   - OUT USB
   - OUT BLE
@@ -426,7 +426,7 @@ layers:
   - Gui+Ctl+$$mdi:arrow-left-bold$$
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: Sft+Ctl+9, s: Sft+Ctl+(}
+  - $$mdi:skip-next$$
   - HOME
   - $$mdi:arrow-up-bold$$
   - END
@@ -439,7 +439,7 @@ layers:
   - Gui+Ctl+$$mdi:arrow-right-bold$$
   - $$mdi:progress-download$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: Sft+Ctl+8, s: Sft+Ctl+*}
+  - $$mdi:skip-previous$$
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
