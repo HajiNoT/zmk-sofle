@@ -426,7 +426,7 @@ layers:
   - Gui+Ctl+$$mdi:arrow-left-bold$$
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - {t: '$$mdi:transfer$$', type: trans}
-  - PgUp
+  - {t: Sft+Ctl+9, s: Sft+Ctl+(}
   - HOME
   - $$mdi:arrow-up-bold$$
   - END
@@ -439,7 +439,7 @@ layers:
   - Gui+Ctl+$$mdi:arrow-right-bold$$
   - $$mdi:progress-download$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - PgDn
+  - {t: Sft+Ctl+8, s: Sft+Ctl+*}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
