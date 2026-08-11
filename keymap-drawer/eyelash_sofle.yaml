@@ -380,15 +380,15 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {t: 'Gui+$$mdi:apple-keyboard-option$$', type: held alternate}
-  - Ctl+$$mdi:apple-keyboard-option$$
-  - {t: 'Sft+$$mdi:apple-keyboard-option$$', type: held alternate}
+  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held alternate}
   - {type: held alternate}
   - Gui+$$mdi:keyboard-tab$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - Sft+$$mdi:apple-keyboard-option$$
-  - Ctl+$$mdi:apple-keyboard-option$$
-  - Gui+$$mdi:apple-keyboard-option$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   r_media:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -445,15 +445,15 @@ layers:
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Gui+$$mdi:apple-keyboard-option$$
-  - Ctl+$$mdi:apple-keyboard-option$$
-  - Sft+$$mdi:apple-keyboard-option$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - Gui+$$mdi:keyboard-tab$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - Sft+$$mdi:apple-keyboard-option$$
-  - Ctl+$$mdi:apple-keyboard-option$$
-  - {t: 'Gui+$$mdi:apple-keyboard-option$$', type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {type: held alternate}
   nav_ten:
   - {t: '$$mdi:transfer$$', type: trans}
