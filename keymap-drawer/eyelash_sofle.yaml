@@ -55,7 +55,7 @@ layers:
   - {t: '$$mdi:arrow-right-bold$$', h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:volume-off$$
   - {t: '$$mdi:keyboard-tab$$', h: l_nav}
-  - {t: INT4, h: l_nav}
+  - {t: INT4, h: '$$mdi:apple-keyboard-option$$'}
   - '&td_lang2_lay'
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:keyboard-return$$', h: num}
@@ -63,7 +63,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: symbol}
   - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-shift$$'}
   - '&td_lang1_lay'
-  - {t: INT5, h: r_media}
+  - {t: INT5, h: '$$mdi:apple-keyboard-option$$'}
   - {t: '$$mdi:keyboard-tab$$', h: r_media}
   num:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -121,7 +121,7 @@ layers:
   - {t: Ctl+0, s: Ctl+)}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:keyboard-space$$
   - {type: held}
   - '&mkp MB2'
@@ -152,9 +152,9 @@ layers:
   - {t: Sft+2, s: Sft+@}
   - $$mdi:volume-low$$
   - Ctl+HOME
-  - HOME
+  - Ctl+$$mdi:arrow-left-bold$$
   - $$mdi:arrow-up-bold$$
-  - END
+  - Ctl+$$mdi:arrow-right-bold$$
   - Ctl+END
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '''', s: '"'}
@@ -164,11 +164,11 @@ layers:
   - $
   - '%'
   - Gui+Sft+$$mdi:arrow-left-bold$$
-  - Ctl+$$mdi:arrow-left-bold$$
+  - HOME
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - Ctl+$$mdi:arrow-right-bold$$
+  - END
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - '?'
@@ -177,7 +177,7 @@ layers:
   - Sft+{
   - {t: Sft+=, s: Sft++}
   - Sft+Gui+$$mdi:arrow-right-bold$$
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - PgDn
@@ -191,7 +191,7 @@ layers:
   - {type: held alternate}
   - MUTE
   - {type: held}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -275,13 +275,13 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Q
+  - B
   - W
   - E
   - R
   - T
   - {t: '$$mdi:transfer$$', type: trans}
-  - B
+  - Q
   - U
   - I
   - O
@@ -380,7 +380,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held alternate}
   - {type: held alternate}
@@ -453,8 +453,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {type: held alternate}
   nav_ten:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
